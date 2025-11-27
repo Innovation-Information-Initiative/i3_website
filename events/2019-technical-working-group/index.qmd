@@ -1,238 +1,82 @@
 ---
 title: "2019 Technical Working Group Meeting"
-subtitle: "Inaugural December 2019 meeting of the I3 TWG"
+subtitle: "December 2019 meeting of the I3 TWG"
 author:
   - Samuel Klein
-  - Adam Jaffe
 date: "2019-12-06"
 image: images/2019_TWG.png
 categories: [workshop, technical-working-group]
 ---
 
-**December 6-7, 2019** | Cambridge, MA
-
-**Inaugural Meeting of the Innovation Information Initiative Technical Working Group**
+**December 6-7, 2019**   |   Cambridge, MA   |   [Edit these notes](https://iii.pubpub.org/pub/2019-wg-agenda/draft?access=uehwc8ou)
 
 ---
 
 ## Introduction
 
-### Opening Remarks
-**Speaker:** Adam B. Jaffe (Brandeis University/NBER)
+Adam B. Jaffe, MIT: [**Introduction to I³**](https://drive.google.com/open?id=0BzHbs6NIM29ALWFMV05Lc0o1YjRzWmVpYlo4SEZHd3dPOVp3)
 
-Introduction to the Innovation Information Initiative and the vision for creating open innovation data infrastructure.
+### Initial data construction projects
 
----
+Samuel J. Klein, MIT: [**Prior Art + Open Innovation Metrics**](https://docs.google.com/presentation/d/1Moz1VJ6tGXMG8ksGr-Zfp-3wG0xoMnbR0uMg9x7Jn2A/)
 
-## Initial Data Construction Projects
+Osmat Azzam Jefferson, QUT and Lens.org: [**A Public Innovation Dataverse**](https://docs.google.com/presentation/d/1IvVp__YMT8q_K1bt-9l64Ne-0DHIXJHgDQK75j33xaI/edit?usp=sharing)
 
-### Prior Art and Open Innovation Metrics
-**Speaker:** Samuel J. Klein (MIT)
+Matt Marx, BU: [**Toward a Complete Set of Patent References to Science**](https://drive.google.com/open?id=1qDz9s_-wxwqtQBheAaMWcuPeIJ_umeDq)
 
-Exploring methods for measuring prior art usage and developing open innovation metrics.
-
-**Focus Areas:**
-- Prior art citation analysis
-- Open innovation measurement frameworks
-- Community-driven metric development
-- Transparency in innovation assessment
+Gaétan de Rassenfosse, EPFL: [**Linking Products to Patents**](https://drive.google.com/open?id=1I2hQ36Sn9jSDyIT81sbw_W1qvW7rlIu6)
 
 ---
 
-### Public Innovation Dataverse
-**Speaker:** Osmat Azzam Jefferson (QUT/Lens.org)
+## Panel discussions
 
-Development of a comprehensive public dataverse for innovation research.
+### Disambiguation
 
-**Vision:**
-- Centralized repository for innovation data
-- Open access to patent and publication data
-- Integration with existing platforms (Lens.org)
-- Research reproducibility and data sharing
+Chair: *Bronwyn H. Hall*, UC Berkeley + NBER
 
----
+Lia Sheer, Duke University: [**The Role of Company Names and Ownership Changes in the Dynamic Reassignments of Patents**](https://drive.google.com/open?id=18TOt9FdSjFN9W9IioUdpc0hwqjH3mjd3)
 
-### Patent References to Science
-**Speaker:** Matt Marx (Boston University/NBER)
+Deyun Yin, WIPO:  
+**Challenges and Solutions in the Construction of Chinese Patent Database** ([paper](https://link.springer.com/article/10.1007/s11192-019-03310-w))
 
-Building comprehensive datasets linking patents to scientific publications.
-
-**Project Goals:**
-- Systematic patent-to-paper citation extraction
-- Cross-database matching and validation
-- Understanding science-technology knowledge flows
-- Public dataset creation
-
-**Applications:**
-- Measuring scientific impact on technology
-- Technology transfer analysis
-- University-industry linkages
-- Basic vs. applied research distinctions
+Lisa D. Cook, Michigan State and NBER:  
+[**Race, Ethnicity, and Patenting: USPTO's New Data Collection Effort**](https://drive.google.com/open?id=1kRubWTYmEgBTrO3ApKanw1Y1qVBqLPgU)
 
 ---
 
-### Product-to-Patent Linking
-**Speaker:** Gaétan de Rassenfosse (EPFL)
+### Text Analysis
 
-Connecting patent data to actual products and commercial applications.
+Chair: *Samuel J. Klein*
 
-**Challenges:**
-- Identifying which patents correspond to real products
-- Product market data integration
-- Temporal alignment issues
-- Company-level aggregation
+Martina Iori, Sant'Anna School of Advanced Studies: [**The Complexity of Knowledge**](https://drive.google.com/open?id=19dXT846SiBAM7zffrc1K67hBWkCP0sqL)
 
-**Value:**
-- Understanding patent commercialization
-- Measuring innovation impact in markets
-- Product development timelines
-- Patent portfolio strategy analysis
+Mitsuru Igami, Yale University: [**Mapping Firms' Locations in Technological Space**](http://conference.nber.org/conf_papers/f131425/f131425.slides.pdf) ([paper](https://conference.nber.org/conf_papers/f131425.pdf))
+
+Jeffrey M. Kuhn, UNC: [**Applications of Textual Similarity to Measure Construction and Evaluation**](https://drive.google.com/open?id=1bjkffD41wjy2XsTW3IynGNIToTLNpYpg)
+
+Dominique Guellec, Observatoire des Sciences et Techniques: [**Novelty and Impact**](https://drive.google.com/open?id=1MryP5Sf2O5ks8SjlhMlUcynUxp_1_Lzz)
 
 ---
 
-## Panel Discussions
+### Other Patent Data Endeavors & Complementarity with I³
 
-### Panel 1: Disambiguation
+Chair: *Osmat Azzam Jefferson*
 
-**Focus Areas:**
-
-**Company Names and Ownership**
-- Standardizing corporate entity names across databases
-- Tracking ownership changes and corporate evolution
-- Mergers, acquisitions, and spin-offs
-- Subsidiary relationships
-
-**Patent Reassignments**
-- Patent sales and transfers
-- Secondary markets for patents
-- Ownership history tracking
-- Assignment data quality
-
-**Chinese Patent Database Challenges**
-- Name standardization in Chinese characters
-- Translation and transliteration issues
-- Institutional identification
-- Regional variation in naming conventions
-
-**Race/Ethnicity in USPTO Patent Data**
-- Name-based inference methods
-- Accuracy and validation concerns
-- Demographic diversity in innovation
-- Ethical considerations in classification
+Gaétan de Rassenfosse: [**PatStat overview**](https://drive.google.com/open?id=19bUzRr1e3VPEiFdpBvHl0pSCOqkC35sF)
+Andrew Toole, USPTO
+Ian Wetherbee, Google: On BigQuery
 
 ---
 
-### Panel 2: Text Analysis
+### Wrap-up: Goals, Mission and Priorities for I³
 
-**Knowledge Complexity Measurement**
-- Quantifying technical complexity from patent text
-- Language-based innovation metrics
-- Comparing complexity across fields
-- Temporal trends in knowledge complexity
+Chair: *Adam B. Jaffe*
 
-**Firm Location Mapping**
-- Extracting geographic information from text
-- Address parsing and standardization
-- Inventor vs. assignee location
-- Regional innovation ecosystems
-
-**Textual Similarity Applications**
-- Patent similarity measures
-- Technology proximity metrics
-- Prior art search optimization
-- Competitive landscape analysis
-
-**Novelty and Impact Assessment**
-- Text-based novelty indicators
-- Predicting patent impact from language
-- Breakthrough vs. incremental innovation
-- Forward-looking assessment tools
+Bronwyn H. Hall, UC Berkeley + NBER  
+Elisabeth Ruth Perlman, Bureau of the Census  
+Bhaven N. Sampat, Columbia + NBER  
+Heidi L. Williams, Stanford + NBER  
 
 ---
 
-### Panel 3: Patent Data Efforts
-
-**PatStat Overview**
-- EPO's PATSTAT database structure
-- Global patent family tracking
-- Citation data comprehensiveness
-- Access and licensing considerations
-
-**USPTO Initiatives**
-- PatentsView platform development
-- Bulk data downloads
-- API access
-- Data quality improvements
-
-**Google BigQuery Patent Data**
-- Cloud-based patent analytics
-- Large-scale computation capabilities
-- Public dataset availability
-- Integration with other Google datasets
-
-**Comparative Discussion:**
-- Strengths and limitations of each platform
-- Complementary uses
-- Best practices for multi-source research
-- Future integration opportunities
-
----
-
-## Wrap-up Session
-
-### Strategic Discussion
-**Participants:**
-- Bronwyn Hall (UC Berkeley/Stanford/NBER)
-- Elisabeth Perlman (UC Berkeley)
-- Bhaven Sampat (Columbia/NBER)
-- Heidi Williams (Stanford/NBER)
-
-**Topics Discussed:**
-- I³ strategic priorities and goals
-- Community building and governance
-- Funding and sustainability
-- Coordination with existing initiatives
-- Future research directions
-- Data sharing norms and standards
-
-**Key Outcomes:**
-- Commitment to annual Technical Working Group meetings
-- Focus on open data and reproducible research
-- Emphasis on collaborative dataset development
-- Recognition of need for validation datasets
-
----
-
-## Founding Vision
-
-The 2019 meeting established the foundation for I³ as a collaborative initiative focused on:
-
-1. **Open Data Infrastructure:** Creating publicly accessible datasets for innovation research
-2. **Methodological Rigor:** Developing validated, reproducible measurement approaches
-3. **Community Building:** Fostering collaboration among researchers, practitioners, and policymakers
-4. **Cross-disciplinary Integration:** Bridging economics, computer science, law, and policy
-5. **Global Perspective:** Addressing innovation measurement across countries and contexts
-
----
-
-## Impact
-
-This inaugural meeting set in motion several major initiatives:
-- Annual TWG meeting tradition (continuing through 2024)
-- Patent-paper pair dataset standardization
-- iiindex.org development (launched 2021)
-- Multiple collaborative research projects
-- Shared methodological frameworks
-
----
-
-## Resources
-
-- [Full Agenda](https://iii.pubpub.org/pub/2019-wg-agenda/release/4)
-- Multiple download formats available (PDF, Word, Markdown, EPUB, etc.)
-- [I3 Discussion List](https://mailman.mit.edu/mailman/listinfo/i3-open)
-- Subsequent meetings: 2020, 2021, 2022, 2023, 2024
-
----
-
-*Original content published on [PubPub](https://iii.pubpub.org/pub/2019-wg-agenda/release/4) under Creative Commons Attribution 4.0 International License (CC-BY 4.0)*
+*Original content published on [PubPub](https://iii.pubpub.org/pub/2019-wg-agenda) under Creative Commons Attribution 4.0 International License (CC-BY 4.0)*
