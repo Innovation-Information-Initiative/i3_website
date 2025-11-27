@@ -1,0 +1,145 @@
+---
+title: "I³ Fall Workshops 2020"
+subtitle: "Virtual workshop series replacing the December TWG meeting"
+author:
+  - Adam Jaffe
+date: "2020-10-28"
+categories: [workshop, technical-working-group, virtual]
+---
+
+**October - December 2020** | Virtual (Zoom)
+
+**Format:** Five-part workshop series, Wednesdays 12:00-1:00 PM or 12:00-1:30 PM EDT
+
+---
+
+## Overview
+
+Due to the COVID-19 pandemic, the Innovation Information Initiative replaced the traditional December in-person Technical Working Group meeting with a series of five virtual workshops. These sessions fostered dialogue among researchers exploring various dimensions of innovation metric construction.
+
+Each session featured 20-minute presentations by panelists followed by discussion periods. Recordings and detailed notes are available for individual sessions.
+
+---
+
+## Workshop Sessions
+
+### Session 1: Linguistics
+**Date:** October 28, 2020
+
+**Panelists:**
+- Nancy Kong
+- Jonathan Ashtor
+- Ryan Whalen
+
+**Focus:** Linguistic approaches to patent text analysis, natural language processing techniques for innovation metrics, and text-based patent classification methods.
+
+---
+
+### Session 2: Citation
+**Date:** November 4, 2020
+
+**Panelists:**
+- Matt Marx (Cornell/NBER)
+- Cyril Verluise
+- Osmat Jefferson
+
+**Focus:** Citation network analysis, patent-paper linkages, forward and backward citation patterns, and citation-based innovation metrics.
+
+**Topics Covered:**
+- Citation data quality and completeness
+- Cross-database citation matching
+- Science-technology knowledge flows
+- Citation-based impact measures
+
+---
+
+### Session 3: Geography
+**Date:** November 11, 2020
+
+**Panelists:**
+- Antonin Bergaud
+- Gabriele Cristelli
+
+**Focus:** Geographic disambiguation and location assignment for inventors, assignees, and institutions.
+
+**Key Challenges:**
+- Address standardization and geocoding
+- Inventor mobility tracking
+- Regional innovation systems analysis
+- Cross-border collaboration patterns
+
+---
+
+### Session 4: Gender
+**Date:** November 18, 2020
+
+**Panelists:**
+- Çağatay Bircan
+- Alenka Guzmán
+
+**Focus:** Gender identification methodologies, diversity in innovation, and gender-based analysis of patenting and publishing.
+
+**Discussion Topics:**
+- Name-based gender inference methods
+- Accuracy and validation approaches
+- International naming conventions
+- Gender disparities in innovation
+- Non-binary considerations in classification
+
+---
+
+### Session 5: History
+**Date:** December 2, 2020
+
+**Panelists:**
+- Mike Andrews
+- Dan Gross (Duke/NBER)
+- Tania Babina (Columbia)
+
+**Focus:** Historical innovation data collection, digitization of historical records, and long-run innovation trends.
+
+**Topics:**
+- Historical patent data digitization
+- Archive access and data quality
+- Temporal consistency in metrics
+- Long-run innovation patterns
+- Connecting historical and modern datasets
+
+---
+
+## Key Themes
+
+The 2020 Fall Workshops explored fundamental challenges in innovation measurement:
+
+- **Data Quality:** Ensuring accuracy and consistency across datasets
+- **Methodology:** Developing rigorous approaches to metric construction
+- **Standardization:** Creating shared definitions and best practices
+- **Validation:** Testing and verifying measurement approaches
+- **Cross-cutting Issues:** Addressing challenges that span multiple dimensions (e.g., geographic-gender interactions)
+
+---
+
+## Format Innovation
+
+The virtual workshop series format proved effective for:
+- Focused, topic-specific discussions
+- Broader participation across geographies
+- More frequent community engagement
+- Accessible recordings for wider audience
+- Lower barriers to participation
+
+This model influenced future I³ event planning and community engagement strategies.
+
+---
+
+## Resources
+
+- [Full Event Information](https://iii.pubpub.org/pub/2020-workshops/release/8)
+- [I3 Discussion List](https://mailman.mit.edu/mailman/listinfo/i3-open)
+- Individual session recordings and notes available on PubPub
+- Previous TWG meetings: 2019
+- Subsequent meetings: 2021, 2022, 2023, 2024
+
+---
+
+*Original content published on [PubPub](https://iii.pubpub.org/pub/2020-workshops/release/8) under Creative Commons Attribution 4.0 International License (CC-BY 4.0)*

@@ -1,0 +1,245 @@
+---
+title: "2021 Technical Working Group Meeting"
+subtitle: "December 2021 meeting of the I3 TWG"
+author:
+  - Samuel Klein
+  - Adam Jaffe
+date: "2021-12-03"
+categories: [workshop, technical-working-group]
+---
+
+**December 3-4, 2021** | Cambridge, MA (NBER)
+
+---
+
+## Friday, December 3
+
+### Welcome & Introductions
+**Host:** Adam Jaffe (Brandeis University and NBER)
+
+---
+
+## Text Analysis Panel
+
+### The Rise of Process Claims
+**Speakers:** Bernhard Ganglmair (ZEW Mannheim), W. Keith Robinson (Wake Forest), Michael Seeligson (Southern Methodist University)
+
+Classifying patent claims beyond traditional keyword searches to understand the evolution of process versus product claims.
+
+**Methodology:**
+- Advanced text classification techniques
+- Analysis of claim structure and language patterns
+- Moving beyond simple keyword matching
+
+**Challenges Discussed:**
+- Formulas and schematics in patents
+- Distinguishing process from product claims
+- Automated classification accuracy
+
+**Data Sharing:**
+- Code and data to be shared on Github and Zenodo
+- Public dataset for claim classification research
+
+---
+
+### Modeling Patent Clarity
+**Speaker:** Jonathan Ashtor (Cardozo School of Law)
+
+Examining how definiteness requirements affect patent claim clarity using machine learning approaches.
+
+**Approach:**
+- Machine learning on linguistic features
+- Analysis of claim rejections based on clarity
+- Definiteness requirement modeling
+- Patent examination data integration
+
+**Research Questions:**
+- What makes a patent claim clear or ambiguous?
+- How do examiners evaluate claim clarity?
+- Can clarity be predicted from linguistic features?
+
+---
+
+### Technology Differentiation and Firm Performance
+**Speakers:** Bruno Cassiman (IESE), Sam Arts (KU Leuven), Jianan Hou (KU Leuven)
+
+Analyzing how firm technology portfolios correlate with performance outcomes.
+
+**Key Concepts:**
+- Portfolio similarity measures
+- Technology differentiation metrics
+- Relationship between tech diversity and firm performance
+
+**Applications:**
+- Strategic portfolio management
+- Competitive positioning analysis
+- Innovation strategy evaluation
+
+---
+
+### OpenAlex Launch Announcement
+**Speakers:** Jason Priem and Heather Piwowar (OurResearch)
+
+Introduction of OpenAlex, an open replacement for Microsoft Academic Graph.
+
+**Launch Details:**
+- Official launch: January 3, 2022
+- Open-access scholarly metadata
+- Comprehensive coverage across disciplines
+- API and data download access
+- Free and open alternative to proprietary databases
+
+**Significance:**
+- Ensures continuity after Microsoft Academic Graph shutdown
+- Provides open infrastructure for research
+- Enables large-scale bibliometric analysis
+
+---
+
+## Saturday, December 4
+
+### Innovation Data Portal
+**Speaker:** Agnes Cameron (Knowledge Futures Group)
+
+Launch of iiindex.org - Innovation Information Initiative's searchable index of open innovation datasets.
+
+**Features:**
+- Searchable index of datasets
+- Linked open data structure
+- Metadata annotations
+- Dataset discovery and documentation
+- Community contributions
+
+**Goal:** Create central hub for innovation research data infrastructure
+
+---
+
+## Firms Section
+
+### Measuring Firms' Technology Use with Employees' Job Data
+**Speakers:** Tania Babina (Columbia), Anastassia Fedyk (UC Berkeley), Alex Xi He (University of Maryland), James Hodson (Jozef Stefan)
+
+Using employment data to infer firm technology adoption and capabilities.
+
+**Data Sources:**
+- Burning Glass job postings
+- Cognism employment records
+- Focus on AI skills and technology requirements
+
+**Methodology:**
+- Job posting text analysis
+- Skill requirement extraction
+- Firm-level technology usage inference
+
+**Applications:**
+- Tracking technology diffusion
+- Measuring AI adoption
+- Firm capability assessment
+
+---
+
+### Matching Patent Assignees to Startups
+**Speakers:** Matt Marx (Cornell/NBER), Michael Ewens (Caltech/NBER)
+
+Creating comprehensive linkages between patent assignees and startup companies.
+
+**Data Integration:**
+- OpenCorporates database
+- Form D filings (venture financing)
+- Patent assignee records harmonization
+
+**Challenges:**
+- Name variations and standardization
+- Startup identification and tracking
+- Temporal alignment of records
+
+**Applications:**
+- Startup innovation analysis
+- Venture capital and patenting patterns
+- Early-stage firm technology strategies
+
+---
+
+## Competition Section
+
+### Intellectual Property Theft
+**Speakers:** Britta Glennon (UPenn/NBER), Daniel P. Gross (Duke/NBER), Lia Sheer (Tel-Aviv University)
+
+Analyzing firm responses to IP theft cases and impacts on organizational behavior.
+
+**Research Focus:**
+- Firm responses to IP theft incidents
+- Changes in hiring patterns post-theft
+- Security and protection strategies
+- International dimensions of IP theft
+
+**Implications:**
+- IP protection strategies
+- Firm boundary decisions
+- Knowledge security practices
+
+---
+
+### U.S. Entrepreneurship over the Long-run
+**Speakers:** Daniel P. Gross (Duke), Jorge Guzman (Columbia), Innessa Colaiacovo (Harvard Business School)
+
+New historical data and measurement approaches for tracking entrepreneurship trends.
+
+**Contributions:**
+- Historical entrepreneurship dataset
+- Long-run measurement methodology
+- Quality-adjusted entrepreneurship metrics
+- Regional and temporal patterns
+
+**Research Questions:**
+- How has entrepreneurship changed over time?
+- What factors drive entrepreneurial activity?
+- How to measure entrepreneurial quality vs. quantity?
+
+---
+
+### Patent-Paper Pairs
+**Speaker:** Matt Marx (Cornell/NBER)
+
+Proposing standardized definitions and public datasets for patent-paper pair research.
+
+**Dataset Goals:**
+- Combine 21 existing patent-paper pair sources
+- Standardized definition and methodology
+- Link OpenAlex data across all fields
+- Include geographic and affiliation details
+- Public access and documentation
+
+**Coverage:**
+- Cross-disciplinary patent-publication links
+- Institution and author metadata
+- Citation relationships
+- Temporal evolution tracking
+
+**Impact:** Enable systematic research on science-technology linkages at scale
+
+---
+
+## Key Themes
+
+The 2021 Technical Working Group meeting highlighted several major themes:
+
+- **Infrastructure Launch:** Introduction of OpenAlex and iiindex.org as foundational open research infrastructure
+- **Text Analysis:** Advanced NLP techniques for patent claim analysis and classification
+- **Firm-Level Data:** New approaches to measuring firm technology adoption and innovation
+- **Standardization:** Efforts to create standardized datasets (patent-paper pairs, startup matching)
+- **Historical Perspectives:** Long-run analysis of entrepreneurship and IP protection
+
+---
+
+## Resources
+
+- [Full Agenda](https://iii.pubpub.org/pub/2021-wg-agenda/release/12)
+- [I3 Discussion List](https://mailman.mit.edu/mailman/listinfo/i3-open)
+- [iiindex.org](https://iiindex.org) - Innovation datasets index
+- Previous TWG meetings: 2019, 2020
+- Subsequent meetings: 2022, 2023, 2024
+
+---
+
+*Original content published on [PubPub](https://iii.pubpub.org/pub/2021-wg-agenda/release/12) under Creative Commons Attribution 4.0 International License (CC-BY 4.0)*

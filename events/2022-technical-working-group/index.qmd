@@ -1,0 +1,170 @@
+---
+title: "Winter 2022 Technical Working Group Meeting"
+subtitle: "December 2022 meeting of the I3 TWG"
+author:
+  - Samuel Klein
+date: "2022-12-02"
+categories: [workshop, technical-working-group]
+---
+
+**December 2-3, 2022** | Cambridge, MA (NBER)
+
+---
+
+## Friday, December 2
+
+### 4:30 PM – Welcome
+
+---
+
+### Building a Corpus of Patent-Article Siblings
+**Speakers:** Jean-Marc Deltorn, Dominique Guellec, Jiangyin Liu, Chenyin Wu
+
+Creating matched pairs of scientific papers and patents using text embeddings and machine learning classifiers.
+
+**Key Goal:** Develop a public corpus mapping relationships between patents and academic publications
+
+**Methodology:**
+- Text embeddings for semantic similarity
+- Machine learning classifiers for matching
+- Focus on patent-article sibling relationships
+
+---
+
+### 5:20 PM – Patents Phrase to Phrase Semantic Matching Dataset
+**Speakers:** Grigor Aslanyan, Ian Wetherbee (Google)
+
+Introduction of the Google Patent Phrase Similarity Dataset.
+
+**Features:**
+- Human-rated semantic similarity scores for technical terms
+- Contextual CPC (Cooperative Patent Classification) classifications
+- Supported a Kaggle competition in March 2022
+- Public dataset for innovation research
+
+---
+
+### 6:30 PM – Dinner
+
+---
+
+## Saturday, December 3
+
+### 8:30 AM – Continental Breakfast
+
+---
+
+### Mapping Patents to Technology Standards
+**Speakers:** Fabian Gaessler, Dietmar Harhoff, Lorenz Brachtendorf
+
+Dataset linking patents to technology standards from major standard-setting organizations.
+
+**Dataset Details:**
+- Available on Harvard Dataverse
+- Includes 60,000+ documents
+- Links ETSI, IEEE, and ITU-T standards to patents
+- Addresses Standard Essential Patents (SEP) litigation analysis
+
+**Applications:**
+- Strategic patent analysis
+- Technology standard evolution tracking
+- SEP litigation research
+- Innovation policy analysis
+
+---
+
+### 9:40 AM – NBER Orange Book Dataset: A User's Guide
+**Speakers:** Maya Durvasula, Scott Hemphill, Lisa Larrimore Ouellette, Bhaven Sampat, Heidi Williams
+
+Newly digitized Orange Book records mapping pharmaceutical patents to drug approvals.
+
+**Dataset Coverage:**
+- Period: 1985-2016
+- Four data files covering:
+  - Drug patents
+  - Patent exclusivity periods
+  - Drug approval data
+  - Patent maintenance information
+
+**Availability:** NBER website
+
+**Applications:**
+- Pharmaceutical innovation research
+- Drug pricing analysis
+- Patent strategy in healthcare
+- Regulatory policy evaluation
+
+---
+
+### 10:35 AM – Progress Report on Inventor-Author Crosswalk
+**Speaker:** Lee Fleming (UC Berkeley)
+
+Linking inventor and author identities across patent and publication databases using machine learning models.
+
+**Technical Approach:**
+- Machine learning models for entity disambiguation
+- Cross-database identity matching
+- Integration with OpenAlex and PatentsView
+
+**Challenges:**
+- Managing OpenAlex database updates
+- PatentsView annual releases requiring ~10,000 compute operations
+- Computational intensity of large-scale matching
+- Maintaining accuracy across database versions
+
+**Goals:**
+- Enable research on scientist-inventor transitions
+- Track knowledge flows between academia and patenting
+- Support innovation ecosystem analysis
+
+---
+
+### 11:30 AM – Panel: Validating Patent Metrics from Semantic Analysis
+**Moderator:** Bronwyn Hall (Stanford/NBER)
+
+**Panelists:** Sam Arts, Dokyun Lee, Ina Ganguli, Josh Lerner
+
+Discussion of validation frameworks for innovation metrics derived from semantic analysis.
+
+**Key Themes:**
+- Establishing validation frameworks
+- Comparing semantic measures to traditional citation-based metrics
+- Expert ratings versus outcome indicators
+- Reliability and reproducibility in patent analytics
+- Ground truth establishment for semantic metrics
+
+**Discussion Points:**
+- How to validate new semantic approaches
+- Relationship between text-based and citation-based measures
+- Expert judgment in metric validation
+- Applications in technology assessment
+- Future directions for semantic patent analysis
+
+---
+
+### 1:00 PM – Lunch
+
+---
+
+## Key Themes
+
+The 2022 Technical Working Group meeting focused on several interconnected themes:
+
+- **Dataset Development:** Creating comprehensive datasets linking patents to external knowledge sources (articles, standards, drugs)
+- **Semantic Similarity:** Applying modern NLP and embedding approaches to patent analysis
+- **Validation Frameworks:** Establishing rigorous methods for validating innovation metrics
+- **Entity Disambiguation:** Matching inventor and author identities across databases
+- **Domain Applications:** Specialized datasets for pharmaceuticals, technology standards, and academic-industry linkages
+
+---
+
+## Resources
+
+- [Full Agenda](https://bit.ly/i3-2022)
+- [I3 Discussion List](https://mailman.mit.edu/mailman/listinfo/i3-open)
+- Previous TWG meetings: 2019, 2020, 2021
+- Subsequent meetings: 2023, 2024
+
+---
+
+*Original content published on [PubPub](https://iii.pubpub.org/pub/kdv6mt73/release/7) under Creative Commons Attribution 4.0 International License (CC-BY 4.0)*
