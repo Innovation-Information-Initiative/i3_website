@@ -4,6 +4,7 @@ subtitle: "Virtual workshop series replacing the December TWG meeting"
 author:
   - Adam Jaffe
 date: "2020-10-28"
+image: images/2020_TWG.png
 categories: [workshop, technical-working-group, virtual]
 ---
 
