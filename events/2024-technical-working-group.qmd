@@ -11,8 +11,6 @@ categories: [workshop, technical-working-group]
 
 **December 6-7, 2024** | [YouTube stream](https://youtube.com) available
 
-**All TWG meetings:** [2019](https://iii.pubpub.org/pub/2019-wg-agenda) | [2020](https://iii.pubpub.org/pub/technical-workshops-2020) | [2021](https://iii.pubpub.org/pub/2021-wg-agenda) | [2022](#) | [2023](../events/2023-technical-working-group.html) | 2024
-
 ---
 
 ## Friday, December 6
