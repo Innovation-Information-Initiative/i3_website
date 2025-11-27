@@ -1,0 +1,376 @@
+---
+article:
+  elocation-id: 2021-wg-agenda
+author:
+- Samuel Klein
+bibliography: /tmp/tmp-60LymrvA8C0U38.json
+copyright:
+  link: "https://creativecommons.org/licenses/by/4.0/"
+  text: Creative Commons Attribution 4.0 International License
+  type: CC-BY
+csl: /app/dist/server/server/utils/citations/citeStyles/apa-6th-edition.csl
+date:
+  day: 03
+  month: 12
+  year: 2021
+journal:
+  publisher-name: Innovation Information Initiative
+  title: Innovation Information Initiative
+link-citations: true
+title: 2021 Technical Working Group Meeting
+uri: "https://iii.pubpub.org/pub/2021-wg-agenda"
+---
+
+# Agenda & Notes
+
+**December 3-4, 2021 ** Cambridge MA \
+[*Agenda*](https://www.nber.org/conferences/innovation-information-initiative-technical-working-group-meeting-fall-2021 "null")*
+*(NBER) \|  * *[*Edit these
+notes*](https://iii.pubpub.org/pub/2021-wg-agenda/draft?access=db77bc17 "null")*
+*\
+All TWG meetings:
+[2019](https://iii.pubpub.org/pub/2019-wg-agenda "null") \|
+[2020](https://iii.pubpub.org/pub/2020-workshops "null") \|
+[**2021**](https://iii.pubpub.org/pub/2021-wg-agenda "null") \|
+[2022](https://iii.pubpub.org/pub/kdv6mt73 "null") \|
+[2023](https://iii.pubpub.org/pub/4wido778 "null")
+
+## Friday, December 3
+
+### Welcome and Introductions!
+
+*Adam Jaffe*, Brandeis University and NBER
+
+### Text Analysis
+
+**The Rise of Process Claims: **Evidence from a Century of U.S.
+Patents  ([**slides**](https://conference.nber.org/conf_papers/f160994/f160994.slides.pdf "null")) \
+*Bernhard Ganglmair*, ZEW Mannheim\
+W. Keith Robinson, Wake Forest Univesity\
+Michael Seeligson, Southern Methodist University
+
+> An approach to classifying claims, beyond keyword searches. We will be
+> sharing code & data (on Github & Zenodo) for others to use and adapt.
+
+Q: When you're relying on textual models, what problems come up w/
+formulas and schematics, given how they are represented in those
+patents?\
+\
+A: (Bruno + Bernhard looked at eachother and both rolled their eyes,
+indicating this is a hard problem! \<laughter\>) Bruno: This is not
+something we are picking up, and these are important elements. Even if
+you think about Josh Greer's work in pharma... molecules, and how they
+are picked up... if it's not expressed in words, we will miss it for
+now. That's a challenge, more in some areas than in others.\
+Bernhard: Looking at our coverage, how well we do for claims in chem and
+biology, we're missing a lot. I've just recently come across [a dataset
+of a few hundred thousand manually classified
+claims](https://onlinelibrary.wiley.com/doi/abs/10.1002/smj.3351 "null")
+in chemicals. If you are in the audience, please call me --- I would
+love to use the dataset just to see how well we do w/ a large sample of
+chemicals, to improve on the approach.
+
+\
+**Modeling Patent Clarity** \
+*Jonathan Ashtor*, Cardozo School of Law
+
+\[file element\]
+
+> Can the *definiteness* requirement be used to model claim clarity, at
+> issuance and publication? This work modeled linguistic features of
+> claims, and trained an ML model on rejections using these features.
+
+Q: Do we know anything about which firms write better patents? \
+A: Portfolio size may bear on this; I don't look at the division or
+subsidiary level, just at the general size of the portfolio, so it's a
+bit rough.
+
+\
+**Technology Differentiation and Firm Performance** \
+*Bruno Cassiman*, IESE\
+Sam Arts, KU Leuven\
+Jianan Hou, KU Leuven
+
+\[file element\]
+
+> How do we characterize the tech portfolio of a firm, and how does that
+> correlates with firm performance? How can we use text to characterize
+> the portfolio?
+>
+> There is some work on measuring similarity and complementarity of the
+> tech of different firms, but little theory + formal models. For a
+> given year, we can plot firms in technology space.
+>
+> Measures: *portfolio similarity*, *technology differentiation *(very
+> different from patent similarity and citations)
+>
+> We are sharing this method and open data, which could be used to look
+> at other questions --- characterizing portfolios by region, or by
+> inventor.
+
+Q: How do you cluster / classify firms that work in many classes?\
+(E.g.: firms compete at business unit level, not at corporate level.)\
+A: We don't cluster, trying to get away from classification...
+
+Comment: Can we draw connections w/ Bernhard's paper around
+differentiation and competitive advantage? *Process* vs *product*
+inventions are on a continuum, but if you think about process patents as
+cost-reducing and product patents as value creating, that might help
+distinguish different ways that firms try to differentiate.
+
+**Closing comment**: we had 2 papers that take the words in the patents
+at face value: "what does this tell us about the firm's inventions?" and
+1 paper that asks "how do firms write the patents they write?" This area
+is exciting -- as someone who started w/ classifications, this clearly
+tells us much more. About both the invention and the applicant's
+strategy.
+
+### What comes after Microsoft Academic Graph? 
+
+**Introducing **[**OpenAlex**](http://openalex.org/about "null") --
+maintaining an open replacement for MAG
+([**outline**](https://docs.google.com/document/d/1pN-3Ou2nl6e0g4Oxbv-gpAQWC-a5CWZh73ViPqjkxxk/edit "null"))\
+*Jason Priem*, OurResearch\
+Heather Piwowar, OurResearch
+
+> Open Alex will provide a replacement for MAG, as of Jan. 3. The code
+> and data will all be open. Here we describe 4 types of data you might
+> be looking for: what was in MAG but is going away (patents!); what is
+> frozen w/ no updates; what has ongoing support; what is new.
+>
+> Feedback welcome once this is out in January, please share how you are
+> using it and what else you would like to see.
+
+**Discussion**\
+Matt: Thank you! In some ways MAG going away was a good thing, as we
+have no documentation of what MAG did; no code, no benchmarks. Thanks
+for open sourcing everything: a quantum leap. We want to help; I may
+have data to share with you after Jan 3.
+
+Q: What are your thoughts on licensing the data? ODC-BY, other? \
+A: our current license is 'none' as with Crossref data. (*CC0*; facts
+are not copyrightable). Lawyers are arguing about this, we will keep our
+ears open if people think this is not true for some subset; but we don't
+think we have the right to apply a \[new\] license to it.\
+
+------------------------------------------------------------------------
+
+## **Saturday, December 4**
+
+### Prototyping an Innovation Data Portal ([**slides**](https://docs.google.com/presentation/d/1BQhsE0KVgZDJGOvc0bvvuiYDJtIQIrCA9dRqo-b6P2A/edit#slide=id.p "null"))
+
+**Introducing **[**iiindex.org**](https://iiiindex.org/ "null")\
+*Agnes Cameron*, Knowledge Futures Group
+
+> A searchable update to the original I3 datasets index.\
+> Linked open data for each dataset, with annotations: metadata,
+> examples, superceding data.
+>
+> You can edit metadata in the original Google sheet, and can add
+> longer-form markdown notes that display as usage guides alongside each
+> entry.
+>
+> We built this largely to include datasets and metadata that often
+> don't get captured on other platforms --- links of inheritance,
+> dependence, and supercession; related datasets; and timelines.
+>
+> You can now add curated collections: a way to index thematic lists for
+> a specific purpose. Items in a collection are often in the index as
+> individual entries, but collections may include both larger and more
+> granular elements.
+>
+> Feedback is warmly welcome! If you have ideas about how to approach
+> dataset-relatedness, or other facets you would like to see, please
+> share --- as issues on the github repo or by email.
+
+### Firms
+
+**Measuring Firms\' Technology Use with Employees\' Job Data** \
+*Tania Babina*, Columbia University\
+Anastassia Fedyk, University of California at Berkeley\
+Alex Xi He, University of Maryland\
+James Hodson, Jozef Stefan International Postgraduate School
+
+> Using employment and employee data from Burning Glass + Cognism\
+> Before we had papers; now we have resumes: for firm-worker match data\
+> We use this to infer AI skills in particular.
+
+Q: do you cluster resumes to find duplicates for the same person? \
+A: In 2018 there were 165M workers, we have resumes for 100M
+
+Q: Is open data available? \
+*Cognism*: Firm-level measures + geographies will be released.\
+*Burning Glass*: may be able to post aggregated data, need to ask \| TBD
+
+Q: Have you thought about generalizing this method to firms that use
+tech from elsewhere to do their work?
+
+Comment - Really cool data! I thought an interesting result was that you
+find a positive correlation between the AI measure and the
+Hoberg-Phillips fluidity measure. What\'s your interpretation of this? I
+guess you could imagine that firms are trying to maintain a competitive
+advantage, or are responding to a changing competitive landscape\
+
+**Matching Patent Assignees to Startups** \
+*Matt Marx*, Cornell University and NBER\
+Michael Ewens, California Institute of Technology and NBER
+
+> NB: Small != Startup. Some orgs stay small. \
+> Youth != Startup. Some established orgs spin out branches that are
+> 'old'. We don't want to reinvent the wheel, there are other efforts to
+> match assignees to startups.
+>
+> Harmonizing a few sources:\
+> -- OpenCorporates data: they are transparent about provenance, access
+> is free; but no data on: headcounts, sales, industry ratings, industry
+> field codes.\
+> -- Form D filings: doesn't get all startups, but has a lot of them
+
+Comment: If you have inventor names, and employment, and know that an
+inventor took out a patent that led to a product at that company, that
+could be a useful sign.
+
+### Competition
+
+**Intellectual Property
+Theft** ([**slides**](https://conference.nber.org/conf_papers/f161001/f161001.slides.pdf "null")) \
+*Britta Glennon*, University of Pennsylvania and NBER\
+Daniel P. Gross, Duke University and NBER\
+Lia Sheer, Tel-Aviv University
+
+> IPR analysis: how do firms respond to (theft cases, theft trends)?\
+> How does theft affect their H1B hires, incl. specifically from China?
+> \
+> How does it affect the \# of immigrants they hire?
+>
+> After completing the work and putting out a first pub, will start
+> sharing data privately with other researchers.
+>
+> This is the hardest paper we've worked on yet, for reasons Britta
+> notes
+
+Comment: MSU group in this area: [https://a-capp.msu.edu/]( "null")
+
+Q: Curious about how many of the people involved in the thefts were
+permanent residents. And how many first came to the US on a student
+visa. Are firms hiring different types of immigrants rather than fewer
+immigrants?\
+A: That is a great point. once we collect the additional data we hope to
+have a better understanding on the background of these workers.
+
+Q: are cases initiated by firms or by DOJ? (Or is this known?) I'm
+trying to understand what share of theft might be captured by cases, and
+it seems like some firms may have incentives not to make it public they
+were successfully victimized.
+
+Q: Can we learn anything from the strategies of the thieves themselves?
+Are they stealing frontier tech?
+
+Q: this is really cool! Two thoughts\...  1. How do you guys know what
+\'event\' to code for the diff-in-diff: there\'s the news catching the
+theft, the indictment of the spies, the veredict.. etc\... and 2. would
+be interesting to separate the cases where the defendant is ultimately
+found innocent vs guilty..\
+A: these are great questions. We ideally want to be able to measure when
+the firm itself learned of the theft. At the moment we\'re working with
+the earliest date we can get our hands on, which isn\'t always that far
+back, but we have an RA trying to push deeper into the timelines as we
+speak.
+
+Q: \@dan \@britta \@lia - what is the underlying theory behind the
+matched sample analysis? If a firm has not been affected should one
+think of this as a persistently lucky firm (which does not need to take
+any action to be safe) or should we think of it as a firm that has taken
+appropriate actions?\
+In other words, I am not sure what story would generate a difference
+between the treated and control firms\
+A: we started looking also into spillovers to rival firms, but first
+want to understand the treaded firm\'s action. Indeed a lot to think
+about!
+
+Comment: Can H1B can be considered immigrants as this is a kind of
+non-immigrant visa? Comment: In the sense that people are moving to the
+US (for their jobs), they are immigrants, even if it\'s not clear how
+long they will stay
+
+**U.S. Entrepreneurship over the Long-run: New Data and Approaches to
+Measurement **([**slides**](https://conference.nber.org/conf_papers/f161002/f161002.slides.pdf "null")) \
+*Daniel P. Gross*, Duke University and NBER\
+Jorge Guzman, Columbia University\
+Innessa Colaiacovo, Harvard Business School
+
+Q: is the real outlier the inter war years?\
+A: in the usual log-log GDP graphs, there is an outlier in the interwar
+and then a return to trend.. in our case, we find a change in trend
+after the war. we have some hypothesis about what this means, still
+prelim so I'll hold off :)
+
+Q: to what extent can you look beyond firm names? can you look at firm
+descriptions ultimately?\
+A: We'd love to, but can't too much. one option could be to try to look
+at what the \'filings\' say but they are mostly not digitized and are
+handwritten (in cursive!) when digitzed for the earlier years in our
+sample\....\
+Q2: I wonder if you can capture related meanings beyond the words? For
+example, firm names might include "code" related to "program"?
+
+Q: with D&B data do you have a sense of establishment longevity? or
+places going from single establishment to multi establishment firms?\
+A: we have thought about this quite a bit, but matching the two and
+thinking about selection differences can be tricky\... happy to hear
+your thoughts
+
+Comment: Thanks very much for another heroic data project! The change of
+ownerships would be interesting to trace too.
+
+**Patent-Paper Pairs**\
+*Matt Marx*, Cornell University and NBER
+
+> Frame: 21 datasets used by 27 articles on patent-paper pairs. Most by
+> hand, only one is open (PubMed, 15 pairs). Fiona, et al match to Web
+> of Science; most don't have full access to allow clean reuse. Ths is
+> where we were w/ patent-paper cites 3+ years ago.
+>
+> 1.  How do we define a PPP? settle on a definition.
+>
+> 2.  Aim to produce a broad public dataset. Link to OpenAlex, cover all
+>     fields (not just med), include advanced data: geography,
+>     affiliation
+
+Comment: It could be illegal to put CEO on patent when they were not
+involved \--\> patent is worthless if challenged. But there are probably
+grey areas in both cases - defining what is a substantive/large enough
+contribution is often a debate. See
+[https://www.science.org/doi/10.1126/sciadv.1700404]( "null")
+
+Q: How do you decide what to work on? \
+A: When you see lots of papers and no sharing of source datasets - the
+21 sources for 27 papers - that's an indication that there's a role for
+a public good
+
+Q: For temporal specificity - you can publish a paper up to 1 year
+after, measured from absolute priority date
+
+Q: For pairs w/ no overlap of author+inventor: is that still a pair? \
+A: Don't only look at similarity; do you also require some similarity of
+content?
+
+Andy T: authors and inventors should overlap by at least one person. if
+another person published something that is then in a patent app, it
+becomes prior art and should block the patent from grant. the author
+would have 1 year to submit before they undermine themselves for getting
+a patent
+
+Emilio R: We are currently working on a project that exploits the
+funding source to identify the patent-paper pairs. It\'s going to be
+limited in size but maybe not terrible.
+
+Bhaven: (noting a gold-standard set you can measure against)
+
+Q: Can you separate different families?
+
+Comment: can you look at both cosign similarity, not just topic pairs? \
+Matt: I hear people asking for more info about different fields, not
+just one ranking of "likelihood of being a PPP"
+
+BP: Lots of
