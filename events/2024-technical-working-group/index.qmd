@@ -45,10 +45,10 @@ This work in information friction was an RCT.
 
 **Discussion**:
 
-Q: How are mentors recruited for your mentorship system?
+Q: How are mentors recruited for your mentorship system?  
 A: Initially, this was via networks of the program founders.
 
-Q: I love seeing this data; our first entrepreneurship dataset ever! (well, there's a 2013 dataset from crunchbase, but that's it) Tell me more about [the long tail?]
+Q: I love seeing this data; our first entrepreneurship dataset ever! (well, there's a 2013 dataset from crunchbase, but that's it) Tell me more about [the long tail?]  
 A: We have application data (for things other than the final vetted applications), it is not as good. We don't follow up with them b/c they're not in the program. Be cautious in interpreting that data.
 
 ---
@@ -69,22 +69,22 @@ Our approach is threefold:
 
 **Discussion**:
 
-Q: Do you study robustness of results around the window you choose around the product announcement? (the market takes time)
+Q: Do you study robustness of results around the window you choose around the product announcement? (the market takes time)  
 A: Yes, thankfully we have the announcement date which is unambiguous. We see clear discontinuities. With a longer window, the effect gets bigger. (market also anticipates)
 
-Q: Why not run event studies with competitors?
+Q: Why not run event studies with competitors?  
 A: If you run events firm by firm, you'll get N^2 studies per year, 25M from 5k competitors. This way we can compute spillovers in closed form w/o looking at those imprecise crossover events.
 
-Q: What about unpriced spillovers? I would have guessed we're also interested in knowledge spillovers, which may happen in other years vs contemporaneous. Are you looking only at price information?
+Q: What about unpriced spillovers? I would have guessed we're also interested in knowledge spillovers, which may happen in other years vs contemporaneous. Are you looking only at price information?  
 A: Knowledge spillovers may be there, we're not looking at those. This may be more relevant for patents than new products. Our model by construction can't capture that.
 
-Q: About interpretation: what's the difference between the change in firm profits vs the change across their market happening to all firms in the market?
+Q: About interpretation: what's the difference between the change in firm profits vs the change across their market happening to all firms in the market?  
 A: Yes, we are all playing an oligopoly game, everyone adjusts their output and prices. Equilibrium pricing effects should already be taken into account.
 
-Q: If you're only looking at 'winners', are the results here inflated?
+Q: If you're only looking at 'winners', are the results here inflated?  
 A: We're careful about who we call winners. If a product was not expected to be successful by the market, the normal return would be close to zero. We don't use the average across all firms; each product-introduction has its own abnormal return.
 
-Q: In the patent paper, the average return is essentially zero. They do a trip to convert negative returns into positive numbers, so the return to a patent is bounded at zero. You have larger average returns but presumably got negatives — what do you do with them? Are they still negative, or do you transform them so the value is bounded at 0?
+Q: In the patent paper, the average return is essentially zero. They do a trip to convert negative returns into positive numbers, so the return to a patent is bounded at zero. You have larger average returns but presumably got negatives — what do you do with them? Are they still negative, or do you transform them so the value is bounded at 0?  
 A: In the paper, there's a signal connected to the patent, which could be positive or negative. They make a distributional assumption, and have a bayesian technique to recover expected signal from the return. We do the same thing, but have a better signal-to-noise ratio, b/c we have a sharp announcement date.
 
 ---
@@ -106,10 +106,10 @@ In related work, we have previously estimated cognitive diversity and its impact
 
 **Discussion**:
 
-Q: You've run this on PubMed, using abstracts and mesh terms. I work with OpenAlex; it sounds like I could do a preprocessing step to take whatever dataset I want to use, and run your code on it. Is that the way to think about it?
+Q: You've run this on PubMed, using abstracts and mesh terms. I work with OpenAlex; it sounds like I could do a preprocessing step to take whatever dataset I want to use, and run your code on it. Is that the way to think about it?  
 A: Yes, exactly.
 
-Q: Say you run across edge cases in your citation network, like 50 references to the same source, or excess self-cites, or a quirk in the source that messed up the citations. Do you have any features that note these issues? A way to flag that someone should doublecheck?
+Q: Say you run across edge cases in your citation network, like 50 references to the same source, or excess self-cites, or a quirk in the source that messed up the citations. Do you have any features that note these issues? A way to flag that someone should doublecheck?  
 A: We only check that you have at least 3 references to be included. Each source of papers might have different quirks (in the dataset), we haven't tried to address this.
 
 ---
@@ -181,7 +181,7 @@ We find that many topics have low predictive power, but a few (positive discussi
 
 **Discussion**:
 
-Q: Working with ChatGPT style LLMs I've found problems increase with larger texts. If you are working with 3 hour transcripts, how do you deal with this?
+Q: Working with ChatGPT style LLMs I've found problems increase with larger texts. If you are working with 3 hour transcripts, how do you deal with this?  
 A: Depends on how specifically you define a prompt. The more you want to find fine-grained features of individual paragraphs or pages, the more we found this is an issue.
 
 ---
@@ -204,16 +204,16 @@ You need to use your own API token
 
 **Discussion**:
 
-Q: Did you compare this approach across green frameworks?
+Q: Did you compare this approach across green frameworks?  
 A: I think that's the next step. We did only 100 samples here. This db should include all green innovations worldwide; we started with transportation patents. The framework has the potential to expand.
 
-Q: How robust do you expect this classification to be over time?
+Q: How robust do you expect this classification to be over time?  
 A: It should get better over time as we refine the model.
-Q: (*But was the question about whether a single model would be persistently good across years, compare to how CPC codes are applied?*)
+Q: (*But was the question about whether a single model would be persistently good across years, compare to how CPC codes are applied?*)  
 
-Q: How sensitive was this work on the choice of CPC codes at the start?
+Q: How sensitive was this work on the choice of CPC codes at the start?  
 
-Q: Some patents are for a technology that is ambiguously related to environmental sustainability. Is a traffic-efficiency tool that increases the demand for driving good or bad for the environment? Are LLMs good or bad at this nuance?
+Q: Some patents are for a technology that is ambiguously related to environmental sustainability. Is a traffic-efficiency tool that increases the demand for driving good or bad for the environment? Are LLMs good or bad at this nuance?  
 
 ---
 
@@ -242,13 +242,13 @@ Working with [clinicaltrials.gov](clinicaltrials.gov) and PubMed was not always 
 
 **Discussion**:
 
-Q: We know we face publication bias. Denominator of unpublished studies can be large. Do your results speak to that?
+Q: We know we face publication bias. Denominator of unpublished studies can be large. Do your results speak to that?  
 A: In constructing the data, we tried to exclude reanalysis by multiple pubs. We don't think publication bias is itself shifting over this time frame, in a way that would change the trends we observed.
 
-Q: You reflected on implications for research. What are the implications for reporting guidelines, at the reporting stage?
+Q: You reflected on implications for research. What are the implications for reporting guidelines, at the reporting stage?  
 A: A lot of people are thinking about policy here. Two strands: since 2007, all sponsors have to register their studies; since 2017, every sponsor under the FDA auspices has to report results. The FDA has not yet imposed penalties however for non-compliance. The [FDAAA Trials Tracker](https://fdaaa.trialstracker.net/) tracks how much money the FDA could have collected had they enforced existing policy and listed fines.
 
-Q: User request: as the first person to fork your github repo, can you add the NCT Number?
+Q: User request: as the first person to fork your github repo, can you add the NCT Number?  
 A: Yes, if we've extracted it we can. (ed: short and sweet!)
 
 ---
@@ -274,7 +274,7 @@ You can see the latest examples at logic-mill, and our [huggingface repo](https:
 
 **Discussion**:
 
-Q: People used to use GROBID to extract data like this. Can I use LLMs for this now?
+Q: People used to use GROBID to extract data like this. Can I use LLMs for this now?  
 A: It can help. We need an English abstract to do it. So if you have a Springer article, which doesn't share abstracts, it's harder. The next gen of logic-mill will add Scopus abstracts.
 
 ---
@@ -303,7 +303,7 @@ Instead: try choosing a model using validation tasks.  A handful of cases that c
 
 ![](images/16-discussion-graph.png)
 
-Q: I would expect these graphs to be smoother, given the size of the corpus; what does it mean when there are jumps over the course of a year?
+Q: I would expect these graphs to be smoother, given the size of the corpus; what does it mean when there are jumps over the course of a year?  
 
 ---
 
@@ -332,14 +332,14 @@ Patents filed per sector:
 
 Problems: authors IPs are sometimes blocked by the government; and they need a bigger machine.
 
-Q: You said you renew patents every year. Is that just bureaucracy?
+Q: You said you renew patents every year. Is that just bureaucracy?  
 A: It's very cheap, you just tell someone to renew it for the next year. Some are not renewed. Renewal is studied more in the US, less in India to date.
 
 Comment: Really unfortunate it's not on PatStat b/c we don't have the families as a result. There is priority data, but these samples don't have a priority date. (only 60% have one) Numbers are messy, they take the original #s from offices that have thousands of variations. But we could clean that to get priority information.
 
-Q: About pharmaceutical research — After TRIPS, will patenting strategies change b/c jurisdiction specific distinctions about what is eligible will change? Chem and bio markets are interesting, India allows some drugs there first.
+Q: About pharmaceutical research — After TRIPS, will patenting strategies change b/c jurisdiction specific distinctions about what is eligible will change? Chem and bio markets are interesting, India allows some drugs there first.  
 
-Q: Is it possible to link clinical trial databases also? From India drug approval
+Q: Is it possible to link clinical trial databases also? From India drug approval  
 A: I don't know where to find those. If you have that info, it would be another big task to do.
 
 ---
@@ -361,16 +361,16 @@ We hope to go live with this database next year.  It includes all patents, wheth
 
 **Discussion**:
 
-Q: Does your Chinese utility patent analysis distinguish between invention patents and utility model patents?
+Q: Does your Chinese utility patent analysis distinguish between invention patents and utility model patents?  
 A: Yes. That's the first filter. What they call "utility patents" are the second-class ones in China, to make things confusing. We in the interest of simplicity have focused on their top-class patents, not on their second-tier patents.
 
-Q: Do you look at propensity to file in the US?
+Q: Do you look at propensity to file in the US?  
 A: In process. We've looked at it within critical-tech contexts as well. We want to know whether, as econ theories would predict, that the best patents per our metric are more likely to be cross-patented. With a caveat about secrecy in some cases.
 
-Q: Did you try to validate against [Patsnap](https://www.patsnap.com/)?
+Q: Did you try to validate against [Patsnap](https://www.patsnap.com/)?  
 A: We pursued that early on: whether commercial or semi-commercial databases out there should be used. We had a couple concerns. We wanted to make something that is fully public, open and unencumbered by licensing requirements (such as PatStat and Google Patents). And felt that many of these commercial tools were mainly deriving the information they offered from public data.
 
-Q: Foreign investment into the chinese economy has declined sharply since 2021. Do you see similar contraction in patenting? Do recent shifts in VC investment change what you're seeing?
+Q: Foreign investment into the chinese economy has declined sharply since 2021. Do you see similar contraction in patenting? Do recent shifts in VC investment change what you're seeing?  
 A: We've been thinking more about constructing the dataset in the past 18mo. But the general thing one hears from the vc community is the environment has moved from a system that mirrored the US, to one where that has dried up considerably and most money comes from the Chinese government, with strings attached.
 A: Some of the changes in 2018 which led to many funders departing (specific to US funding) we should be able to trace in our data.
 

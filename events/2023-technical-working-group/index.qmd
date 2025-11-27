@@ -9,9 +9,7 @@ image: images/2023-twg.jpeg
 categories: [workshop, technical-working-group]
 ---
 
-**December 1-2**, Cambridge MA
-[Agenda](https://bit.ly/i3-2022) (NBER)   |   *[Edit these notes](https://iii.pubpub.org/pub/4wido778/draft?access=46wow517)!*    |   [Youtube](https://www.youtube.com/nbervideos) recording
-All TWG meetings:   [2019](https://iii.pubpub.org/pub/2019-wg-agenda) | [2020](https://iii.pubpub.org/pub/2020-workshops) | [2021](https://iii.pubpub.org/pub/2021-wg-agenda) | [2022](https://iii.pubpub.org/pub/kdv6mt73) | **[2023](https://iii.pubpub.org/pub/4wido778)**
+**December 1-2**, Cambridge MA   |   [Agenda](https://bit.ly/i3-2022) (NBER)   |   [Youtube](https://www.youtube.com/nbervideos) recording
 
 ---
 
@@ -23,26 +21,26 @@ All TWG meetings:   [2019](https://iii.pubpub.org/pub/2019-wg-agenda) | [2020](h
 Matt Marx, Cornell University and NBER
 Emma Scharfmann, University of California, Berkeley
 
-**Discussion**
+**Discussion**:
 
 If anyone knows about the bump of Chemistry papers and gatekeepers around 2010, let me know.
-   A: that's an OpenAlex error in using the date of publication, not date of invention, that's the date that lots of documents were published online.
+A: That's an OpenAlex error in using the date of publication, not date of invention, that's the date that lots of documents were published online.
 
 We use the term '*gatekeepers*' for someone who both publishes and patents. Also '*scientist-inventor*'.
-  Comment: Maybe not a good term for you. esp seeing the geographic patterns; opening slide makes me think of centrality and eigenvectors; these aren't gatekeepers of info flow.  It also feels normative.
+Comment: Maybe not a good term for you. Esp seeing the geographic patterns; opening slide makes me think of centrality and eigenvectors; these aren't gatekeepers of info flow. It also feels normative.
 
-Q: for many East Asian countries, there's an oversupply of grad students, just part of the culture that you'll overeducate a bit [then students will go to firms?]
-   A: I never connected that to the asian angle until yesterday; that makes a lot of sense.
+Q: For many East Asian countries, there's an oversupply of grad students, just part of the culture that you'll overeducate a bit [then students will go to firms?]  
+A: I never connected that to the asian angle until yesterday; that makes a lot of sense.
 
-Q You started from paper-patent pairs where matt started. I'm guessing that the vast majority of output is not actually such pairs, ti's people doing both.  have you looked at that at all?
-   A: that's my intuition also, but haven't looked.
+Q: You started from paper-patent pairs where Matt started. I'm guessing that the vast majority of output is not actually such pairs, it's people doing both. Have you looked at that at all?  
+A: That's my intuition also, but haven't looked.
 
-Q: you have the # of patents and papers, maybe you can classify based on the distribution?  some write a lot and patent once, some patent a lot and write once.  impact of each one?
-   A: One slide that didn't make it is a pie chart: gatekeepers seem to be prolific scientists; more than 50 papers.
-   A: Old work on university patenting shows that's true.  profs wh patent are on average the most productive.
+Q: You have the # of patents and papers, maybe you can classify based on the distribution? Some write a lot and patent once, some patent a lot and write once. Impact of each one?  
+A: One slide that didn't make it is a pie chart: gatekeepers seem to be prolific scientists; more than 50 papers.
+A: Old work on university patenting shows that's true. Profs who patent are on average the most productive.
 
-Q: In general you're looking at a slew of papers/patents by the same person?
-   A: We start with patent/paper pairs, then look at their ORCID papers to expand our training set.  That's where we get model numbers. But we didn't look at accuracy after we're done with clustering, which is a headache.
+Q: In general you're looking at a slew of papers/patents by the same person?  
+A: We start with patent/paper pairs, then look at their ORCID papers to expand our training set. That's where we get model numbers. But we didn't look at accuracy after we're done with clustering, which is a headache.
 
 Adam: Thanks all! Looking forward to working with the data when it comes out next summer.
 
@@ -60,9 +58,9 @@ Our work studies *ex ante* commercial potential. We want to measure commercial p
 
 We realize that commercial potential is a boogeyman.  Some of the questions we have: Are there gaps or biases against women or minorities from certain regions, or specific regions where research is published?
 
-**Outcome**: scientific finding, cited in a patent that is renewed.
-**Predictor**: knowledge contained in article abstracts alone.
-**Method**: relying on SciBERT embeddings for abstracts, using NN with predictors as embeddings. We also use two secondary measures of potential: academic cites vs patent cites, and social impact.
+- **Outcome**: scientific finding, cited in a patent that is renewed.
+- **Predictor**: knowledge contained in article abstracts alone.
+- **Method**: relying on SciBERT embeddings for abstracts, using NN with predictors as embeddings. We also use two secondary measures of potential: academic cites vs patent cites, and social impact.
 
 We develop one model per year, using citations up the year prior to the prediction year.  This provided rolling predictions.
 
@@ -80,30 +78,30 @@ Conditional on disclosure, we looked at whether there is investment, patents fil
 
 We also compared the impact of TTO involvement., and compared across different institutions.  About 60% of the variation of patent citations pf papers can be explained by mean ex-ante commercial potential for that institution.
 
-Noting limitations:  many contributions reach the market without associated patents.  This may only partially capture potential due to indirect paths to commercializaiton.  Long time horizons are often required before scientific contributions are embodied in new products.
+Noting limitations: many contributions reach the market without associated patents. This may only partially capture potential due to indirect paths to commercialization. Long time horizons are often required before scientific contributions are embodied in new products.
 
-Q: Do public university limitations on self-funding limit the potential that would be illustrated here?  They may have high potential science but are restricted (via TTO options) in how they can make profitable investments.  (from the UC perspective)
-   A: That's a great question, we'd like to use our model to consider this
+Q: Do public university limitations on self-funding limit the potential that would be illustrated here? They may have high potential science but are restricted (via TTO options) in how they can make profitable investments. (from the UC perspective)  
+A: That's a great question, we'd like to use our model to consider this.
 
-Q: Maybe you can look at attributes that characterize good ideas that haven't been commercialized.  That's the question really on the table — what is undiscovered, what charateristics are undiscovered?
-   A: We're looking more generally at determinants of what we call the "realization gap".
+Q: Maybe you can look at attributes that characterize good ideas that haven't been commercialized. That's the question really on the table — what is undiscovered, what characteristics are undiscovered?  
+A: We're looking more generally at determinants of what we call the "realization gap".
 
-Q: Long ago I made a credit-scoring algorithm re: whether startups would fial within 4 years.  I talked to a lot of banks and partners continued to work on this after.  The AUC was just like yours.  This algorithm didn't commercialize.  Our problem was: even though AUC is 0.74, what's the value of that signal? If it's too noisy, even if it's fairly good, that doesn't help the user.  Thoughts on what success you need for this to get used?
-   A: Good question.  Also how does this compare to human evaluators' AUC? We can get away with this for a research exercise.
+Q: Long ago I made a credit-scoring algorithm re: whether startups would fail within 4 years. I talked to a lot of banks and partners continued to work on this after. The AUC was just like yours. This algorithm didn't commercialize. Our problem was: even though AUC is 0.74, what's the value of that signal? If it's too noisy, even if it's fairly good, that doesn't help the user. Thoughts on what success you need for this to get used?  
+A: Good question. Also how does this compare to human evaluators' AUC? We can get away with this for a research exercise.
 
-Q: I love the scalability here, you can see the whole field. How does this work on subfields?  Compare to fine-graining subfields, where you have easy breakdown by schools, topic area, &c.  Are there fields where this is a significant improvement?
-   A: We are thinking about this.   We've done field-specific models; you get some extra juice; in some you can get clear separation.  Physics, clear difference between basic physics and quantum.
+Q: I love the scalability here, you can see the whole field. How does this work on subfields? Compare to fine-graining subfields, where you have easy breakdown by schools, topic area, &c. Are there fields where this is a significant improvement?  
+A: We are thinking about this. We've done field-specific models; you get some extra juice; in some you can get clear separation. Physics, clear difference between basic physics and quantum.
 
-Q:  Did you look qualitatively at the embeddings to see how much the model is picking up on language suggesting the author is thinking about patenting or preparing for a patent? Which may be separable from the commercial potential of the idea.
-   A: We looked at whether asking ChatGPT to make abstracts "sound more like a patent" affected the model prediction; it only had 2-3% of an effect.  But things that *did* have an effect were: indications of tackling a big vs narrow problem, something likely to affect a lot of people, [subjects related to a commercial product or service.  See note above re: theory vs applied physics]
+Q: Did you look qualitatively at the embeddings to see how much the model is picking up on language suggesting the author is thinking about patenting or preparing for a patent? Which may be separable from the commercial potential of the idea.  
+A: We looked at whether asking ChatGPT to make abstracts "sound more like a patent" affected the model prediction; it only had 2-3% of an effect. But things that *did* have an effect were: indications of tackling a big vs narrow problem, something likely to affect a lot of people, subjects related to a commercial product or service. See note above re: theory vs applied physics.
 
-Q: What about more path-breaking innovations?  Things w/ long gestation periods?
+Q: What about more path-breaking innovations?  Things w/ long gestation periods?  
 
-Q: Did you consider whether you're picking up on terms indicating where the field is going, so that those mentioning that are more likely to be cited in patents? Could this lead to the high predictions for papers that were later Nobel Prizes?
+Q: Did you consider whether you're picking up on terms indicating where the field is going, so that those mentioning that are more likely to be cited in patents? Could this lead to the high predictions for papers that were later Nobel Prizes?  
    A: That's interesting, want to think it through clearly.  Possibly
 
-This data will be public, yes?
-   A: Yes, soon!
+Q: This data will be public, yes?  
+A: Yes, soon!
 
 ---
 
@@ -123,18 +121,12 @@ Data selection: we emailed a subset of 260k people to get data.
 Lots of areas to explore:
 
 1. Much more earnings variation is within-field compared to across-fields
-
 2. Institutions, ranks, tasks and sources are quite important for earnings
-
 3. Standard meta-sci, used research output is not very important for earnings
-
 4. Publs-per-year is a mediocre proxy for pubs-per-research-hour
-
 5. Research risk beliefs: fundraising, personal risks, and generating theories
-
 6. Life-cycle changes in research inputs and outputs, but not audiences
-
-7. 'Edisons' tend to take more personal rsiks and earn more than 'Bohrs'
+7. 'Edisons' tend to take more personal risks and earn more than 'Bohrs'
 
 ---
 
@@ -156,10 +148,10 @@ Existing models for this in machine learning are robust: in part because dataset
 
 Current gaps: projects that make heavy use of validation data and rarely publish those datasets.  How can we credit and promote what's happening? What validation data do we want to bring into being? [Contributions welcome](https://docs.google.com/spreadsheets/d/1bdyhGrj0oNz-_qW3Rv2GNGqhZZ73rgj-DYWePLA_1Ms/edit#gid=1512625211)!
 
-Q: Do we have a sense of how many people use validation datasets vs other datasets?  [other than their own]
+Q: Do we have a sense of how many people use validation datasets vs other datasets?  [other than their own]  
 A: This comes into its own once there is a norm around sharing and reusing them. Rarely considered something to credit. People currently just use it in the construction of new datasets, more than in reevaluating existing ones or shared between projects.
 
-Q: Good to compare the ML models of credit for naming such things.  But credit in CS has often been different from other fields.  We need to think about how to adapt to the field norms.  For instance: creating a dataset paper alongside the dataset helps [for NBER data]; something like that here could be important for this community.
+Q: Good to compare the ML models of credit for naming such things.  But credit in CS has often been different from other fields.  We need to think about how to adapt to the field norms.  For instance: creating a dataset paper alongside the dataset helps [for NBER data]; something like that here could be important for this community.  
 
 ---
 
@@ -175,13 +167,13 @@ Current status of [logic-mill.net](logic-mill.net) : Beta w/ 8 API functions, 22
 
 Road map: improving our language model, moving beyond our current 512-token limit, updating/expanding data sources (to include Open Alex, and PATSTAT).  We also want to add API functionality and offer precomputed datasets.
 
-Q: What about providing pairwise similarities for all ~50Q pairs?
+Q: What about providing pairwise similarities for all ~50Q pairs?  
 A: [That might be hard.]
 
-Q: what does it take to compile this, technically?
+Q: what does it take to compile this, technically?  
 A: we need to store a lot of vectors in memory, we have > 1TB of RAM in our HPC. Thanks to  Max Planck for this.
 
-Q: Have you segmented the overall corpus and found any interesting subsets with shared structure?
+Q: Have you segmented the overall corpus and found any interesting subsets with shared structure?  
 A: I've looked at this a lot, for instance we looked at the patent families of single companies, including large ones like Siemens.  There are definitely useful clusters that can be seen there with this tool; we haven't done something like this across the entire corpus.  Algorithms for this tend to take additional memory so we'd need even more compute.
 
 ---
@@ -203,19 +195,19 @@ We're using gen AI models every day, tried to feed these strings into an LLM to 
 We're using LLAMA and vLLM for this clean-up.
 cascade of cleanup steps for OpenAlex matching.
 
-Q: Can you ask OpenAlex to do that [themselves]?
+Q: Can you ask OpenAlex to do that [themselves]?  
 Audience to heckler: no, but you can :)
 
-Q: You mention looking at ownership changes.  Are you looking at other things such as name changes, across renewals, and publications following assignment?
+Q: You mention looking at ownership changes.  Are you looking at other things such as name changes, across renewals, and publications following assignment?  
 
-Q: Do you also track sales, as part of tracking ownership changes?
+Q: Do you also track sales, as part of tracking ownership changes?  
 A: We do look at that.  [to the extend data exists]
 Adam: USPTO asks firms to report, but it's not obligatory.  I don't know if we have estiamtes of how complete the reassignment file is. Many of us have said for years the law should be changed so that you have to tell the PTO for assignment to be enforceable.  I've said publicly that most of the things we argue about have two sides, here there's only one thing to do.
 
-Q: I wonder about the reliability of the LLM system you used. That seems like it should depend on the quality of data used; how did you check its validity?
+Q: I wonder about the reliability of the LLM system you used. That seems like it should depend on the quality of data used; how did you check its validity?  
 A: We did look at it, can discuss it more after.
 
-Q: You said you're looking at pre-grant pubs as well:
+Q: You said you're looking at pre-grant pubs as well:  
 1) assignment is often missing for ungranted applications, how do you think about it?   2) if you look at European pairs, can you pick up that data anyway?
 A: Interesting idea, thanks
 
@@ -238,21 +230,21 @@ We link the USPTO to the Business Register and Longituinal Business Database.  S
 *Example*: looking at impact of Chinese competition on firm innovation.
 We were able to use the bridge to help match with other sources like young firm data.
 
-Q: Are there any characteristics of the new matches you were able to make?
+Q: Are there any characteristics of the new matches you were able to make?  
 A: Fuzzy name matching only fixes small character shifts.  But significantly different formats, such as "IBM Corp" and "International Business  Machines corp" benefit from this bridge.
 
-Q: Any idea what fraction are private firms?
+Q: Any idea what fraction are private firms?  
 A: Not sure exactly, but one eample might be young firms that wouldn't be in the public firms list.  These are ~30% of the total population:
 
-Q: How does accuracy change over time?  I can imagine internet search is more helpful recently than for firms in the 1980s.
+Q: How does accuracy change over time?  I can imagine internet search is more helpful recently than for firms in the 1980s.  
 A: We do look at this; nothing published yet, but we haven't considered working this into the overal stats about matching-improvement
 
-Q: I understand this is set up for people who can access it through the Census system.  Have you thought about a version of this that could be used by anyone online?  A scaled-down version you could release publicly?
+Q: I understand this is set up for people who can access it through the Census system.  Have you thought about a version of this that could be used by anyone online?  A scaled-down version you could release publicly?  
    A: Absolutely.  There's a version of matched assignees that is totally public, that could be published.
-Q: Aside form compustat firms, what about small firms? to have names standardized within patent data.  That would be valuable, I think.  PatentsView has done some of this for names disambig.  But this seems better (esp for private firms).  You might want to talk w/ someone in the office of the chief economist, which owns PatentsView, to incorporate your better assignee-name disambig into their public data.
+Q: Aside form compustat firms, what about small firms? to have names standardized within patent data.  That would be valuable, I think.  PatentsView has done some of this for names disambig.  But this seems better (esp for private firms).  You might want to talk w/ someone in the office of the chief economist, which owns PatentsView, to incorporate your better assignee-name disambig into their public data.  
    A: Great idea.
 
-Q: (AT) **a**) Since you're working in the Census Bureau, what's the relationship b/t your work with the BR and what others are doing in CES and Census?
+Q: (AT) **a**) Since you're working in the Census Bureau, what's the relationship b/t your work with the BR and what others are doing in CES and Census?  
     A: Work by Nathan and others starts at 2000, trinagulating by inventors. He said he's planning to accomodate all these methodologies, collecting existing bridges over multiple periods. That's in progress within Census.
 **b**) impressive to see what you're doing linking patent data to companies. Now we have lots of different versions around: DISCERN, PTO, [NETS](https://msbfile03.usc.edu/digitalmeasures/cswenson/intellcont/NETS%20Database%20Description2008-1.pdf) (nat'l time-series database) w/ D&B.  It would be nice to know to what degree these datasets agree with one another about linkages. As this group wants to reduce duplication, when we have many variateis of the same linkage data going on, how can we support comparison across them?
     A: That's certainly part of the I3 Index, Agnes can speak to how to facilitate that comparison.   It's  hard for dataset-generators who can't access/read the Census alternatives.
@@ -283,23 +275,23 @@ As control for evaluations of specific changes, especially where correlated w/ D
 
 **Discussion**:
 
-Q: How big a role does gov funding play in innovation direction for major new paradigms and breakthroughs?  E.g. recent COVID vaccines? iPhone tech based on gov-funded research?
+Q: How big a role does gov funding play in innovation direction for major new paradigms and breakthroughs?  E.g. recent COVID vaccines? iPhone tech based on gov-funded research?  
 A: good use case for us and others!
 
-Q: Do you have a measure, citations or other, to show whether gov funded patents are more important than private, by industry / by department, per patent or sectorally?
+Q: Do you have a measure, citations or other, to show whether gov funded patents are more important than private, by industry / by department, per patent or sectorally?  
 A: We'd like to go beyond citations here.
 
-Q: Is the stitching together available yet? Can we email you?
+Q: Is the stitching together available yet? Can we email you?  
 A: It's available, we're still working on stitching for a few months but will share it with you.
 
-Q: Do you have a sense of the connection b/t these patents and the subsequent creation of institutes like Stanford Engineering, pushing a new frontier?
+Q: Do you have a sense of the connection b/t these patents and the subsequent creation of institutes like Stanford Engineering, pushing a new frontier?  
 A: We do; we're getting into the creation of new fields, in medical contexts, not using patent data.  That's something we're pursuing.  It's a longer answer, but happy to talk about that after.
 
-Q: Niggling Q - you posted the Roosevelt exec order but also showed data from before…
+Q: Niggling Q - you posted the Roosevelt exec order but also showed data from before…  
    A: They backfilled — the agencies did.  Great question, and relates to another point I didn't make:  agencies did keep records. I don't have the total # in the Register over time, it's small before WWII.  How reliably records were kept I don't know; there wan't much funding of R&D and debates then were about context where someone in Ag had their own invention, intramurally; who gets the rights to that.  Those are USC 266 patents.
-Q: Might be useful to see which agencies did and didn't backfill.
+Q: Might be useful to see which agencies did and didn't backfill.  
 
-Q:  How well do people comply with requirements to report back?
+Q:  How well do people comply with requirements to report back?  
 A:  There are requirements to report back to agencies; we didn't get in too detail into complaince, but we coulde explore that with modern data.
 
 ---
@@ -339,22 +331,22 @@ Next Steps:  international assignees; work with the updated patent-paper pairs d
 
 **Discussion**:
 
-Q: Which comes first, good patent or startup? Do good ideas get funding b/c the idea is good and patented, or do they patent after starting up?
+Q: Which comes first, good patent or startup? Do good ideas get funding b/c the idea is good and patented, or do they patent after starting up?  
 A: Unclear.  Maybe both?  See related work on non-startup firms.
 
-Q:  Any anomalies you've found in there?
+Q:  Any anomalies you've found in there?  
 A:  The dataset is now online, you'll see the first patents are sometimes in -5 years.  There are a lot of anomalies; we find historical assignees harder to get.
 
-Q: Compare this to the [Startup Cartography](https://www.startupcartography.com/home) work?
+Q: Compare this to the [Startup Cartography](https://www.startupcartography.com/home) work?  
 A: I think they also build on OpenCorporates, but we could get data directly.
 
-Q: if time to first patent is declining, but inventor age is increasing, does that say anything about time to invent? Is it partly that they delay founding and patent fast once they start up?
+Q: if time to first patent is declining, but inventor age is increasing, does that say anything about time to invent? Is it partly that they delay founding and patent fast once they start up?  
 A: That's a very compelling idea.  We could look at whether inventors come from academia, or leave a firm and do this and decide to do it as a startup?
 
-Q: Cf. the Graham/Samuelson [survey](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1429049) from 2008: if you just use startup assignees, you miss out on founders who had patents that weren't assigned to the firm.
+Q: Cf. the Graham/Samuelson [survey](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1429049) from 2008: if you just use startup assignees, you miss out on founders who had patents that weren't assigned to the firm.  
 A: Aha!
 
-Q: Interesting you're working w. PitchBook.  We're doing something mixing PitchBook, Crunchbase, Capital IQ — and found less than 20% of firms in dataset that showed up in more than one source.  We matched to NETS which is great, 80% match there.  But be cautious about relying on just one of these.
+Q: Interesting you're working w. PitchBook.  We're doing something mixing PitchBook, Crunchbase, Capital IQ — and found less than 20% of firms in dataset that showed up in more than one source.  We matched to NETS which is great, 80% match there.  But be cautious about relying on just one of these.  
 
 ---
 
@@ -381,7 +373,7 @@ Our main contribution will be our general pipeline to map texts into CPC space; 
 **Questions** for the audience: can't share the raw data yet.  If you have something we can test this on, where you want CPC classes, let us know and we'll try to do it, and that could be published on the I3 site / in the Index.
 
 **Discussion**:
-Q: Why do people use disclosures vs publication (scholarship, &c)?  Can you compare disclosures to other publication, in various fields?
+Q: Why do people use disclosures vs publication (scholarship, &c)?  Can you compare disclosures to other publication, in various fields?  
 A:  It's easier; don't pay as much.  $120 vs $1k+, no referees, just a single invention or idea rather than a writeup.   But yes, could be an extension
 
 ---
@@ -401,9 +393,9 @@ Many researchers share updates at conferences and public talks, and there's a me
 
 We started with EurekaAlert data, then linked it to author data on OpenAlex. First pass matching is 58%.  Some of this is from date errors in OpenAlex.  Using dates from CrossRef increases match rate to over 80%.
 
-Q: There's work on hype in scientific publications, and Qs around gender dynamics, and characterizations of uncertainty (does confident science get more attention than that which exposes its uncertainty?)  Have you looked at these aspects?
+Q: There's work on hype in scientific publications, and Qs around gender dynamics, and characterizations of uncertainty (does confident science get more attention than that which exposes its uncertainty?)  Have you looked at these aspects?  
 
-Q: Are things more likely to be licensed if they get press releases?
+Q: Are things more likely to be licensed if they get press releases?  
 A: Certainly things that are licensed get more pess attention; I haven't seen results that are too closely linked [for novel discoveries?], but the further you are from the source of [the science], the more a press release helps.
 
 ---
@@ -411,23 +403,24 @@ A: Certainly things that are licensed get more pess attention; I haven't seen re
 ### LLMs as Research Assistants: constructing a corpus of medical evidence  <sub><sup>Maya Durvasula, w/ Sabri Eyuboglu and David Ritzwoller</sup></sub>
 
 Excited to share this work!
-Recently we've been using clinical trials as measures of innovation: how firms respond to gov policy and prioritize investments.  But just as unweighted patent counts seems to leave information on the table, unweighted trial counts miss out on their details: trials are standardized, for quantitative output; studies can be more or less well designe dand mnore or less successful.
+Recently we've been using clinical trials as measures of innovation: how firms respond to gov policy and prioritize investments. But just as unweighted patent counts seems to leave information on the table, unweighted trial counts miss out on their details: trials are standardized, for quantitative output; studies can be more or less well designed and more or less successful.
 
 We combine scientific pubs, [clinicaltrials.gov](clinicaltrials.gov) records, and FDA approvals.
-Most of PubMed doesn't include clinical trials; we flag abstracts by keyword, and look at NLM categories, to get 1.8M abstracts. Colleagues made us a nice  interface speeding hand-labelling by 5-10x, to build meaningful training data. Then we iteratively developed prompts for GPT-3 and GPT-4; final prompts got us down to 5% false negatives/positives. [trying a range of visually similar prompts improved the success rate by a factor of 4-5, esp with GPT-3]. We also extracted 60k 'noisy' labels from each model.
+Most of PubMed doesn't include clinical trials; we flag abstracts by keyword, and look at NLM categories, to get 1.8M abstracts. Colleagues made us a nice interface speeding hand-labelling by 5-10x, to build meaningful training data. Then we iteratively developed prompts for GPT-3 and GPT-4; final prompts got us down to 5% false negatives/positives. Trying a range of visually similar prompts improved the success rate by a factor of 4-5, esp with GPT-3. We also extracted 60k 'noisy' labels from each model.
 
-Q: "why not use GPT-4 for everything?"
-A: this was quite expensive.  It seems expensive for them as well, and not suitable for this sort of labelling at commercial scale.  also, chatGPT is a black box, and we'd like more visibility into their workings.
+Q: "Why not use GPT-4 for everything?"  
+A: This was quite expensive. It seems expensive for them as well, and not suitable for this sort of labelling at commercial scale. Also, chatGPT is a black box, and we'd like more visibility into their workings.
 
-We chose LLaMa, Mistral, and Pythia; but got comparable performance from BERT directly.  Fine-tuning w/ GPT-3 labels we could match perf of GPT-3 with open models.  Fine-tuning w/ GPT-4 labels we could match perf of GPT-4!
+We chose LLaMa, Mistral, and Pythia; but got comparable performance from BERT directly. Fine-tuning w/ GPT-3 labels we could match perf of GPT-3 with open models. Fine-tuning w/ GPT-4 labels we could match perf of GPT-4!
 
-Finally, we tried a few version of the open models.  BiomedBERT trained on PubMed, &c.  These didn't necessarily do better than off the shelf BERT.
+Finally, we tried a few version of the open models. BiomedBERT trained on PubMed, &c. These didn't necessarily do better than off the shelf BERT.
 
-Conclusions: we can use LLMs to get very close to hand labelling.  Prompt design matters.  Fine tuning let us beat the perf of proprietary models.
+Conclusions: we can use LLMs to get very close to hand labelling. Prompt design matters. Fine tuning let us beat the perf of proprietary models.
 
 Next Step: streamlining a workflow for label extraction, getting better statistical information, using that to reduce errors.
 
-Q: Have you talked to the NatLib of Medicine to update MESH tags in a similar way?  A: they've been using algorithms to do that since 2022.  Not this technique but they're working towards sth like this.
+Q: Have you talked to the NatLib of Medicine to update MESH tags in a similar way?  
+A: They've been using algorithms to do that since 2022. Not this technique but they're working towards something like this.
 
 ---
 
