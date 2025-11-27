@@ -57,7 +57,7 @@ _backup/
 **/*.quarto_ipynb
 
 # Claude
-CLAUDE.md
+#CLAUDE.md
 .claude/
 
 # Netlify
