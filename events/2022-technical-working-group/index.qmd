@@ -4,166 +4,361 @@ subtitle: "December 2022 meeting of the I3 TWG"
 author:
   - Samuel Klein
 date: "2022-12-02"
+image: images/2022_twg.png
 categories: [workshop, technical-working-group]
 ---
 
-**December 2-3, 2022** | Cambridge, MA (NBER)
+**December 2-3, 2022**   |   Cambridge, MA (NBER)   |   [Agenda](https://bit.ly/i3-2022)
 
 ---
 
-## Friday, December 2
+# Friday, December 2
 
-### 4:30 PM – Welcome
-
----
-
-### Building a Corpus of Patent-Article Siblings
-**Speakers:** Jean-Marc Deltorn, Dominique Guellec, Jiangyin Liu, Chenyin Wu
-
-Creating matched pairs of scientific papers and patents using text embeddings and machine learning classifiers.
-
-**Key Goal:** Develop a public corpus mapping relationships between patents and academic publications
-
-**Methodology:**
-- Text embeddings for semantic similarity
-- Machine learning classifiers for matching
-- Focus on patent-article sibling relationships
+4:30 pm — Welcome!
 
 ---
 
-### 5:20 PM – Patents Phrase to Phrase Semantic Matching Dataset
-**Speakers:** Grigor Aslanyan, Ian Wetherbee (Google)
+## **Building a Corpus of "Patent-Article Siblings"**
 
-Introduction of the Google Patent Phrase Similarity Dataset.
+*Jean-Marc Deltorn*, University of Strasbourg
+Dominique Guellec, Observatoire des Sciences et Techniques  
+Jiangyin Liu, Observatoire des Sciences et Techniques  
+Chenyin Wu, University of Strasbourg  
 
-**Features:**
-- Human-rated semantic similarity scores for technical terms
-- Contextual CPC (Cooperative Patent Classification) classifications
-- Supported a Kaggle competition in March 2022
-- Public dataset for innovation research
+Scientific papers can serve as a background approximation to the field in which the patent exists. Trying to use citations for this has limitations. So does language similarity: Language serves different purposes in the scientific and patent worlds. Standards of clarity are different.
 
----
+Keywords are brittle: latent semantic analysis is not currently capable of going beyond the style to the underlying technical object. We are looking at embeddings, and want to evaluate whether text embeddings can discriminate true patent-paper pairs from non-pairs.
 
-### 6:30 PM – Dinner
+We started with a manual ground-truth corpus. Chose a subset of domains and their CPC codes. Then evaluated different embeddings: GANs, transformers, and other models, and developed a classifier based on them.
 
----
+Selection of corresponding articles: based on inventor last names, pub date, and priority date. Then querying the resulting corpus, looking at Jaccard index, date difference, and text embedding difference (of abstracts)...
 
-## Saturday, December 3
+**Ongoing work:**
+- Extend to other technical fields (ML, crypto, quantum computing, ARNm)
+- Build a **public corpus** of field-dependent PPPs
 
-### 8:30 AM – Continental Breakfast
+**Future work:**
+- Extend to other sources (preprints, other media)
+- Fine tune language models
+- Address limitations: reliance on author/inventor names
 
----
+**Discussion**:
 
-### Mapping Patents to Technology Standards
-**Speakers:** Fabian Gaessler, Dietmar Harhoff, Lorenz Brachtendorf
+Q: Timeframe?  
+A: We want to extend this to a much larger set...
 
-Dataset linking patents to technology standards from major standard-setting organizations.
+Q: How do you ensure patent/paper have an overlapping author?  
+A: We query Semantic Scholar, to maximize proximity of patent + author.
 
-**Dataset Details:**
-- Available on Harvard Dataverse
-- Includes 60,000+ documents
-- Links ETSI, IEEE, and ITU-T standards to patents
-- Addresses Standard Essential Patents (SEP) litigation analysis
+Q: My understanding is that there are differences normatively and legally re: what counts in being an author / inventor. How do you think about that?  
+A: The rules are different, though it's a similar principle in Europe and the US.
 
-**Applications:**
-- Strategic patent analysis
-- Technology standard evolution tracking
-- SEP litigation research
-- Innovation policy analysis
+Comment: Great to see this, fantastic use of patent data. As you expand on this project: institutional affiliation could help evaluate some matches. And have you considered looking at full claims, not just abstracts?
+A: Yes, affiliation is interesting.
+A: Our experience from a first test was that the full claim tree did not add much value in classifying true matches, and takes a lot of computation time. (LeeF: seconded)
 
----
+Comment: Affiliations are missing for 20% of OpenAlex. When there are multiple authors + institutions, they don't always link correctly.
 
-### 9:40 AM – NBER Orange Book Dataset: A User's Guide
-**Speakers:** Maya Durvasula, Scott Hemphill, Lisa Larrimore Ouellette, Bhaven Sampat, Heidi Williams
+Comment: From the other side, patents from universities can be assigned to someone else (a grant provider, a startup) leading to other notable gaps.
 
-Newly digitized Orange Book records mapping pharmaceutical patents to drug approvals.
+Comment: This is a perfect example of what we want presented at this workshop: a sense of what's going on, before it is finalized. Thank you!
 
-**Dataset Coverage:**
-- Period: 1985-2016
-- Four data files covering:
-  - Drug patents
-  - Patent exclusivity periods
-  - Drug approval data
-  - Patent maintenance information
+Q: (Adam) In your first slide you had something about "we looked at PPP to understand the relation b/t science and invention. If we *knew* which were the pairs: can we use this analysis to get a deeper understanding b/t the science and the invention? And predict which science linked to which inventions would produce valuable inventions?  
+A: That's part of the idea, one of my colleagues (Dominique?) should join there. That's a longer goal, to get that kind of understanding.
+A: Often you might take inspiration from a scientific idea...
 
-**Availability:** NBER website
-
-**Applications:**
-- Pharmaceutical innovation research
-- Drug pricing analysis
-- Patent strategy in healthcare
-- Regulatory policy evaluation
+NB: Lee Fleming is talking about related work tomorrow.
 
 ---
 
-### 10:35 AM – Progress Report on Inventor-Author Crosswalk
-**Speaker:** Lee Fleming (UC Berkeley)
+## **Patents Phrase to Phrase Semantic Matching Dataset**
 
-Linking inventor and author identities across patent and publication databases using machine learning models.
+*Grigor Aslanyan*, Google    
+Ian Wetherbee, Google  
 
-**Technical Approach:**
-- Machine learning models for entity disambiguation
-- Cross-database identity matching
-- Integration with OpenAlex and PatentsView
+This is a new public phrase-to-phrase dataset for semantic textual similarity (STS): the *Google Patent Phrase Similarity Dataset*
+
+- Human rated, contextual, focused on technical terms, w/ similarity scores
+- With granular ratings/flags (e.g. synonym, antonym, hypernym, hyponym, holonym, shared domain, unrelated...)
+
+Existing STS collections build on Wikipedia, books, &c. not technical terms.
+
+Our dataset was used in a Kaggle [competition](https://www.kaggle.com/competitions/us-patent-phrase-to-phrase-matching) in March 2022.
+
+We focused on **phrase disambiguation** (adding CPCs for context), **adversarial keyword** matching, and **hard negatives** (explicit non-relation).
+
+**Method:**
+
+**Choosing anchors:**
+- We keep phrases that appear in 100+ patents
+- Randomly choosing 1000 anchor phrases from these
+- Randomly sampling up to 4 CPC classes for each, for context
+
+**Generating targets:**
+- We randomly select phrases from the full corpus with a partial keyword match with an anchor
+- We use a masked language model, asking BERT to generate replacement phrases after masking out each instance of the phrase
+
+**Discussion**:
+
+This is meant to be a tool to fine tune models rather than intended as a model itself.
+
+---
+
+6:30 pm — **Dinner**
+
+---
+
+# Saturday, December 3
+
+8:30 am — Continental Breakfast
+
+---
+
+## **Mapping Patents to Technology Standards** ([slides](https://conference.nber.org/conf_papers/f176406/f176406.slides.pdf))
+
+*Fabian Gaessler*, Pompeu Fabra University    
+Dietmar Harhoff, Max Planck Institute for Innovation and Competition  
+Lorenz Brachtendorf, Max Planck Institute for Innovation and Competition  
+
+**Summary**: We try a new method to link patents to standards based on semantic similarity. Useful for SEP litigation, strategic patenting, contributions to tech progress.
+
+**Future Improvements**: Refine similarity measure, extend to other standards, historical and other regions.
+
+**Data sources + challenges:**
+- **Standards**: We focus on ETSI - a standards db with 40k standard docs, varying in size >1k pages, may describe multiple technologies and split at a chapter level
+- Also 18,000 declared SEPs, at family level
+- **Challenges**: long texts, multiple docs, two corpora
+
+**Similarity approaches:**
+- `octimine`: closed-source, via Natterer(2016). 'vector space model', cosine + other? fine tuning
+- *tf-idf*, embeddings: we checked results with this
+
+Linking essentiality status to predicted essentiality: "if this worked better I would be out founding a company offering patent-tech"
+
+We compared this w/ wifi patents, and hand-marked gold standard, w/ similar results.
+
+![](images/standards-wifi-comparison.png)
+
+We posted everything on Harvard Dataverse: with csv's for 60k docs, use cases, and more.
+[Semantic similarity of patent-standard pairs](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/B2RJSX) (ETSI, IEEE, ITUT)
+
+**Discussion**:
+
+Tim: We are basically citing one another's unpublished papers here. Great to see this. Can you say more about similarity score coeffs and how this changes for claims?
+A: With *claims*: Effect size gets smaller. There's a tradeoff b/t the noise you have from just having [claims] vs [standards], and bias that may come in (from also looking at description, less uniform?).
+A: Also interesting that the final decisions (across the corpus) didn't change that much when using just claims or using full.
+
+Tim: Ideas - take claim + description, find ones that are more similar on one or the other. Perhaps claims change in ways that make them fall w.r.t. standard. There's such time variation in patenting and standardization processes, this micro-longitudinal change could show which ones move in or away from specs. From a policy standpoint: can you find things that were close substitutes but isn't essential? Policy debate here is that stands process created a monopoly that wasn't there before. So: what were the alternatives early in stands?
+A: We looked at undeclared-by-humans but high-similarity. Overall seem less valuable. Also much older at the time; patent had expired. Share of SSO membership was not lower among these.
+
+Comment: One way to get essentiality is to put language in your patent into the standard (in one direction or the other). Given the slow standards process, you have opportunities through continuations + more. My concern w/ this approach: it's not that patents are written in a eureka moment, and language summarizes that insight!
+A: This is complex. There are some just-in-time patenting studies, also personal ties: can you see prelim drafts, file a patent just before adoption? This is an issue for many such efforts.
+
+Adam: Sounds like you could document this phenomenon by looking at increasing similarity over the course of the standards process.
+
+---
+
+## [**The NBER Orange Book Dataset: A User's Guide**](https://www.nber.org/system/files/working_papers/w30628/w30628.pdf)
+
+*Maya Durvasula*, Stanford University    
+Scott Hemphill, NYU Law School  
+Lisa Larrimore Ouellette, Stanford University  
+Bhaven Sampat, Columbia University and NBER  
+Heidi Williams, Stanford University and NBER  
+
+Patents are used as measure of innovation; but *mappings to products* can be unclear. There's no straightforward linkage. But this is different in pharma, via the [Orange Book](http://rx-wiki.org/index.php?title=Orange_Book).
+
+We introduce a newly digitized OA dataset of Orange Book records, w/ annual editions providing snapshots at points in time; giving a comprehensive portrait of legal protections over drug lifecycles.
 
 **Challenges:**
-- Managing OpenAlex database updates
-- PatentsView annual releases requiring ~10,000 compute operations
-- Computational intensity of large-scale matching
-- Maintaining accuracy across database versions
+- OB records are self-reported, not audited by the FDA. We validated against external benchmarks
+- Appropriate use may differ across researchers. Use case: calculating market exclusivity
 
-**Goals:**
-- Enable research on scientist-inventor transitions
-- Track knowledge flows between academia and patenting
-- Support innovation ecosystem analysis
+"Orange Book" is a misnomer. Real name: Approved Drug Products with Therapeutic Equivalence Evaluations, for pharmacists to track generic-brandname links. Related: *Hatch-Waxman Act* for drug price competition.
+
+Not everything is eligible for listing. Only patents that could reasonably be asserted (to track infringement of generics). Incentives to list all patents: generic competitors have to challenge every patent that's still in force at the point they enter the market. [challenge means: legal certification, required to argue each specific patent is either invalid or not infringed]
+
+Any infringement suit leads to 30 months of blocking generic approval. Free extra exclusivity! Sometimes called 'pseudo-patents'. We see 5 categories of exclusivity:
+
+1. New chemical entity (NCE): 5y
+2. Orphan drug (ODE): 7y
+3. Pediatric (PED): 6mo
+4. Generating Antibiotic Incentives Now (GAIN): 5y
+5. 180-day exclusivity (Generic DE): 6mo
+
+**Find our dataset** on NBER: the [NBER Orange Book Dataset](https://www.nber.org/research/data/orange-book-patent-and-exclusivity-data-1985-2016) ([Readme](https://data.nber.org/fda/orange-book/historical/1986-2016/README.pdf)).
+
+Good news: you can *just use this* w/o worrying about gaps!
+[4 data files: Drug patents, patent use codes, drug exclusivity, drug exclusivity code...]
+
+Of 2500 new drugs 1985-2015, 80% have one form of such protection. Of 800 new molecular entities, 96% of these 'innovative drugs' have one. This exclusivity is granted and recorded directly by FDA.
+
+We run a comparison to IQVIA/Ark, look at litigation records, and at extended patents under Hatch-Waxman. The majority of drug patents do get recorded in the Book.
+
+We also looked at 4 predictable changes to expiry:
+1. TRIPS
+2. PT Extension
+3. PT Adjustment
+4. Maintenance fee non-payment (at 3.5/7.5/11.5)
+
+At high level all things are accurate, but non-payment doesn't appear! Firms just stop self-reporting. **45% of patents expire before full term**. Must find other resources to track.
+
+*Context*: This was originally an appendix for another project estimating market exclusivity: Nominal, Expected, Realized (what do legal protections say they confer, what shielding should be expected, how much time actually elapsed in a case).
+
+**Discussion**:
+
+Q: Dan Gross: Could you list some potential misuses as well as good uses of this dataset?  
+A: Bhaven: Positive use cases included... Don't count all entries as if they are equal. E.g. those that actually matter for generic entry.
+
+**Errors/disputes:**
+
+If you're a competitor you can state that a record doesn't actually conflict w/ listed drugs. There are 54 active disputes here, from generic competitors. This is hard if you're not yourself in the weeds re: what the patent text allows. Our period ends in 2015, and there weren't disputes that ended in delisting in that period.
+
+Until 2003, you could get multiple 30mo stays. Firms would start pulling new OB listings out of nowhere. Had to be fixed in the Medicare Modernization Act.
+
+Q: Have you thought about how different IP rights complement one another?  
+A: The project this was originally an appendix for is doing that: looking at new uses for approved drugs, and how patent + regulatory exclusivity interact. Definitely something you can do with this data!
+
+Comment: [from USPTO] The [**patent examination research dataset**](https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-examination-research-dataset-public-pair) (**PatEx**) includes patent status, expiry due to non-maintenance. Published annually since 2014. Google Patents may have more, if you need older years reach out and we can track down where it actually is.
+
+Comment: Renewals can be found in **PatStat**.
 
 ---
 
-### 11:30 AM – Panel: Validating Patent Metrics from Semantic Analysis
-**Moderator:** Bronwyn Hall (Stanford/NBER)
+## **Progress Report on an Inventor-Author Crosswalk**
 
-**Panelists:** Sam Arts, Dokyun Lee, Ina Ganguli, Josh Lerner
+*Lee Fleming*, University of California, Berkeley    
 
-Discussion of validation frameworks for innovation metrics derived from semantic analysis.
+We have initial results, model, and proposed flow.
 
-**Key Themes:**
-- Establishing validation frameworks
-- Comparing semantic measures to traditional citation-based metrics
-- Expert ratings versus outcome indicators
-- Reliability and reproducibility in patent analytics
-- Ground truth establishment for semantic metrics
+**The Gatekeepers of Science**:
+Papers for pure sci, Light bulb for pure inventor, Gate for sciinventor.
 
-**Discussion Points:**
-- How to validate new semantic approaches
-- Relationship between text-based and citation-based measures
-- Expert judgment in metric validation
-- Applications in technology assessment
-- Future directions for semantic patent analysis
+Relationship width: # of coauthorships.
+Heterogeneity across lab clusters?
+
+**Artefacts:**
+- Sankey diagram of Doudna's OA ID / PatsView ID shows over-splitting in OA
+- For a ML model estimating missed links:
+  - Take subset of Marx/Fuegi patent-article citations that are self-citations. Look for scientists w/ ORCID IDs ['best thing we have right now']
+  - Features of prediction model: many! Clean up all fields, plug in, publish accuracy estimates
+  - Enable sub-setting, intermediate results
+
+![](images/inventor-features.png)
+
+Some features used in distance calculation.
+
+**Challenges**: Queries directly draw from OAlex right now. Encoding takes time. For clustering, let users choose an algorithm, show both sanity check + confidence measure.
+
+**Discussion**:
+
+Lee: Our server died, so we're trying to figure out the economies of hosting own servers and BigQuery.
+
+Q: Say more about this? How could BQ help?  
+A: Some IT guys suggested using [it] to help keeping this running.
+NB: For Gaetan, curation feels like the critical upkeep cost.
+
+Q: What are the most expensive parts of keeping this updated?  
+A: OA updates their dataset every 6mo. PatentsView each year. We want to turn the crank. Needs ~10k compute each time...
+
+OA is changing in real time, since last year. Maybe they're trying to cluster researchers. (A: we should incorporate those)
+
+Q: Are you using OA's `field` concepts? They're a bit wonky, too sparse, too many of them associated w/ each researcher.  
+A: We're using those and rolling our own, trying both. I'm a pathological case: my patents are in materials science, and I'm a social scientist now.
+A: (Adam) I waded into this in NZ, looking at the work of NZ scientists who worked in NA/Europe and returned. Typically in db's they are treated as different people. Different location + institution! May be impossible to handle.
+A: Doesn't seem impossible for a human, or a great machine reader (esp if they can trace the full timeline of other work of each person).
+
+Q: Is there a way to [use email to prompt to dig deeper]?  
+Q: What fraction of scientists have an ORCID?  
+A: As of 2022: about 6M distinct ORCIDs are associated with at least one work or external identifier. Recency bias.
 
 ---
 
-### 1:00 PM – Lunch
+## **Panel: How do we validate patent metrics derived from semantic analysis?**
+
+There has been an explosion of development of semantic-based measures seeking to capture similarity across patents; novelty; disruptiveness, value or impact, etc. The panel will bring together researchers who've been working on these metrics to discuss questions such as: what is the relationship of these metrics to older ones based on, e.g., patent classification or citations; how should validation be structured (should people validate their own measures or should we try to create some kind of shared or over-arching validation process); what is the relationship between different modes of validation (e.g. correlation with existing metrics, testing against subjective expert judgements, correlation with outcome indicators such as productivity or prizes).
+
+**Moderator**: Bronwyn Hall, Stanford University and NBER
+**Panelists**: Sam Arts (KU Leuven), Dokyun Lee (Boston University), Ina Ganguli (UMass Amherst), Josh Lerner (Harvard + NBER)
+
+Approaches to validation:
+
+1. Internal validity: expert ratings (13 from 5 fields)
+2. External validity: citations, shared family, shared ID
+
+*Ideas*: Use new combinations of classes to estimate novelty.
+Special case: Look at 400 patents that got rare awards.
+Control case: Not novel / impactful? (US grant, EPO/JPO rejection)
+
+**General remarks:**
+- Preprocessing text makes a big difference
+- Articulate tradeoffs b/t simple and advanced approaches
+- Explain why text works better (than trad measures)
+- Define the goal (better to estimate what?)
+- We need new benchmarks to validate metrics
+- To everyone: provide raw data, and the code that processes it! That lets others replicate, vary steps, chain processes
+
+### [**InnoVAE**](https://tiny.cc/innovae) - Generative AI for patent innovation
+
+We looked at different representations for innovation.
+
+Token-based methods, embedding methods, topic methods are used for similarity, but there is no regularization of the learned manifolds/latent spaces, so distances are hard to interpret.
+
+Semantic orthogonality + dimension independence is not internalized or sharpened → problem of unique interpretability.
+
+**Innovae**: Develops Innovation Space — constructing economically interpretable measures, in a well-disentangled representation.
+
+- What could you get by combining two patents? E.g., combinational creativity for claims. How exceptional is one patent in the context of a portfolio / with respect to one tech factor?
+- Desirable features: *Multimodal*...
+
+Innovation factors for one topical specialty:
+
+![](images/innovae-factors.png)
+
+Our ideal: A common dataset, task, metric + benchmarks
+- Compare how speech + language models evolved; Kaggle today
+- Unite scattered approaches to this for patent/scholarly data
+
+Downstream application: Predict [*Tobin's q*](https://en.wikipedia.org/wiki/Tobin%27s_q).
+
+**Discussion**:
+
+Comment: Cautious optimism about advancing the s.quo with language models.
+
+Q: Is there a way to look inside black boxes to describe what's driving the process (and compare options)?  
+
+Comment: Limits of language similarity: (Andy Toole) Applicants have an incentive to morph language to differentiate their applications and help overcome objections related to novelty and nonobviousness. Now Bronwyn is talking about strategic language.
+
+(Adam) One concrete thing that seems to be coming out of this:
+**We should create a parallel index of validation datasets**
+Get everyone [running contests] to compare a) their prize matching[?], b) standard tests to run new measures against. Then referees could say "you have to run your new metric against those testing datasets".
+
+Josh's comments hinted at this: Patents are issued through a resource-intensive admin process. There's just a lot of eyes on these docs. As we saw today there's a lot of emphasis on similarity, but we haven't targeted what Julian was talking about: examination process, assignment to examiners, to a unit, what kinds of rejection specific claims get.
+- That's more informed than a lot of RAs who look at patents
+- That plugs into a community of commercial/professional services [tools to get your patent assigned to a favorable art unit]
+- If we do things relevant to that community they could come help?
+
+Comment: Validation tasks seem specific to an application... but for human coding, we could draw standards from how to design the coding task. People are expensive, if consistent over time... and a recent emerging patent pool is "Open RAN" for 5g. They decided there was so much IP clamoring to get in, they had to turn it over to computers to determine essentiality.
+- [Machine reading / synthesis is good enough to get lots of leverage here]
+- (Adam) We could explore this more systematically
+- The first AI winter came about due to a lack of shared validation?
+- Compare how [Papers With Code](https://paperswithcode.com/)/[Papers With Data](https://paperswithcode.com/datasets) work now
+
+More clarity would be useful for specific common ideas:
+- *Similarity* (much more than just cosine of feature vectors) — ex: consider what we're looking at similarity *between*
+- *Quality* (Bronwyn has a whole chapter on this)
+- *Novelty* (compare to what, on what timescale)
+
+Q: General Q: Is public pair data available?  
+A: It is discontinued; queries go through [Patent Center](https://patentcenter.uspto.gov/)
 
 ---
 
-## Key Themes
-
-The 2022 Technical Working Group meeting focused on several interconnected themes:
-
-- **Dataset Development:** Creating comprehensive datasets linking patents to external knowledge sources (articles, standards, drugs)
-- **Semantic Similarity:** Applying modern NLP and embedding approaches to patent analysis
-- **Validation Frameworks:** Establishing rigorous methods for validating innovation metrics
-- **Entity Disambiguation:** Matching inventor and author identities across databases
-- **Domain Applications:** Specialized datasets for pharmaceuticals, technology standards, and academic-industry linkages
+1:00 pm — **Lunch**
 
 ---
 
-## Resources
-
-- [Full Agenda](https://bit.ly/i3-2022)
-- [I3 Discussion List](https://mailman.mit.edu/mailman/listinfo/i3-open)
-- Previous TWG meetings: 2019, 2020, 2021
-- Subsequent meetings: 2023, 2024
+Thanks for joining! For further questions or conversation, please join the I3 discussion list ([i3-open](https://mailman.mit.edu/mailman/listinfo/i3-open)).
 
 ---
 
