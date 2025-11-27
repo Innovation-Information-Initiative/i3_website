@@ -1,0 +1,86 @@
+---
+css: custom.css
+page-layout: custom
+
+listing:
+- id: news-events
+  sort: "date desc"
+  type: grid
+  fields: [image, title, subtitle, date]
+  grid-item-align: left
+  grid-columns: 3
+  image-height: 200px
+  max-items: 6
+  page-size: 6
+  contents:
+    - events.yml
+    - news.yml
+
+- id: publications
+  sort: "date desc"
+  type: grid
+  fields: [image, title, subtitle, date]
+  grid-item-align: left
+  grid-columns: 3
+  image-height: 200px
+  max-items: 3
+  page-size: 3
+  contents: publications.yml
+
+include-in-header:
+  - file: files/includes/_mswebmaster.js
+---
+
+{{< include /files/includes/_msclarity.qmd >}}
+
+::: {.hero-banner-wrapper}
+<div class="hero-banner" style="background-image: url('/files/images/i3-banner.png'); background-size: cover; background-position: center; padding: 4rem 2rem; text-align: center;">
+  <h1 style="color: #333333; font-size: 48px; font-weight: bold; margin-bottom: 0.5rem;">Innovation Information Initiative</h1>
+  <p style="color: #333333; font-size: 24px; margin-top: 0;">A data collaborative for innovation datasets, analytics, + metrics</p>
+</div>
+:::
+
+::: {.background-frame .alt-background}
+::: {.content-block}
+
+<p style="font-size:18px; line-height: 1.6;">
+The **Innovation Information Initiative** (**I³**) is a data collaborative for open innovation data and related analytics, tools, & metrics. This includes patent datasets, citation graphs among and between patents and scholarship, and metrics or secondary datasets derived from these.
+</p>
+
+<p style="font-size:18px; line-height: 1.6;">
+Datasets will include patent-product links, scholarship-funding data, disambiguation datasets for authors and affiliations, and subsets of the full patent-scholarship citation graph, enriched with extended metadata.
+</p>
+
+<p style="font-size:18px; line-height: 1.6;">
+All participants are welcome. We have hosted regular convenings since 2019 to shape this collaborative and share our work.
+</p>
+
+<p style="font-size:18px; line-height: 1.6;">
+We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER** and the **Knowledge Futures Group**.
+</p>
+
+### Founding Members
+
+Adam Jaffe • Osmat Jefferson • Samuel Klein • Matt Marx • Gaetan de Rassenfosse • James Weis • Bronwyn Hall • Bhaven Sampat
+
+:::
+:::
+
+
+
+::: {.background-frame}
+::: {.content-block}
+
+<p align="center" style="font-size:36px; font-weight:bold;">News & Events</p>
+
+:::{#news-events}
+:::
+
+<p align="center" style="margin-top: 2em;">
+[View all news](news.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button"} [View all events](events.qmd){.btn-action-primary .btn-action .btn .btn-success .btn-lg role="button" style="margin-left: 1em;"}
+</p>
+
+:::
+:::
+
+

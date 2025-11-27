@@ -1,0 +1,428 @@
+---
+title: "2023 Technical Working Group Meeting"
+subtitle: "December 2023 meeting of the I3 TWG"
+author:
+  - Adam Jaffe
+  - Samuel Klein
+date: "2023-12-01"
+image: /files/images/events/2023-twg.jpeg
+categories: [workshop, technical-working-group]
+---
+
+**December 1-2, 2023** | Cambridge, MA
+
+---
+
+## Friday, December 1
+
+### Matching Scientists and Inventors
+**Speakers:** Lee Owen Fleming (UC Berkeley), Matt Marx (Cornell/NBER), Emma Scharfmann (UC Berkeley)
+
+The presenters examined how scientific researchers and patent inventors overlap. Key findings included discussion of "gatekeepers" or "scientist-inventors"—individuals who both publish and patent.
+
+**Discussion Points:**
+- OpenAlex data showed a chemistry paper bump around 2010 due to online publication dating rather than invention timing
+- Geographic patterns suggested these aren't necessarily information gatekeepers
+- East Asian countries may have cultural factors regarding graduate student employment pathways
+- Most research output involves people conducting both activities rather than discrete pairs
+- "Gatekeepers" tend to be prolific scientists with 50+ papers
+- University patenting research confirms patent-active professors are highly productive overall
+- Clustering methodology based on patent/paper pairs expanded via ORCID data
+- Accuracy validation remained incomplete after clustering
+
+---
+
+### The Commercial Potential of Science & Its Realization
+**Speakers:** Sharique Hasan (Duke), Roger Masclans Armengol (Duke), Wesley M. Cohen (Duke/NBER)
+
+This presentation explored using machine learning to measure commercial potential by predicting patent citations from research abstracts.
+
+**Methodology:**
+- Used SciBERT embeddings for scientific abstracts
+- Developed neural network predictions with rolling annual models
+- Achieved 0.74 AUROC and accuracy scores
+- Validated against technology transfer office disclosure data (96k publications, 13k matched to 2,700 inventions)
+- Models identified specific article language predicting patent use independent of h-index
+
+**Key Findings:**
+- Model picked up on problem scope (big vs. narrow), potential population impact
+- Commercial product/service references improved predictions
+- Theory versus applied physics showed clear distinction
+- About 60% of institutional variation in patent citations explained by ex-ante commercial potential
+- Nobel Prize research papers tested favorably in predictions
+
+**Limitations Noted:**
+- Many innovations reach market without patents
+- Long time horizons required before commercialization
+- Indirect paths to commercialization may be missed
+
+**Discussion Points:**
+- Public university funding constraints may limit realized potential despite high ex-ante potential
+- "Realization gap" represents undiscovered high-potential research
+- Comparing to human evaluator performance (AUC threshold for practical utility)
+- Subfield modeling showed improvements; physics/quantum distinction particularly clear
+- ChatGPT abstraction "patentification" had minimal effect (2-3%) on model
+- Path-breaking innovations with long gestation periods pose measurement challenges
+- Possible capture of field-trajectory indicators rather than pure commercial potential
+- Data will be made public
+
+---
+
+### New Facts and Data about Professors and their Research
+**Speakers:** Kyle R. Myers (Harvard), Wei Yang Tham (Harvard)
+
+Researchers analyzed 260k academics using survey data to examine earnings, productivity, and research patterns.
+
+**Key Findings:**
+1. Within-field earnings variation exceeds across-field variation
+2. Institutions, ranks, tasks, and funding sources significantly impact earnings
+3. Standard research output metrics poorly predict earnings
+4. Publications-per-year is mediocre proxy for publications-per-research-hour
+5. Research risk factors include fundraising and theory generation
+6. Life-cycle changes observed in inputs/outputs but not audiences
+7. "Edisons" (applied researchers) take more personal risks and earn more than "Bohrs" (theoretical researchers)
+
+**Context:** Databases designed for scientific advancement require assumptions to evaluate science, lacking traditional price signals for inputs/outputs.
+
+---
+
+### 6:45 pm - Dinner Reception
+
+---
+
+## Saturday, December 2
+
+### Index and Validation Datasets
+**Speaker:** Agnes Cameron (Knowledge Futures)
+
+The Innovation Information Initiative's open innovation data index (iiindex.org) turned two years old. The presentation focused on validation datasets as research infrastructure tools.
+
+**Current State:**
+- Index accessible at iiindex.org
+- GitHub repository for direct edits and contributions
+- Many papers publish data but withhold validation datasets
+
+**Infrastructure Models:**
+- Machine learning communities (HuggingFace, Kaggle, Papers with Code) demonstrate robust dataset-sharing practices
+- HuggingFace shows task usage and model deployment
+- Hugging Face approach provides infrastructure precedent
+
+**Gaps Identified:**
+- Projects using validation data rarely publish those datasets
+- Credit attribution for validation dataset creation unclear
+- Norm around sharing and reuse needs development
+
+**Discussion Points:**
+- Limited data on validation dataset reuse versus original datasets
+- Credit norms differ between CS and other fields
+- Dataset papers alongside datasets help (NBER precedent)
+- Adaptation to field-specific norms necessary
+
+---
+
+### Logic Mill - A Knowledge Navigation System
+**Speakers:** Erik Buunk, Sebastian Erhardt, Mainak Gosh, Dietmar Harhoff, Michael E. Rose (Max Planck Institute)
+
+Beta version at logic-mill.net provides knowledge navigation through research documents.
+
+**Current Status:**
+- 8 API functions operational
+- 228 million documents (200M from Semantic Scholar)
+- 130 users from 30 institutions
+- Over 1TB of RAM storage deployed
+
+**Roadmap:**
+- Improved language model development
+- Extension beyond 512-token limits
+- Data source expansion (OpenAlex, PATSTAT)
+- API functionality enhancement
+- Precomputed dataset offerings
+
+**Discussion Points:**
+- Pairwise similarity computation for 50 billion pairs presents technical challenges
+- Vector storage and memory requirements substantial (>1TB RAM)
+- Patent family clustering analysis conducted (e.g., Siemens companies)
+- Useful clusters identified but corpus-wide analysis requires additional compute
+- Segment-specific structure analysis possible but computationally intensive
+
+---
+
+### DISCERN 2.0: Extending and Enhancing the DISCERN Dataset
+**Speakers:** Ashish Arora (Duke/NBER), Sharon Belenzon (Duke/NBER), Larisa C. Cioaca (Duke), Lia Sheer (Tel Aviv), Dror Shvadron (Fuqua)
+
+Major database update extending coverage and improving data quality.
+
+**Updates in Version 2.0:**
+- Coverage extended through 2021
+- Added non-patenting R&D firms
+- Transitioned from ORBIS to SEC filings
+- Migrated from PATSTAT to PatentsView
+- Included patent-level reassignments and pre-grant applications
+- Moved from Web of Science to OpenAlex
+
+**Technical Improvements:**
+- Enhanced matching algorithms
+- Raw affiliation string processing (81 million unique strings from PDFs)
+- LLM-based name cleaning and entity resolution
+- LLAMA and vLLM deployed for cleanup
+- Cascade of cleaning steps for OpenAlex matching
+
+**Discussion Points:**
+- OpenAlex could potentially handle affiliation normalization internally
+- Ownership change tracking, name changes, and renewal patterns under examination
+- Patent sales tracking extends to available data
+- LLM validity checking needed (data quality dependent)
+- Pre-grant publication assignment completeness uncertain
+- European patent pair data potentially available
+- USPTO requires assignment reporting but lacks enforceability for non-reporting
+- Industry standard: mandatory reporting should be required for enforceability
+
+---
+
+### Improving Patent Assignee-Firm Bridge with Web Search Results
+**Speakers:** Yuheng Ding (World Bank), Karam Jo (Korea Development Institute), Seula Kim (Princeton)
+
+Researchers constructed longitudinal patent-assignee-firm bridges using Census administrative data and web search.
+
+**Methodology:**
+- Linked USPTO to Business Register and Longitudinal Business Database
+- Name standardization and fuzzy-matching
+- Web-search-aided patent-firm crosswalk
+- Extraction from internet searches
+
+**Results:**
+- Search-aided matching accounts for 4-8.5% of total matches
+- Provides stable bridge over longer horizons
+- Helps study non-public firms absent from PTO data
+
+**Example Application:** Chinese competition impact on firm innovation
+
+**Discussion Points:**
+- Fuzzy matching fixes minor character variations; "IBM Corp" to "International Business Machines" requires different approaches
+- Private firms represent approximately 30% of population
+- Internet search effectiveness varies temporally (more recent data advantages)
+- Time-variation accuracy changes under investigation
+- Public-access scaled-down version under consideration
+- Small firm name standardization within patent data valuable
+- Potential integration with PatentsView public data recommended
+- Census-internal bridges under coordination with Nathan's 2000+ work
+- Multiple linkage methodologies exist (DISCERN, PTO, NETS/D&B)
+- Comparison across dataset variants needed to assess agreement levels
+- Patent application terminology clarification: granted patents versus pending/abandoned applications
+- Lawyer-based firm confirmation via consistent legal representation useful
+
+---
+
+### The Government Patent Register: A New Lens on Historical U.S. Government-Funded Patenting
+**Speakers:** Daniel P. Gross (Duke/NBER), Bhaven N. Sampat (Arizona State/NBER)
+
+Historical analysis of government patent funding through register digitization.
+
+**Background:**
+- World War II marked first major government funding shock
+- Multiple funding agencies emerged (PHS, DoD, AEC, NSF)
+- Bayh-Dole Act (1981) established uniform licensing and required interest statements
+- Researchers scanned and digitized government patent register through mid-1990s
+
+**Key Findings:**
+- Government patent share peaked during WWII, predominantly DoD-funded
+- Post-WWII decline observed
+- Example: Fermi patents in register
+
+**Data Integration Plans:**
+- Link Register with Fleming et al. dataset
+- Incorporate Matt and Lee's work
+- Create modern register combining sources
+- Analyze patent language patterns across regimes
+
+**Research Applications:**
+- Historical indicator of public versus private R&D
+- Control variables for policy evaluations
+- Exploitation of Bayh-Dole pre/post variation
+- "Title" versus "license" policy comparison
+
+**Discussion Points:**
+- Government funding role in major paradigm shifts (COVID vaccines, iPhone)
+- Citation analysis of government-funded patents compared to private
+- Register stitching availability imminent (sharing underway)
+- Connection to institutional creation (Stanford Engineering) under investigation
+- Pre-WWII data backfilling by agencies documented
+- Total pre-WWII patent counts modest; record-keeping reliability uncertain
+- Agency backfilling variance identification needed
+- Compliance with reporting requirements under-explored
+- Scientific publication citations to patents studied (Fleming dataset available for 1970+)
+
+---
+
+### Startup Patenting
+**Speakers:** Michael Ewens (Columbia/NBER), Matt Marx (Cornell/NBER)
+
+Researchers developed methods to match startups with patent data using publicly available sources.
+
+**Data Challenges:**
+- PatEx small/micro firm indicator doesn't proxy for age
+- Crunchbase-2013 lacks founding year for most firms
+- DISCERN only provides public listing dates
+- Traditional Census data access limited
+
+**Solutions Implemented:**
+- OpenCorporates (B-corp sustainability model: free searches with paid harvesting)
+- Loose API searching with exact matching for short/common names
+- Filtering for dissolution timing and incorporation dates
+
+**Current Status (Foundingpatents.com - Beta):**
+- 142,000 assignees located
+- 85% of patents, 73% of assignees covered
+- 135k from OpenCorporates, 2k from DISCERN 1.0, 4k from PitchBook
+- Founding year and confidence scores included
+- VC funding flags with confidence scores
+
+**Findings:**
+- Young firms receive more citations across broader patent classes
+- Young versus small (not young) distinction: fewer science citations
+- Selection bias: all old firms were formerly young
+- Firms stopping patenting after 3-8 years show early novelty peaks
+- Young firms correlate with new industry formation
+- VC-backed firms represent one-third of total
+- No novelty difference between VC and non-VC funding
+- VC-backed firms cite science and receive citations less frequently
+
+**"Burden of Knowledge" Investigation:**
+- Innovation difficulty increasing? (longer PhDs, expanded knowledge requirements)
+- First patent assignment arriving earlier in firm age
+- Hiring of older inventors with patent experience increasing
+- Multi-class prior patent experience rising
+
+**Next Steps:**
+- International assignee inclusion
+- Integration with updated patent-paper pair dataset (moved to OpenAlex)
+- Launch relianceonscience.org (updated through 2022)
+
+**Discussion Points:**
+- Good idea versus funding causality unclear (both directions possible)
+- Dataset anomalies present (negative patent years in historical data)
+- Historical assignee matching particularly difficult
+- Startup Cartography comparison (also uses OpenCorporates)
+- Declining time-to-first-patent with increasing inventor age suggests delayed founding with rapid patenting post-launch
+- Founder source analysis (academia versus industry) possible
+- Graham/Samuelson survey (2008) warns: startup assignees miss founder-held patents
+- Multi-source matching concerns: Crunchbase, Capital IQ, PitchBook show <20% overlap
+- NETS linkage achieves 80% match rate
+- Source dependence caution warranted
+
+---
+
+### I3 Fellows Presentations (Lightning Talks)
+
+#### Patents or Defensive Disclosures?
+**Speaker:** Bernhard Ganglmair (University of Mannheim)
+
+Examination of whether patents capture complete innovation landscape, comparing defensive disclosures.
+
+**Challenges:**
+- Heterogeneous disclosure formats
+- Domain differences between patent and disclosure ecosystems
+
+**Approach:**
+- NLP pipeline using Llama2 generating abstracts reducing heterogeneity
+- Elastic search supporting domain adaptation
+- DANN (2015) model: classifier good at patents, poor at distinguishing disclosures/patents
+
+**Planned Outputs:**
+- Descriptive paper on patents versus disclosures
+- Analytical paper on patentability-change effects
+- General CPC-mapping pipeline contribution
+
+**Contribution Mechanism:** I3 Index/site publication for tested datasets
+
+**Discussion:**
+- Disclosure usage motivations: cost ($120 vs. $1k+), no peer review, format flexibility
+- Comparison to other publication types (scholarship) possible extension
+- Historical trends in defensive disclosure adoption unexplored
+
+---
+
+#### Using Pydrad
+**Speaker:** Bernardo Dionisi (Duke University)
+
+Python library simplifying large dataset access through unified interface.
+
+**Features:**
+- Integration of common datasets: Reliance on Science, OpenFDA, PatentsView
+- Named dataset import capability
+- API design for datasets with clean repository hosting (Zenodo preference)
+- Registration planning with I3 Index (pending launch)
+
+---
+
+#### Linking Scientific Articles to Media Mentions
+**Speaker:** Saqib Mumtaz (Berkeley)
+
+Understudied media landscape deserves examination alongside publication and patent metrics.
+
+**Data Source:** EurekaAlert with OpenAlex author linking
+
+**Results:**
+- Initial matching: 58% success
+- Date corrections via CrossRef improved to >80%
+
+**Related Questions:**
+- Scientific publication hype characteristics
+- Gender dynamics in science communication
+- Confidence-level presentation (uncertainty exposure)
+- Licensing correlation with press releases
+
+**Notes:** Licensing predicts press attention; distance from scientific source increases press-release importance
+
+---
+
+#### LLMs as Research Assistants: Constructing a Corpus of Medical Evidence
+**Speaker:** Maya Durvasula (Stanford, with Sabri Eyuboglu, David Ritzwoller)
+
+Innovation measurement through clinical trial analysis using machine learning.
+
+**Approach:**
+- Combined scientific publications, clinicaltrials.gov records, FDA approvals
+- Flagged 1.8M PubMed abstracts via keyword and NLM categories
+- Hand-labeling interface accelerating labeling 5-10x
+- Iterative GPT-3 and GPT-4 prompting achieving 5% false negative/positive rate
+- Visual prompt variation improving success 4-5x (GPT-3 particularly)
+- 60k noisy labels extracted from models
+
+**Model Development:**
+- Tested LLaMa, Mistral, Pythia open models
+- BERT baseline achieved comparable performance
+- GPT-3 fine-tuning matched GPT-3 performance with open models
+- GPT-4 fine-tuning matched GPT-4 performance with open models
+- BiomedBERT (PubMed-trained) didn't necessarily outperform standard BERT
+
+**Conclusions:**
+- LLMs achieve near-hand-labeling performance
+- Prompt design matters substantially
+- Fine-tuning allows beating proprietary model performance
+- Open models can match/exceed proprietary alternatives
+
+**Next Steps:**
+- Workflow streamlining for label extraction
+- Statistical information improvement
+- Error reduction implementation
+
+**Discussion:**
+- NLM (National Library of Medicine) algorithms updated MESH tags since 2022 (different methodology than presented approach)
+
+---
+
+### 1:00 pm - Lunch
+
+---
+
+## Closing Information
+
+**Further Engagement:**
+- I3 discussion list: i3-open (mailman.mit.edu)
+- Dataset registration: iiindex.org
+- Validation dataset contributions welcome
+
+---
+
+*Original content published on [PubPub](https://iii.pubpub.org/pub/4wido778) under Creative Commons Attribution 4.0 International License (CC-BY 4.0)*

@@ -1,0 +1,8 @@
+- path: news/2023-i3-open-data-fellows.qmd
+  image: /files/images/news/2023_fellows.png
+  title: "2023 I3 Open Data Fellows"
+  subtitle: "Fellows program announcement"
+  author: "Agnes Cameron"
+  description: "The Innovation Information Initiative granted five fellowships to PhD students researching innovation in 2023. Fellows developed tools for defensive disclosures, open-source Python packages for innovation datasets, linked scientific articles to media mentions, combined clinical trial records with publication data, and created new innovation impact metrics."
+  date: "2024-10-04"
+  categories: [fellows, announcement]

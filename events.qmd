@@ -1,0 +1,20 @@
+---
+title: "Events"
+subtitle: "Workshops, meetings, and convenings"
+page-layout: full
+toc: false
+listing:
+- id: events
+  contents: events.yml
+  sort: "date desc"
+  type: grid
+  fields: [image, title, subtitle, description, date]
+  grid-item-align: left
+  grid-columns: 3
+  image-height: 200px
+---
+
+{{< include /files/includes/_msclarity.qmd >}}
+
+:::{#events}
+:::

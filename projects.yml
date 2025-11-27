@@ -1,0 +1,12 @@
+# Projects from the Innovation Information Initiative
+# Add project entries here following this structure:
+#
+# - path: URL or relative path to project page
+#   image: /files/images/projects/image.jpg
+#   title: "Project Title"
+#   description: "Brief description of the project"
+#   date: "YYYY-MM-DD"
+#   categories: [category1, category2]
+
+# Empty list - add your projects below
+[]

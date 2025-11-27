@@ -1,0 +1,18 @@
+---
+title: "News"
+subtitle: "Recent releases and announcements"
+page-layout: full
+toc: false
+listing:
+- id: news
+  sort: "date desc"
+  type: grid
+  fields: [image, title, subtitle, description, date]
+  grid-item-align: left
+  grid-columns: 3
+  image-height: 200px
+  contents: news.yml
+---
+
+:::{#news}
+:::

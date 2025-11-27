@@ -1,0 +1,42 @@
+---
+title: "Contact Us"
+subtitle: "Get in touch with the Innovation Information Initiative"
+page-layout: full
+---
+
+{{< include /files/includes/_msclarity.qmd >}}
+
+## Get Involved
+
+All participants are welcome to join the Innovation Information Initiative. We have hosted regular convenings since 2019 to shape this collaborative and share our work.
+
+## Contact Information
+
+For questions, contributions, or to get involved with I³, please reach out:
+
+- **Website**: [https://iii.pubpub.org/](https://iii.pubpub.org/)
+
+## Contributing
+
+We welcome contributions in several areas:
+
+- **Essays and Notes**: Share your research and insights related to innovation data
+- **Datasets**: Contribute datasets or scripts to our public repository
+- **Technical Working Group**: Join our regular convenings and technical discussions
+- **Feedback**: Help us improve the initiative by sharing your ideas
+
+## Support
+
+The Innovation Information Initiative is supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER** and the **Knowledge Futures Group**.
+
+## Founding Members
+
+- Adam Jaffe
+- Osmat Jefferson
+- Samuel Klein
+- Matt Marx
+- Gaetan de Rassenfosse
+- James Weis
+- Bronwyn Hall
+- Bhaven Sampat
+

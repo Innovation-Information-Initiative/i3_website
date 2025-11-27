@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Innovation Information Initiative"
+  description: "Innovation Information Initiative (I³): A data collaborative for innovation datasets, analytics, and metrics. Open innovation data including patent datasets, citation graphs, and related analytics tools."
+
+  navbar:
+    background: "#016fe2"
+    foreground: "#FFFFFF"
+    left:
+      - text: I3 Essays
+        href: essays.qmd
+      - text: News
+        href: news.qmd
+      - text: Events
+        href: events.qmd
+      - text: Publications
+        href: publications.qmd
+      - text: Public Datasets
+        href: datasets.qmd
+      - text: Contact
+        href: contact.qmd
+
+  page-navigation: true
+  page-footer:
+    left: "Innovation Information Initiative (I³) &copy; <script>document.write(new Date().getFullYear())</script>"
+
+  search:
+    location: navbar
+    type: textbox
+  reader-mode: true
+  open-graph: true
+  twitter-card: true 
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    link-external-icon: false
+    link-external-newwindow: true 
+
+
+

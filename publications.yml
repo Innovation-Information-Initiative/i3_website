@@ -1,0 +1,14 @@
+# Publications related to the Innovation Information Initiative
+# Add publication entries here following this structure:
+#
+# - path: DOI or URL to publication
+#   image: /files/images/journal/journal-logo.jpg
+#   title: "Publication Title"
+#   subtitle: "*Journal Name*"
+#   description: "Brief description of the publication"
+#   date: "YYYY-MM-DD"
+#   fulltext: "[pdf](link) or [preprint](link)"
+#   categories: [category1, category2]
+
+# Empty list - add your publications below
+[]

@@ -1,0 +1,30 @@
+---
+title: "Public Datasets and Scripts"
+subtitle: "Open innovation data and analytics tools"
+page-layout: full
+---
+
+{{< include /files/includes/_msclarity.qmd >}}
+
+The Innovation Information Initiative provides access to public datasets and scripts for innovation research.
+
+## Available Datasets
+
+### Patent Datasets
+- Patent citation graphs
+- Patent-scholarship citation links
+- Patent metadata
+
+### Related Datasets
+- Patent-product links
+- Scholarship-funding data
+- Author and affiliation disambiguation datasets
+
+## Scripts and Tools
+
+Coming soon.
+
+## Contributing Datasets
+
+If you have datasets or scripts you'd like to contribute to I³, please [contact us](contact.qmd).
+

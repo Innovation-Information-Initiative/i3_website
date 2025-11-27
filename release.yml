@@ -1,0 +1,11 @@
+# Release announcements for the Innovation Information Initiative
+# Add release entries here following this structure:
+#
+# - path: URL or relative path
+#   image: /files/images/release/image.jpg
+#   title: "Release Title"
+#   description: "Brief description"
+#   date: "YYYY-MM-DD"
+
+# Empty list - add your releases below
+[]

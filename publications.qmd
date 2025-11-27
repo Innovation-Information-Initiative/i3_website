@@ -1,0 +1,25 @@
+---
+title: "Publications"
+subtitle: "Research and papers from the I³ community"
+page-layout: full
+toc: false
+listing:
+- id: publications
+  sort: "date desc"
+  type: grid
+  fields: [image, title, subtitle, description, date]
+  field-display-names:
+    subtitle: "Journal"
+    date: "Year"
+  grid-item-align: left
+  grid-columns: 3
+  image-height: 200px
+  sort-ui: [title, subtitle, date]
+  filter-ui: true
+  contents: publications.yml
+---
+
+{{< include /files/includes/_msclarity.qmd >}}
+
+:::{#publications}
+:::
