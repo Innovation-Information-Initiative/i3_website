@@ -59,3 +59,6 @@ _backup/
 # Claude
 CLAUDE.md
 .claude/
+
+# Netlify
+_site/
