@@ -11,7 +11,7 @@ listing:
   grid-item-align: left
   grid-columns: 3
   image-height: 200px
-  contents: news.yml
+  contents: news/*/index.qmd
 ---
 
 :::{#news}

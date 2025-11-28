@@ -1,10 +1,12 @@
 ---
 title: "2023 I3 Open Data Fellows"
-subtitle: "Summary of awarded fellows and program outputs"
+subtitle: "Fellows program announcement"
+description: "The Innovation Information Initiative granted five fellowships to PhD students researching innovation in 2023. Fellows developed tools for defensive disclosures, open-source Python packages for innovation datasets, linked scientific articles to media mentions, combined clinical trial records with publication data, and created new innovation impact metrics."
 author: "Agnes Cameron"
 date: "2024-10-04"
-image: /files/images/news/2023_fellows.png
-categories: [fellows, announcement]
+image: images/2023_fellows.png
+categories: [fellows, announcement, featured]
+featured: true
 ---
 
 The Innovation Information Initiative awarded five fellowships to PhD students focused on innovation research in 2023. Four of these fellows presented their work at the December Technical Working Group meeting.
