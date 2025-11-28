@@ -1,5 +1,7 @@
 # Innovation Information Initiative (I³) Website
 
+[![Build Quarto](https://github.com/Innovation-Information-Initiative/i3_website/actions/workflows/quarto-build.yml/badge.svg)](https://github.com/Innovation-Information-Initiative/i3_website/actions/workflows/quarto-build.yml)
+
 The official website for the Innovation Information Initiative, built with [Quarto](https://quarto.org/). 
 
 ## Prerequisites
@@ -103,11 +105,19 @@ Add your analytics code to `/files/includes/_msclarity.qmd`
 
 ## Deployment
 
-The site is automatically deployed via **Netlify** on every commit to the repository.
+The site uses a two-stage deployment process:
 
-- **Live site**: www.i3open.org
-- **Build**: Handled automatically by Netlify (no need to run `quarto render` manually)
-- **Deploy**: Simply commit and push changes to trigger deployment
+1. **GitHub Actions** builds the site on every commit to `main`
+   - Runs `quarto render` automatically
+   - Publishes built site to `netlify-deploy` branch
+   - Build status shown in badge above
+
+2. **Netlify** serves the pre-built site
+   - Deploys from `netlify-deploy` branch
+   - No build step on Netlify (just serves static files)
+   - **Live site**: www.i3open.org
+
+Simply commit and push changes to `main` to trigger the build and deployment.
 
 ## License
 
