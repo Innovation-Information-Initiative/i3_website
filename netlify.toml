@@ -1,2 +1,5 @@
-[[plugins]]
-package = "@quarto/netlify-plugin-quarto"
+[build]
+  publish = "."
+  ignore = "git diff --quiet HEAD^ HEAD ./"
+
+# No build command - site is pre-built by GitHub Actions

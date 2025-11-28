@@ -188,4 +188,16 @@ All placeholder/template pages have been removed.
 
 ## Deployment
 
-The site is automatically deployed to **www.i3open.org** via Netlify on every commit to the repository. There is no need to manually run `quarto render` - Netlify handles the build process automatically.
+The site uses a two-stage deployment process:
+
+1. **GitHub Actions** (`/.github/workflows/quarto-build.yml`) builds the site on every commit to `main`:
+   - Runs `quarto render` automatically
+   - Publishes built site to `netlify-deploy` branch
+   - Uses `peaceiris/actions-gh-pages` action
+
+2. **Netlify** serves the pre-built site from the `netlify-deploy` branch:
+   - No build step on Netlify (configured in `netlify.toml`)
+   - Simply serves static files from the branch
+   - Live site: **www.i3open.org**
+
+Simply commit and push changes to `main` to trigger the build and deployment. No need to manually run `quarto render`.
