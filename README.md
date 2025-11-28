@@ -1,6 +1,6 @@
 # Innovation Information Initiative (I³) Website
 
-The official website for the Innovation Information Initiative, built with [Quarto](https://quarto.org/). This is a clean, modern static website ready for content migration from PubPub.
+The official website for the Innovation Information Initiative, built with [Quarto](https://quarto.org/). 
 
 ## Prerequisites
 
