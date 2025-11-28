@@ -7,7 +7,7 @@ author:
 date: "2022-12-02"
 image: images/2022_twg.png
 categories: [workshop, technical-working-group, featured]
-featured: true
+featured: false
 ---
 
 **December 2-3, 2022**   |   Cambridge, MA (NBER)   |   [Agenda](https://bit.ly/i3-2022)

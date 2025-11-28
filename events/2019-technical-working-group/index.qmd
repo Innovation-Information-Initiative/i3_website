@@ -8,7 +8,7 @@ author:
 date: "2019-12-06"
 image: images/2019_TWG.png
 categories: [workshop, technical-working-group, featured]
-featured: true
+featured: false
 ---
 
 **December 6-7, 2019**   |   Cambridge, MA   

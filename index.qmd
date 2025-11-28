@@ -16,7 +16,7 @@ listing:
     featured: true
   contents:
     - events/*/index.qmd
-    - news.yml
+    - news/*/index.qmd
 
 - id: publications
   sort: "date desc"

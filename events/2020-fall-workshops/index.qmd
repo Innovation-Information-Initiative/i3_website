@@ -7,7 +7,7 @@ author:
 date: "2020-10-28"
 image: images/2020_TWG.png
 categories: [workshop, technical-working-group, virtual, featured]
-featured: true
+featured: false
 ---
 
 **October - December 2020** | Virtual (Zoom)

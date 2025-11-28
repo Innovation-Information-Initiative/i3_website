@@ -8,7 +8,7 @@ author:
 date: "2021-12-03"
 image: images/2021_twg.png
 categories: [workshop, technical-working-group, featured]
-featured: true
+featured: false
 ---
 
 **December 3-4, 2021**   |   Cambridge, MA (NBER)   |   [Agenda](https://www.nber.org/conferences/innovation-information-initiative-technical-working-group-meeting-fall-2021)
