@@ -1,11 +1,13 @@
 ---
 title: "Winter 2022 Technical Working Group Meeting"
 subtitle: "December 2022 meeting of the I3 TWG"
+description: "Two-day event at NBER featuring presentations on patent-article corpus building, semantic matching datasets, mapping patents to technology standards, pharmaceutical Orange Book dataset, inventor-author crosswalks, and validation frameworks for patent metrics from semantic analysis."
 author:
   - Samuel Klein
 date: "2022-12-02"
 image: images/2022_twg.png
-categories: [workshop, technical-working-group]
+categories: [workshop, technical-working-group, featured]
+featured: true
 ---
 
 **December 2-3, 2022**   |   Cambridge, MA (NBER)   |   [Agenda](https://bit.ly/i3-2022)

@@ -1,12 +1,14 @@
 ---
 title: "2024 Technical Working Group meeting"
 subtitle: "December 2024 meeting of the I3 TWG"
+description: "Two-day event featuring presentations on emerging tools and datasets for innovation research, including discussions of entrepreneurship databases, new product analysis, novelty measurement tools, large language model applications, patent databases, and comparative NLP methodologies."
 author:
   - Samuel Klein
   - Matt Marx
 date: "2024-12-06"
 image: images/2024-twg.png
-categories: [workshop, technical-working-group]
+categories: [workshop, technical-working-group, featured]
+featured: true
 ---
 
 **December 6-7**, 2024   

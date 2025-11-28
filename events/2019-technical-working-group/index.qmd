@@ -1,11 +1,14 @@
 ---
 title: "2019 Technical Working Group Meeting"
-subtitle: "December 2019 meeting of the I3 TWG"
+subtitle: "Inaugural December 2019 meeting of the I3 TWG"
+description: "Inaugural two-day meeting in Cambridge featuring initial data construction projects including prior art metrics, Public Innovation Dataverse, patent-science references, and product-patent linking. Panel discussions covered disambiguation challenges, text analysis applications, and major patent data infrastructure efforts."
 author:
   - Samuel Klein
+  - Adam Jaffe
 date: "2019-12-06"
 image: images/2019_TWG.png
-categories: [workshop, technical-working-group]
+categories: [workshop, technical-working-group, featured]
+featured: true
 ---
 
 **December 6-7, 2019**   |   Cambridge, MA   

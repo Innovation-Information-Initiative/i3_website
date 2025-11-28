@@ -1,12 +1,14 @@
 ---
 title: "2023 Technical Working Group Meeting"
 subtitle: "December 2023 meeting of the I3 TWG"
+description: "Technical Working Group meeting held in Cambridge, MA. The agenda encompassed presentations on matching scientists to inventors, measuring commercial potential in science, professorial research patterns, patent data infrastructure, startup innovation, and emerging tools for knowledge navigation."
 author:
   - Adam Jaffe
   - Samuel Klein
 date: "2023-12-01"
 image: images/2023-twg.jpeg
-categories: [workshop, technical-working-group]
+categories: [workshop, technical-working-group, featured]
+featured: true
 ---
 
 **December 1-2**, Cambridge MA   |   [Agenda](https://bit.ly/i3-2022) (NBER)   |   [Youtube](https://www.youtube.com/nbervideos) recording

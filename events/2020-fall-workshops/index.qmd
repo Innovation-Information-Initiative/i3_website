@@ -1,11 +1,13 @@
 ---
 title: "I³ Fall Workshops 2020"
 subtitle: "Virtual workshop series replacing the December TWG meeting"
+description: "Five-part virtual workshop series held Wednesdays featuring panels on linguistics, citation, geography, gender, and history dimensions of innovation metrics construction. Sessions covered patent text analysis, citation networks, geographic disambiguation, gender identification, and historical innovation data."
 author:
   - Adam Jaffe
 date: "2020-10-28"
 image: images/2020_TWG.png
-categories: [workshop, technical-working-group, virtual]
+categories: [workshop, technical-working-group, virtual, featured]
+featured: true
 ---
 
 **October - December 2020** | Virtual (Zoom)
