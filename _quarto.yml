@@ -12,15 +12,15 @@ website:
     background: "#016fe2"
     foreground: "#FFFFFF"
     left:
-      - text: I3 Essays
-        href: essays.qmd
       - text: News
         href: news.qmd
       - text: Events
         href: events.qmd
-      - text: Publications
-        href: publications.qmd
-      - text: Public Datasets
+      - text: About
+        href: about.qmd
+      - text: i3 Fellows
+        href: fellows.qmd
+      - text: Datasets
         href: datasets.qmd
       - text: Contact
         href: contact.qmd
