@@ -109,11 +109,11 @@ The site uses a two-stage deployment process:
 
 1. **GitHub Actions** builds the site on every commit to `main`
    - Runs `quarto render` automatically
-   - Publishes built site to `netlify-deploy` branch
+   - Publishes built site to `deploy` branch
    - Build status shown in badge above
 
 2. **Netlify** serves the pre-built site
-   - Deploys from `netlify-deploy` branch
+   - Deploys from `deploy` branch
    - No build step on Netlify (just serves static files)
    - **Live site**: www.i3open.org
 

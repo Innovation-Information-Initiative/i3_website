@@ -192,10 +192,10 @@ The site uses a two-stage deployment process:
 
 1. **GitHub Actions** (`/.github/workflows/quarto-build.yml`) builds the site on every commit to `main`:
    - Runs `quarto render` automatically
-   - Publishes built site to `netlify-deploy` branch
+   - Publishes built site to `deploy` branch
    - Uses `peaceiris/actions-gh-pages` action
 
-2. **Netlify** serves the pre-built site from the `netlify-deploy` branch:
+2. **Netlify** serves the pre-built site from the `deploy` branch:
    - No build step on Netlify (configured in `netlify.toml`)
    - Simply serves static files from the branch
    - Live site: **www.i3open.org**
