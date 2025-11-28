@@ -1,20 +1,11 @@
 ---
-title: "I3 Essays"
-subtitle: "Essays and notes from the I³ community"
+title: "i3 Fellows"
+subtitle: "Fellows program"
 page-layout: full
 ---
 
 {{< include /files/includes/_msclarity.qmd >}}
 
-We welcome related essays and notes from the I³ community. You can make an account to create a draft.
-
-## Featured Essays
-
-Coming soon.
-
-## Contribute
-
-Interested in contributing an essay? Please [contact us](contact.qmd) for more information.
 
 
 
