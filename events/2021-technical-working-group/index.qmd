@@ -1,12 +1,14 @@
 ---
 title: "2021 Technical Working Group Meeting"
 subtitle: "December 2021 meeting of the I3 TWG"
+description: "Two-day event in Cambridge featuring the launch of OpenAlex and iiindex.org, alongside presentations on patent text analysis, firm technology portfolios, startup matching, IP theft responses, historical entrepreneurship data, and patent-paper pairs standardization."
 author:
   - Samuel Klein
   - Adam Jaffe
 date: "2021-12-03"
 image: images/2021_twg.png
-categories: [workshop, technical-working-group]
+categories: [workshop, technical-working-group, featured]
+featured: true
 ---
 
 **December 3-4, 2021**   |   Cambridge, MA (NBER)   |   [Agenda](https://www.nber.org/conferences/innovation-information-initiative-technical-working-group-meeting-fall-2021)
