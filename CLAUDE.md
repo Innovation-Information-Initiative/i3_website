@@ -29,11 +29,12 @@ quarto --version
 
 ### Content Organization
 
-The site uses **YAML-based content management** for structured data:
+The site uses **automatic content discovery** with folder-based organization:
 
-- **YAML files** store metadata for news, events, publications, etc.
-- **Quarto listing feature** automatically generates pages from YAML data
-- **Individual pages** can supplement YAML content when needed
+- **Events** and **News** use folder structures with individual `index.qmd` files
+- **Quarto listing feature** automatically discovers and displays content
+- **Featured filtering** controls which items appear on the homepage using `featured: true` in YAML front matter
+- **Publications** still use `publications.yml` for centralized management
 
 All template content from Deep Policy Lab has been removed - the site is clean and ready for I³ content migration.
 
@@ -45,35 +46,51 @@ All template content from Deep Policy Lab has been removed - the site is clean a
 
 ### Content Types
 
-**News**: Add entries to `news.yml`
-- Fields: path, image, title, subtitle, description, date
-- Displayed on `news.qmd` and homepage
+**News**: Folder-based structure with automatic discovery
+- Location: `news/item-name/index.qmd`
+- Required front matter: title, subtitle, description, author, date, image, categories
+- Images stored in: `news/item-name/images/`
+- Set `featured: true` to display on homepage
+- All news items automatically appear on `news.qmd`
 
-**Events**: Add entries to `events.yml`
-- Fields: path, image, title, author, description, date, categories
-- Displayed on `events.qmd` and homepage
+**Events**: Folder-based structure with automatic discovery
+- Location: `events/event-name/index.qmd`
+- Required front matter: title, subtitle, description, author, date, image, categories
+- Images stored in: `events/event-name/images/`
+- Set `featured: true` to display on homepage
+- All events automatically appear on `events.qmd`
 
 **Publications**: Add entries to `publications.yml`
 - Fields: path, image, title, subtitle, description, date, fulltext, categories
 - Displayed on `publications.qmd` and homepage
 - Can filter by categories (e.g., "featured")
 
-**Essays**: Create individual `.qmd` files or use `essays.yml`
+**Essays**: Create individual `.qmd` files
 - Page: `essays.qmd`
 
 **Datasets**: Edit `datasets.qmd` directly with dataset information
 
 ### Listing System
 
-The homepage (`index.qmd`) demonstrates Quarto's listing feature:
-- `#news-events` listing: Pulls from `events.yml` and `news.yml`
+The site uses Quarto's listing feature with automatic discovery and filtering:
+
+**Homepage (`index.qmd`):**
+- `#news-events` listing: Auto-discovers from `events/*/index.qmd` and `news/*/index.qmd`
+  - Uses `include: featured: true` to filter homepage items
+  - Shows only content marked as `featured: true` in front matter
 - `#publications` listing: Pulls from `publications.yml`
-- Listings support:
-  - Sorting (e.g., "date desc")
-  - Multiple content sources
-  - Grid/table layouts
-  - Filtering by categories
-  - Custom field display
+
+**Individual listing pages:**
+- `events.qmd`: Auto-discovers all events from `events/*/index.qmd`
+- `news.qmd`: Auto-discovers all news from `news/*/index.qmd`
+
+**Listing features:**
+- Automatic content discovery using glob patterns
+- Sorting (e.g., "date desc")
+- Multiple content sources
+- Grid/table layouts
+- Filtering by YAML front matter fields using `include`/`exclude`
+- Custom field display
 
 ### Styling and Theming
 
@@ -85,7 +102,9 @@ The homepage (`index.qmd`) demonstrates Quarto's listing feature:
 
 ### Static Assets
 
-- `/files/images/`: Image storage for news, events, publications, people
+- `events/*/images/`: Event-specific images (stored with each event)
+- `news/*/images/`: News-specific images (stored with each news item)
+- `/files/images/`: Legacy image storage for publications, people, shared assets
 - `/files/includes/`: Reusable content snippets (analytics, social sharing)
   - `_msclarity.qmd`: Microsoft Clarity analytics
   - `_mswebmaster.js`: Webmaster verification
@@ -117,22 +136,56 @@ All placeholder/template pages have been removed.
 ### Quick Reference
 
 **Add a news item:**
-1. Open `news.yml`
-2. Add entry with path, image, title, subtitle, description, date
-3. Preview with `quarto preview`
+1. Create folder: `news/news-item-name/`
+2. Create `news/news-item-name/index.qmd` with front matter:
+   ```yaml
+   ---
+   title: "News Item Title"
+   subtitle: "Brief subtitle"
+   description: "Longer description for listings"
+   author: "Author Name"
+   date: "YYYY-MM-DD"
+   image: images/image-name.png
+   categories: [category1, category2]
+   featured: true  # Set to true to show on homepage
+   ---
+   ```
+3. Add images to `news/news-item-name/images/`
+4. Write content below front matter
+5. Preview with `quarto preview`
 
 **Add an event:**
-1. Open `events.yml`
-2. Add entry following the structure in the file comments
-3. Preview changes
+1. Create folder: `events/event-name/`
+2. Create `events/event-name/index.qmd` with front matter:
+   ```yaml
+   ---
+   title: "Event Title"
+   subtitle: "Event subtitle"
+   description: "Event description for listings"
+   author:
+     - Author One
+     - Author Two
+   date: "YYYY-MM-DD"
+   image: images/image-name.png
+   categories: [workshop, category2]
+   featured: true  # Set to true to show on homepage
+   ---
+   ```
+3. Add images to `events/event-name/images/`
+4. Write event details below front matter
+5. Preview changes
 
 **Add a publication:**
 1. Open `publications.yml`
-2. Add entry with DOI/URL, journal, description, date
+2. Add entry with path, image, title, subtitle, description, date, fulltext, categories
 3. Use categories for filtering (e.g., "featured")
+4. Preview changes
 
-See `MIGRATION_GUIDE.md` for detailed migration instructions from PubPub.
+**Controlling homepage display:**
+- Set `featured: true` in the front matter to show an event or news item on the homepage
+- Set `featured: false` or omit the field to hide from homepage
+- All items appear on their respective listing pages (`events.qmd` or `news.qmd`) regardless of featured status
 
 ## Deployment
 
-The site is configured to output to the `docs/` directory for GitHub Pages deployment. After running `quarto render`, commit and push the `docs/` directory to deploy.
+The site is automatically deployed to **www.i3open.org** via Netlify on every commit to the repository. There is no need to manually run `quarto render` - Netlify handles the build process automatically.
