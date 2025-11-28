@@ -20,10 +20,6 @@ quarto render
 ```
 This generates static files in the `_site/` directory. Netlify does this automatically.
 
-## Content Migration
-
-See `MIGRATION_GUIDE.md` for detailed instructions on migrating content from PubPub.
-
 ### Adding Content
 
 Content uses automatic discovery with folder-based organization:
