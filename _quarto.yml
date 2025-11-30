@@ -19,14 +19,12 @@ website:
         href: news.qmd
       - text: Events
         href: events.qmd
-      - text: About
-        href: about.qmd
       - text: i3 Fellows
         href: fellows.qmd
       - text: Datasets
         href: datasets.qmd
-      - text: Contact
-        href: contact.qmd
+      - text: About
+        href: about.qmd
 
   page-navigation: true
   page-footer:
