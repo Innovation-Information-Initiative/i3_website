@@ -17,7 +17,7 @@ website:
     left:
       - text: Events
         href: events.qmd
-      - text: Fellows Program
+      - text: Fellows 
         href: fellows.qmd
       - text: Datasets
         href: datasets.qmd
