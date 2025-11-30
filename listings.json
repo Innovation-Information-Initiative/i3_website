@@ -1,0 +1,33 @@
+[
+  {
+    "listing": "/index.html",
+    "items": [
+      "/events/2025-technical-working-group/index.html",
+      "/events/2024-technical-working-group/index.html",
+      "/news/2023-i3-open-data-fellows/index.html",
+      "/events/2023-technical-working-group/index.html"
+    ]
+  },
+  {
+    "listing": "/events.html",
+    "items": [
+      "/events/2025-technical-working-group/index.html",
+      "/events/2024-technical-working-group/index.html",
+      "/events/2023-technical-working-group/index.html",
+      "/events/2022-technical-working-group/index.html",
+      "/events/2021-technical-working-group/index.html",
+      "/events/2020-fall-workshops/index.html",
+      "/events/2019-technical-working-group/index.html"
+    ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/news.html",
+    "items": [
+      "/news/2023-i3-open-data-fellows/index.html"
+    ]
+  }
+]
