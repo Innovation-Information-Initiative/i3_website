@@ -10,13 +10,10 @@ page-layout: full
 
 ::: {.g-col-12 .g-col-md-7}
 
-The **Innovation Information Initiative** (**I³**) is a data collaborative for open innovation data and related analytics, tools, & metrics. This includes patent datasets, citation graphs among + between patents and scholarship, and metrics or secondary datasets derived from these.
+The **Innovation Information Initiative** (**i3**) is a data collaborative for open innovation data and related analytics, tools, & metrics. This includes patent datasets, citation graphs among + between patents and scholarship, and metrics or secondary datasets derived from these.
 
-Datasets will include patent-product links, scholarship-funding data, disambiguation datasets for authors and affiliations, and subsets of the full patent-scholarship citation graph, enriched with extended metadata.
 
-All participants are welcome. We have hosted regular convenings since 2019 to shape this collaborative and share our work. Below are notes from our technical working group meetings. We welcome related essays and notes – you can make an account to create a draft.
-
-We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER** and the **Knowledge Futures Group**. You can find a summary of our activities [here](news.qmd).
+We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER**. 
 
 ## Founding Members
 
