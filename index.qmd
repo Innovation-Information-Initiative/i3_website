@@ -37,7 +37,7 @@ include-in-header:
 
 ::: {.hero-banner-wrapper}
 <div class="hero-banner" style="background-image: url('files/images/i3-banner.png'); background-size: cover; background-position: center; padding: 4rem 2rem; text-align: center;">
-  <h1 style="color: #333333; font-size: 48px; font-weight: bold; margin-bottom: 0.5rem;">Innovation Information Initiative</h1>
+  <h1 style="color: #333333; font-size: 48px; font-weight: bold; margin-bottom: 0.5rem;">Innovation Information Initiative (i3)</h1>
   <p style="color: #333333; font-size: 24px; margin-top: 0;">A data collaborative for innovation datasets, analytics, + metrics</p>
 </div>
 :::
@@ -46,16 +46,9 @@ include-in-header:
 ::: {.content-block}
 
 <p style="font-size:18px; line-height: 1.6;">
-The **Innovation Information Initiative** (**I³**) is a data collaborative for open innovation data and related analytics, tools, & metrics. This includes patent datasets, citation graphs among and between patents and scholarship, and metrics or secondary datasets derived from these.
+The **Innovation Information Initiative** (**i3**) is a data collaborative for open innovation data and related analytics, tools, & metrics. This includes patent datasets, citation graphs among and between patents and scholarship, and metrics or secondary datasets derived from these.
 </p>
 
-<p style="font-size:18px; line-height: 1.6;">
-Datasets will include patent-product links, scholarship-funding data, disambiguation datasets for authors and affiliations, and subsets of the full patent-scholarship citation graph, enriched with extended metadata.
-</p>
-
-<p style="font-size:18px; line-height: 1.6;">
-All participants are welcome. We have hosted regular convenings since 2019 to shape this collaborative and share our work.
-</p>
 
 <p style="font-size:18px; line-height: 1.6;">
 We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER**.
