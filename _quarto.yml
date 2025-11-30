@@ -15,11 +15,9 @@ website:
     background: "#016fe2"
     foreground: "#FFFFFF"
     left:
-      - text: News
-        href: news.qmd
       - text: Events
         href: events.qmd
-      - text: i3 Fellows
+      - text: Fellows Program
         href: fellows.qmd
       - text: Datasets
         href: datasets.qmd
