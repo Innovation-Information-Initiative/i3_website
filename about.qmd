@@ -30,7 +30,6 @@ We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **N
 
 ::: {.g-col-12 .g-col-md-5}
 
-![Created by Copilot](/files/images/cover-square.png)
 
 :::
 
