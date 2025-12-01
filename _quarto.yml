@@ -21,6 +21,8 @@ website:
         href: fellows.qmd
       - text: Datasets
         href: datasets.qmd
+      - text: BigQuery
+        href: bigquery.qmd
       - text: About
         href: about.qmd
 
