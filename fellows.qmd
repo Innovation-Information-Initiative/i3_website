@@ -6,51 +6,50 @@ page-layout: full
 
 # 2026 Fellows
 
-### Yujing Huang (UCLA): "US-China scientist returnee dataset (1911–1953)"
+### Yujing Huang (UCLA)
 
-Yujing  will create an open, reproducible dataset tracking Chinese scientists trained in the U.S. (1911–1953) and their return to China, linking historical student directories, biographical records, and modern bibliometric data (OpenAlex, CNKI). It includes transparent code for cross-lingual name disambiguation and embedding-based measures of research-agenda shifts, enabling future studies on international scientific mobility and human-capital spillovers.
-
----
-
-### Georgia Demirev (Northwestern): "Product launch announcements dataset"
-
-Georgia will  build and continuously update a public dataset of corporate product launch announcements by scraping press releases (e.g., PRNewswire) and classifying them with a fine-tuned transformer model. The resulting dataset will allow innovation researchers to systematically measure the scope, scale, and direction of product-market innovation.
+Yujing  will create an open, reproducible dataset tracking Chinese scientists trained in the U.S. (1911–1953) and their return to China, linking historical student directories, biographical records, and modern bibliometric data (OpenAlex, CNKI). 
 
 ---
 
-### Yanou Zhou (U Toronto): "LLM_AuditKit: bias auditing tool for LLMs"
+### Georgia Demirev (Northwestern)
 
-LLM_AuditKit is an open-source Python package that audits large language models for embedded producer-specific biases that trade off factual accuracy for perceived harmlessness. It offers an end-user module to generate Trust & Safety Scorecards before using LLMs in research tasks and an auditor module to benchmark models and track their evolving strategic philosophies, plus a bonus historical job-postings dataset (1950–2020).
-
----
-
-### Randol Yao (MIT): "Traditional Chinese Medicine to modern drug pipeline dataset"
-
-Randol will integrate structured  Traditional Chinese Medicine data (herbs, compounds, formulas from TCM Bank) with modern drug, patent, and clinical-trial databases, standardizing names and mapping ancient indications to MeSH/ICD codes. The resulting open dataset will reveal which traditional medicines have entered modern pipelines, which remain unexplored, and spotlight neglected biochemical hypotheses for natural-product innovation research.
+Georgia will  build and continuously update a public dataset of corporate product launch announcements by scraping press releases (e.g., PRNewswire) and classifying them with a fine-tuned transformer model. 
 
 ---
 
-### Piyasha Majumdar (Virginia Tech): "Historical Indian patents database (1900–2005)"
+### Yanou Zhou (U Toronto)
 
-The project will digitize and standardize all historical Indian patents from 1900–2005, link them to UK and US counterparts, and classify them using the CPC system. The publicly released dataset will provide a foundational resource for studying long-run inventive activity and institutional change across colonial and post-colonial India up to TRIPS.
-
----
-
-### Marco Panuzi (Stanford): "Scientific tasks extracted from paper abstracts"
-
-Using LLMs and clustering, this project will extract and categorize author-action sentences (e.g., “we propose an estimator”) from millions of paper abstracts to create the first large-scale dataset of fine-grained scientific tasks. It will enable research on the evolving division of labor in science, the impact of computerization on the idea production function, and broader questions about research organization and method diffusion.
+LLM_AuditKit is an open-source Python package that audits large language models for embedded producer-specific biases that trade off factual accuracy for perceived harmlessness. 
 
 ---
 
-### Eliana Diodati (U Turin): "Research institutes ownership classifier (public/private)"
+### Randol Yao (MIT)
 
-This project develops an open dataset and transparent methodology to identify research institutes in bibliographic databases and classify them as public, private, or hybrid using LLMs and RAG on Wikipedia and official webpages. It addresses a major gap in current classification systems, enabling better analysis of how ownership affects incentives, collaboration, and knowledge transfer in innovation ecosystems.
+Randol will integrate structured  Traditional Chinese Medicine data (herbs, compounds, formulas from TCM Bank) with modern drug, patent, and clinical-trial databases, standardizing names and mapping ancient indications to MeSH/ICD codes. 
+---
+
+### Piyasha Majumdar (Virginia Tech)
+
+The project will digitize and standardize all historical Indian patents from 1900–2005, link them to UK and US counterparts, and classify them using the CPC system. 
 
 ---
 
-### Taoyu Long (U Georgia): "Point-in-time USPTO patent stock for Compustat firms"
+### Marco Panuzi (Stanford)
 
-The project will produce and maintain an open patent-ID–firm–month panel of in-force U.S. patents for Compustat firms, correctly accounting for subsidiary patents, assignments, and maintenance-fee events. Building on DISCERN 2.0, it provides fully reproducible code and documentation to deliver accurate, dynamic patent-stock measures that overcome limitations of grant-based approaches currently used in research.
+Using LLMs and clustering, this project will extract and categorize author-action sentences (e.g., “we propose an estimator”) from millions of paper abstracts to create the first large-scale dataset of fine-grained scientific tasks. 
+
+---
+
+### Eliana Diodati (U Turin)
+
+This project develops an open dataset and transparent methodology to identify research institutes in bibliographic databases and classify them as public, private, or hybrid using LLMs and RAG on Wikipedia and official webpages.
+
+---
+
+### Taoyu Long (U Georgia)
+
+The project will produce and maintain an open patent-ID–firm–month panel of in-force U.S. patents for Compustat firms, correctly accounting for subsidiary patents, assignments, and maintenance-fee events. 
 
 ---
 
@@ -98,35 +97,35 @@ Categorization of citations as “deep” or “shallow” for a broad corpus of
 # 2024 Fellows
 
 
-### Alexander Kann (University of Mannheim): "Patents or Defensive Disclosures?"
+### Alexander Kann (University of Mannheim)
 
 
-Alexander developed a sophisticated classifier using BERT (Bidirectional Encoder Representations from Transformers) to identify and match defensive disclosures with their corresponding patent technology classifications. This work addresses the challenge of distinguishing between formal patents and defensive publications, which are increasingly used by companies to prevent others from patenting specific innovations without going through the full patent process themselves.
-
----
-
-### Bernardo Dionisi (Duke University): "Pydrad"
-
-Bernardo created Pydrad, an open-source Python package designed to streamline the construction, transformation, combination, and comparison of innovation datasets. This tool addresses a critical need in the innovation research community for standardized methods to work with diverse data sources. The package provides researchers with a useful index and workflow tools that make complex dataset manipulation more accessible and reproducible.
+Alexander developed a sophisticated classifier using BERT (Bidirectional Encoder Representations from Transformers) to identify and match defensive disclosures with their corresponding patent technology classifications. 
 
 ---
 
-### Saqib Mumtaz (UC Berkeley): "Linking Scientific Articles to Media Mentions"
+### Bernardo Dionisi (Duke University)
 
-
-Saqib's research connects scientific publications with their media coverage by linking EurekaAlert press release data to OpenAlex author information. By using CrossRef dates for improved matching accuracy, this work examines how the science promotion landscape influences innovation visibility and the broader impact of scientific discoveries. This dataset enables researchers to study the relationship between media attention and scientific impact in new ways.
-
----
-
-### Maya Durvasula (Stanford University): "Statistical Evidence from Clinical Trials"
-
-Maya applied large language models to integrate three critical data sources: clinical trial records from ClinicalTrials.gov, scientific publications, and FDA approval data. This integration creates a comprehensive new clinical trial results dataset that researchers can use to study the relationships between trial design, publication patterns, and regulatory outcomes. The work demonstrates how modern NLP techniques can extract and structure information from diverse biomedical data sources.
+Bernardo created Pydrad, an open-source Python package designed to streamline the construction, transformation, combination, and comparison of innovation datasets. 
 
 ---
 
-### Matteo Tranchero (UC Berkeley): "Analysis of Knowledge Entities"
+### Saqib Mumtaz (UC Berkeley)
 
-Matteo utilized Bio-BERT to develop a novel innovation impact metric based on "knowledge entities" rather than traditional citation counts. This approach measures how attention shifts toward specific concepts and ideas over time, providing a more nuanced view of scientific impact that captures influence beyond simple citation patterns. By tracking knowledge entities, the metric can identify important innovations that may be widely discussed and built upon without necessarily being heavily cited in the traditional sense.
+
+Saqib's research connects scientific publications with their media coverage by linking EurekaAlert press release data to OpenAlex author information. 
+
+---
+
+### Maya Durvasula (Stanford University)
+
+Maya applied large language models to integrate three critical data sources: clinical trial records from ClinicalTrials.gov, scientific publications, and FDA approval data. 
+
+---
+
+### Matteo Tranchero (UC Berkeley)
+
+Matteo utilized Bio-BERT to develop a novel innovation impact metric based on "knowledge entities" rather than traditional citation counts. 
 
 ---
 {{< include /files/includes/_msclarity.qmd >}}
