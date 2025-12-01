@@ -11,42 +11,53 @@ page-layout: full
 Yujing  will create an open, reproducible dataset tracking Chinese scientists trained in the U.S. (1911–1953) and their return to China, linking historical student directories, biographical records, and modern bibliometric data (OpenAlex, CNKI). It includes transparent code for cross-lingual name disambiguation and embedding-based measures of research-agenda shifts, enabling future studies on international scientific mobility and human-capital spillovers.
 
 ---
+
 # Georgia Demirev (Northwestern): ""
 
-Georgia will  build and continuously update a public dataset of corporate product launch announcements by scraping press releases (e.g., PRNewswire) and classifying them with a fine-tuned transformer model. The resulting dataset will allow innovation researchers to systematically measure the scope, scale, and direction of product-market innovation
+Georgia will  build and continuously update a public dataset of corporate product launch announcements by scraping press releases (e.g., PRNewswire) and classifying them with a fine-tuned transformer model. The resulting dataset will allow innovation researchers to systematically measure the scope, scale, and direction of product-market innovation.
+
 ---
 
 # Yanou Zhou (U Toronto): ""
 
 LLM_AuditKit is an open-source Python package that audits large language models for embedded producer-specific biases that trade off factual accuracy for perceived harmlessness. It offers an end-user module to generate Trust & Safety Scorecards before using LLMs in research tasks and an auditor module to benchmark models and track their evolving strategic philosophies, plus a bonus historical job-postings dataset (1950–2020).
+
 ---
 
 # Randol Yao (MIT): ""
 
 Randol will integrate structured  Traditional Chinese Medicine data (herbs, compounds, formulas from TCM Bank) with modern drug, patent, and clinical-trial databases, standardizing names and mapping ancient indications to MeSH/ICD codes. The resulting open dataset will reveal which traditional medicines have entered modern pipelines, which remain unexplored, and spotlight neglected biochemical hypotheses for natural-product innovation research.
+
 ---
 
 # Piyasha Majumdar (Virginia Tech): ""
 
 The project will digitize and standardize all historical Indian patents from 1900–2005, link them to UK and US counterparts, and classify them using the CPC system. The publicly released dataset will provide a foundational resource for studying long-run inventive activity and institutional change across colonial and post-colonial India up to TRIPS.
+
 ---
 
 # Marco Panuzi (Stanford): ""
 
 Using LLMs and clustering, this project will extract and categorize author-action sentences (e.g., “we propose an estimator”) from millions of paper abstracts to create the first large-scale dataset of fine-grained scientific tasks. It will enable research on the evolving division of labor in science, the impact of computerization on the idea production function, and broader questions about research organization and method diffusion.
+
 ---
-# Eliana Diodati (Unito???): ""
+
+# Eliana Diodati (U Turin): ""
 
 This project develops an open dataset and transparent methodology to identify research institutes in bibliographic databases and classify them as public, private, or hybrid using LLMs and RAG on Wikipedia and official webpages. It addresses a major gap in current classification systems, enabling better analysis of how ownership affects incentives, collaboration, and knowledge transfer in innovation ecosystems.
+
 ---
 
 # Taoyu Long (U Georgia): ""
 
 The project will produce and maintain an open patent-ID–firm–month panel of in-force U.S. patents for Compustat firms, correctly accounting for subsidiary patents, assignments, and maintenance-fee events. Building on DISCERN 2.0, it provides fully reproducible code and documentation to deliver accurate, dynamic patent-stock measures that overcome limitations of grant-based approaches currently used in research.
+
 ---
 
 
 ### 2025 Fellows
+
+
 
 ### 2024 Fellows
 
