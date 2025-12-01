@@ -4,6 +4,62 @@ subtitle: "Fellows program"
 page-layout: full
 ---
 
+***2026 Fellows***
+
+***2025 Fellows***
+
+***2024 Fellows***
+
+
+### Alexander Kann (University of Mannheim)
+
+**Project:** "Patents or Defensive Disclosures?"
+
+**Focus:** Building a BERT classifier to match defensive disclosures with patent technology classifications
+
+Alexander developed a sophisticated classifier using BERT (Bidirectional Encoder Representations from Transformers) to identify and match defensive disclosures with their corresponding patent technology classifications. This work addresses the challenge of distinguishing between formal patents and defensive publications, which are increasingly used by companies to prevent others from patenting specific innovations without going through the full patent process themselves.
+
+---
+
+### Bernardo Dionisi (Duke University)
+
+**Project:** "Pydrad"
+
+**Focus:** Developed an open-source Python package for constructing and analyzing innovation datasets
+
+Bernardo created Pydrad, an open-source Python package designed to streamline the construction, transformation, combination, and comparison of innovation datasets. This tool addresses a critical need in the innovation research community for standardized methods to work with diverse data sources. The package provides researchers with a useful index and workflow tools that make complex dataset manipulation more accessible and reproducible.
+
+---
+
+### Saqib Mumtaz (UC Berkeley)
+
+**Project:** "Linking Scientific Articles to Media Mentions"
+
+**Focus:** Connected EurekaAlert data to OpenAlex author information to examine media impact on scientific discoveries
+
+Saqib's research connects scientific publications with their media coverage by linking EurekaAlert press release data to OpenAlex author information. By using CrossRef dates for improved matching accuracy, this work examines how the science promotion landscape influences innovation visibility and the broader impact of scientific discoveries. This dataset enables researchers to study the relationship between media attention and scientific impact in new ways.
+
+---
+
+### Maya Durvasula (Stanford University)
+
+**Project:** "Statistical Evidence from Clinical Trials"
+
+**Focus:** Used large language models to combine clinical trial records with publication and FDA approval data
+
+Maya applied large language models to integrate three critical data sources: clinical trial records from ClinicalTrials.gov, scientific publications, and FDA approval data. This integration creates a comprehensive new clinical trial results dataset that researchers can use to study the relationships between trial design, publication patterns, and regulatory outcomes. The work demonstrates how modern NLP techniques can extract and structure information from diverse biomedical data sources.
+
+---
+
+### Matteo Tranchero (UC Berkeley)
+
+**Project:** "Analysis of Knowledge Entities"
+
+**Focus:** Developed a metric for measuring innovation impact through attention directed at knowledge entities rather than citations
+
+Matteo utilized Bio-BERT to develop a novel innovation impact metric based on "knowledge entities" rather than traditional citation counts. This approach measures how attention shifts toward specific concepts and ideas over time, providing a more nuanced view of scientific impact that captures influence beyond simple citation patterns. By tracking knowledge entities, the metric can identify important innovations that may be widely discussed and built upon without necessarily being heavily cited in the traditional sense.
+
+---
 {{< include /files/includes/_msclarity.qmd >}}
 
 
