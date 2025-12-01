@@ -1,0 +1,207 @@
+---
+title: "i3 BigQuery Data Workspace"
+subtitle: "User Guide and Technical Documentation"
+page-layout: full
+author:
+    - name: Dror Shvadron
+      affiliation: Rotman School of Management, University of Toronto
+date: last-modified
+date-format: "MMMM YYYY"
+toc: true
+toc-depth: 3
+number-sections: true
+---
+
+## Overview
+
+The i3 BigQuery Data Workspace is a collaborative Google BigQuery project hosting curated datasets for innovation and science policy research. Maintained by the [Innovation Information Initiative (i3)](https://i3open.org), this workspace provides researchers with cloud-based access to comprehensive patent, publication, and innovation-related data.
+
+This guide covers access information, available datasets, query patterns, and best practices for working with the data.
+
+::: {.callout-note}
+## Stay Connected
+Join our [Google Group](https://groups.google.com/g/i3-bigquery) for announcements, community discussions, and technical support.
+:::
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+Before accessing the i3 repository, you will need a Google Cloud account with billing enabled. New users receive complimentary credits that are sufficient for substantial initial analysis.
+
+### Accessing the Repository
+
+**Step 1:** Navigate to [Google Cloud Console](https://cloud.google.com) and sign in or create an account.
+
+**Step 2:** Open BigQuery from the Cloud Console navigation menu.
+
+**Step 3:** In the Explorer panel, click **Add** → **Star a project by name** and enter: `nber-i3`
+
+**Step 4:** The i3 datasets will appear in your Explorer panel, ready for querying.
+
+---
+
+## Available Datasets
+
+The repository contains two categories of datasets: raw data sources and derivative datasets contributed by the research community.
+
+### Core Datasets
+
+| Dataset | Description | Link |
+|:--------|:------------|:--------------|
+| **Crossref** | Scholarly metadata and DOI registration records (bulk) | [Crossref Public Data File](https://www.crossref.org/learning/public-data-file/) |
+| **CrunchBase (2013)** | Startup ecosystem and venture capital data | — |
+| **OpenAlex** | Catalog of scholarly works, authors, institutions, and citation networks | [openalex.org](https://openalex.org/) |
+| **Orange Book** | FDA-approved drug products with patent and exclusivity info | [FDA Orange Book Data Files](https://www.fda.gov/drugs/drug-approvals-and-databases/orange-book-data-files) |
+| **PatentsView** | Complete patent data from the USPTO | [PatentsView Data Downloads](https://patentsview.org/download/data-download-tables) |
+| **Retraction Watch** | Database of retracted scientific publications | [Retraction Watch](https://retractionwatch.com/) |
+| **USPTO Patent Assignment** | Patent ownership transfers and assignment records | [USPTO Patent Assignment Dataset](https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-assignment-dataset) |
+
+
+### Community-Developed Datasets
+
+
+| Dataset | Description | Citation |
+|:--------|:------------|:---------|
+| **British Historic Patents** | Historical UK patent records | [Berkes, Chen & Tranchero (2026)](https://doi.org/10.1016/j.respol.2025.105347) |
+| **Commercial Potential of Science** | Measures of commercial potential of science | [Masclans, Hasan & Cohen (2025)](https://doi.org/10.1002/smj.3720) |
+| **DISCERN** | Patenting and scientific publications by U.S. publicly listed firms | [Arora, Belenzon, Cioaca, Sheer, Shin & Shvadron (2024)](https://doi.org/10.5281/zenodo.13619821) |
+| **Founding Patents** | Assignee age at patent grant | — |
+| **Geocoding of Worldwide Patent Data** | Geographic coordinates for inventors and assignees | [de Rassenfosse, Kozak & Seliger (2019)](https://doi.org/10.1038/s41597-019-0264-6) |
+| **HistPat** | Historical patents with harmonized geography | [Petralia, Balland & Rigby (2016)](https://doi.org/10.7910/DVN/BPC15W) |
+| **Inventor Age** | Inventor demographic and career-stage information | — |
+| **JCIF** | Journal Commercial Impact Factor | [Marx & Fuegi (2019); Bikard & Marx (2020)](https://github.com/mattmarx/jcif) |
+| **KPSS Patent Value** | Stock market-based patent valuations | [Kogan, Papanikolaou, Seru & Stoffman (2017)](https://doi.org/10.1093/qje/qjw040) |
+| **Paper Twins** | Matched paper pairs | [Bikard & Marx (2020)](https://doi.org/10.1287/mnsc.2019.3385) |
+| **Patent Hubs** | Geographic clustering of innovation | — |
+| **Patent Paper Pairs** | Linked patent-publication data | — |
+| **Patent Scope** | Patent breadth and technological coverage measures | — |
+| **PQRS** | Patent quality and relevance scores | — |
+| **Reliance on Science** | Patent citations to scientific literature | [Marx & Fuegi (2020, 2022)](https://doi.org/10.1111/jems.12455) |
+
+
+---
+
+## Querying the Data
+
+### BigQuery Console
+
+The BigQuery web interface provides an integrated development environment with syntax highlighting, autocomplete, query history, and real-time cost estimation. For most users, this is the recommended starting point.
+
+### SQL Query Example
+
+The following query retrieves all citations to patents held by a specific assignee:
+
+```sql
+SELECT 
+    citing_patent_id,
+    cited_patent_id,
+    citation_date
+FROM 
+    `nber-i3.patentsview.citations`
+WHERE 
+    cited_assignee = 'Xerox'
+```
+
+This query typically scans approximately 10 GB of data, costs around $0.015, and completes in 15–20 seconds.
+
+### Python Integration
+
+```python
+from google.cloud import bigquery
+
+# Initialize client with your project
+client = bigquery.Client(project="your-project-id")
+
+query = """
+    SELECT *
+    FROM `nber-i3.openalex.works`
+    WHERE publication_year = 2023
+    LIMIT 1000
+"""
+
+df = client.query(query).to_dataframe()
+```
+
+::: {.callout-tip}
+## Authentication
+Ensure you have configured Google Cloud credentials. Run `gcloud auth application-default login` or set the `GOOGLE_APPLICATION_CREDENTIALS` environment variable.
+:::
+
+### R Integration
+
+```r
+library(bigrquery)
+
+project_id <- "your-project-id"
+
+sql <- "
+    SELECT *
+    FROM `nber-i3.openalex.works`
+    WHERE publication_year = 2023
+    LIMIT 1000
+"
+
+results <- bq_project_query(project_id, sql)
+df <- bq_table_download(results)
+```
+
+### Jupyter Notebooks
+
+BigQuery provides integrated notebook support directly in the Cloud Console, enabling combined SQL and Python workflows without additional setup.
+
+---
+
+## Dataset Documentation
+
+Each dataset includes comprehensive documentation covering variable definitions, temporal coverage, licensing terms, and required citations. Review this documentation before beginning your analysis.
+
+::: {.callout-warning}
+## Citation Requirements
+When publishing research using i3 data, you must cite the original data sources as specified in each dataset's documentation. Failure to provide proper attribution may violate data use agreements.
+:::
+
+---
+
+## Cost Management
+
+### Pricing Model
+
+BigQuery uses a consumption-based pricing model. Charges are based on the volume of data scanned, not the size of results returned. The current rate is approximately **$6.25 per terabyte** of data processed.
+
+Storage costs for i3 datasets are covered by the initiative—users pay only for query execution.
+
+### Cost Optimization Strategies
+
+**Select specific columns.** Avoid `SELECT *` queries. BigQuery is columnar, so selecting fewer columns reduces scanned data proportionally.
+
+**Filter on partitioned columns.** Many tables are partitioned by date or year. Filtering on these columns significantly reduces costs.
+
+**Use the query validator.** Before execution, the console displays estimated bytes scanned and cost.
+
+**Leverage caching.** Identical queries within 24 hours return cached results at no additional cost.
+
+**Apply TABLESAMPLE during exploration.** When investigating data structure, use `TABLESAMPLE SYSTEM (10 PERCENT)` clauses to minimize costs.
+
+
+## Contributing to the Repository
+
+The i3 repository welcomes contributions from the research community. Researchers may contribute derived datasets, share analysis workflows, or participate in data curation efforts.
+
+To propose a contribution, contact the i3 team with a description of your dataset, its research applications, and any associated publications.
+
+---
+
+## Support and Resources
+
+### Community Discussion
+
+For questions, announcements, and collaboration opportunities, join the i3 BigQuery Google Group: <https://groups.google.com/g/i3-bigquery>
+
+### External Documentation
+
+- [Google BigQuery Documentation](https://cloud.google.com/bigquery/docs)
+- [BigQuery SQL Reference](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax)
+
