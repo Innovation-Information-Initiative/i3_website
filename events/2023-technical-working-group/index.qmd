@@ -8,7 +8,7 @@ author:
 date: "2023-12-01"
 image: images/2023-twg.jpeg
 categories: [workshop, technical-working-group, featured]
-featured: true
+featured: false
 ---
 
 **December 1-2**, Cambridge MA   |   [Agenda](https://bit.ly/i3-2022) (NBER)   |   [Youtube](https://www.youtube.com/nbervideos) recording
