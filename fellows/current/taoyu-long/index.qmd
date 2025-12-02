@@ -1,0 +1,13 @@
+---
+title: "Taoyu Long"
+subtitle: "University of Georgia"
+description: |
+  The project will produce and maintain an open patent-ID–firm–month panel of in-force U.S. patents for Compustat firms, correctly accounting for subsidiary patents, assignments, and maintenance-fee events.
+image: images/photo.jpg
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+
+**i3 Fellow, 2026 Cohort**

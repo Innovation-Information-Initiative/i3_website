@@ -1,0 +1,13 @@
+---
+title: "Yujing Huang"
+subtitle: "UCLA"
+description: |
+  Yujing will create an open, reproducible dataset tracking Chinese scientists trained in the U.S. (1911–1953) and their return to China, linking historical student directories, biographical records, and modern bibliometric data (OpenAlex, CNKI).
+image: images/photo.avif
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+
+**i3 Fellow, 2026 Cohort**

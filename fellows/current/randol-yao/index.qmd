@@ -1,0 +1,13 @@
+---
+title: "Randol Yao"
+subtitle: "MIT"
+description: |
+  Randol will integrate structured Traditional Chinese Medicine data (herbs, compounds, formulas from TCM Bank) with modern drug, patent, and clinical-trial databases, standardizing names and mapping ancient indications to MeSH/ICD codes.
+image: images/photo.jpeg
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+
+**i3 Fellow, 2026 Cohort**

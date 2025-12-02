@@ -1,0 +1,9 @@
+---
+title: "Kyoungah Noh"
+subtitle: "University at Albany SUNY, Economics"
+description: |
+  A comprehensive dataset of standardized priority dates for patents.
+cohort: 2025
+---
+
+**i3 Fellow, 2025 Cohort**

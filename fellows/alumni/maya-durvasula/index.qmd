@@ -1,0 +1,9 @@
+---
+title: "Maya Durvasula"
+subtitle: "Stanford University"
+description: |
+  Maya applied large language models to integrate three critical data sources: clinical trial records from ClinicalTrials.gov, scientific publications, and FDA approval data.
+cohort: 2024
+---
+
+**i3 Fellow, 2024 Cohort**

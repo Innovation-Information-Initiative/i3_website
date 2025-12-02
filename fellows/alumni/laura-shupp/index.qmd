@@ -1,0 +1,9 @@
+---
+title: "Laura Shupp"
+subtitle: "MIT Sloan"
+description: |
+  A comprehensive patent dataset covering the Middle East and North Africa.
+cohort: 2025
+---
+
+**i3 Fellow, 2025 Cohort**

@@ -2,135 +2,52 @@
 title: "i3 Fellows"
 subtitle: "Fellows program"
 page-layout: full
+
+listing:
+- id: fellows-current
+  sort: "title asc"
+  type: grid
+  fields: [image, title, subtitle, description]
+  grid-item-align: center
+  grid-columns: 4
+  image-height: 350px
+  max-description-length: 500
+  contents:
+    - fellows/current/*/index.qmd
+
+- id: fellows-alumni
+  sort: "cohort desc"
+  type: table
+  fields: [title, subtitle, description, cohort]
+  grid-item-align: center
+  field-display-names:
+    title: "Name"
+    subtitle: "Affiliation"
+    description: "Research Topic"
+    cohort: "Cohort"
+  contents:
+    - fellows/alumni/*/index.qmd
+
+page-navigation: false
+title-block-banner: false
+toc: false
 ---
 
-# 2026 Fellows
-
-### Yujing Huang (UCLA)
-
-Yujing  will create an open, reproducible dataset tracking Chinese scientists trained in the U.S. (1911–1953) and their return to China, linking historical student directories, biographical records, and modern bibliometric data (OpenAlex, CNKI). 
-
----
-
-### Georgia Demirev (Northwestern)
-
-Georgia will  build and continuously update a public dataset of corporate product launch announcements by scraping press releases (e.g., PRNewswire) and classifying them with a fine-tuned transformer model. 
-
----
-
-### Yanou Zhou (U Toronto)
-
-LLM_AuditKit is an open-source Python package that audits large language models for embedded producer-specific biases that trade off factual accuracy for perceived harmlessness. 
-
----
-
-### Randol Yao (MIT)
-
-Randol will integrate structured  Traditional Chinese Medicine data (herbs, compounds, formulas from TCM Bank) with modern drug, patent, and clinical-trial databases, standardizing names and mapping ancient indications to MeSH/ICD codes. 
----
-
-### Piyasha Majumdar (Virginia Tech)
-
-The project will digitize and standardize all historical Indian patents from 1900–2005, link them to UK and US counterparts, and classify them using the CPC system. 
-
----
-
-### Marco Panuzi (Stanford)
-
-Using LLMs and clustering, this project will extract and categorize author-action sentences (e.g., “we propose an estimator”) from millions of paper abstracts to create the first large-scale dataset of fine-grained scientific tasks. 
-
----
-
-### Eliana Diodati (U Turin)
-
-This project develops an open dataset and transparent methodology to identify research institutes in bibliographic databases and classify them as public, private, or hybrid using LLMs and RAG on Wikipedia and official webpages.
-
----
-
-### Taoyu Long (U Georgia)
-
-The project will produce and maintain an open patent-ID–firm–month panel of in-force U.S. patents for Compustat firms, correctly accounting for subsidiary patents, assignments, and maintenance-fee events. 
-
----
-
-
-# 2025 Fellows
-
-### Laura Shupp (MIT Sloan)
-
-A comprehensive patent dataset covering the Middle East and North Africa.
-
----
-
-###  Rebekah Dix (MIT Economics)
-
-A dataset of combination innovations in medicine using LLMs and clinical trials data.
-
----
-
-### Mihai Codreanu (Stanford Economics)
-
-A database of electronics products using 20th-century historical data, matched to patents via LLMs.
-
----
-
-### Tianshu Lyu (Yale School of Management)
-
-A new matched dataset of consumer products with patents using detailed product-level data and topic modeling techniques.
-
-### Guilherme Junqueira (University of Florida, Finance)
-
-A new comprehensive dataset documenting financing sources for young innovative firms.
-
----
-
-### Kyoungah Noh (University at Albany SUNY, Economics)
-
-A comprehensive dataset of standardized priority dates for patents.
-
-### Matthew Lee Chen (Harvard Economics)
-
-Categorization of citations as “deep” or “shallow” for a broad corpus of 19th- and 20th-century British and American scientific articles and patents.
-
----
-
-# 2024 Fellows
-
-
-### Alexander Kann (University of Mannheim)
-
-
-Alexander developed a sophisticated classifier using BERT (Bidirectional Encoder Representations from Transformers) to identify and match defensive disclosures with their corresponding patent technology classifications. 
-
----
-
-### Bernardo Dionisi (Duke University)
-
-Bernardo created Pydrad, an open-source Python package designed to streamline the construction, transformation, combination, and comparison of innovation datasets. 
-
----
-
-### Saqib Mumtaz (UC Berkeley)
-
-
-Saqib's research connects scientific publications with their media coverage by linking EurekaAlert press release data to OpenAlex author information. 
-
----
-
-### Maya Durvasula (Stanford University)
-
-Maya applied large language models to integrate three critical data sources: clinical trial records from ClinicalTrials.gov, scientific publications, and FDA approval data. 
-
----
-
-### Matteo Tranchero (UC Berkeley)
-
-Matteo utilized Bio-BERT to develop a novel innovation impact metric based on "knowledge entities" rather than traditional citation counts. 
-
----
 {{< include /files/includes/_msclarity.qmd >}}
 
+<style>
+#fellows-current .listing-item .listing-image img {
+  object-fit: cover !important;
+  object-position: top center !important;
+}
+</style>
 
+## Current Fellows (2026)
 
+:::{#fellows-current}
+:::
 
+## Alumni
 
+:::{#fellows-alumni}
+:::

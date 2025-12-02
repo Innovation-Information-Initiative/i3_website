@@ -1,0 +1,9 @@
+---
+title: "Alexander Kann"
+subtitle: "University of Mannheim"
+description: |
+  Alexander developed a sophisticated classifier using BERT (Bidirectional Encoder Representations from Transformers) to identify and match defensive disclosures with their corresponding patent technology classifications.
+cohort: 2024
+---
+
+**i3 Fellow, 2024 Cohort**

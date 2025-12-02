@@ -1,0 +1,9 @@
+---
+title: "Matteo Tranchero"
+subtitle: "UC Berkeley"
+description: |
+  Matteo utilized Bio-BERT to develop a novel innovation impact metric based on "knowledge entities" rather than traditional citation counts.
+cohort: 2024
+---
+
+**i3 Fellow, 2024 Cohort**

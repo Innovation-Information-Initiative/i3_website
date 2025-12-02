@@ -1,0 +1,9 @@
+---
+title: "Bernardo Dionisi"
+subtitle: "Duke University"
+description: |
+  Bernardo created Pydrad, an open-source Python package designed to streamline the construction, transformation, combination, and comparison of innovation datasets.
+cohort: 2024
+---
+
+**i3 Fellow, 2024 Cohort**

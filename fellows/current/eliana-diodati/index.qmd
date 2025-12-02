@@ -1,0 +1,12 @@
+---
+title: "Eliana Diodati"
+subtitle: "University of Turin"
+description: |
+  This project develops an open dataset and transparent methodology to identify research institutes in bibliographic databases and classify them as public, private, or hybrid using LLMs and RAG on Wikipedia and official webpages.
+image: images/photo.webp
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+

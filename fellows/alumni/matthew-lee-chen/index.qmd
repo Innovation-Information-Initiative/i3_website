@@ -1,0 +1,9 @@
+---
+title: "Matthew Lee Chen"
+subtitle: "Harvard Economics"
+description: |
+  Categorization of citations as "deep" or "shallow" for a broad corpus of 19th- and 20th-century British and American scientific articles and patents.
+cohort: 2025
+---
+
+**i3 Fellow, 2025 Cohort**
