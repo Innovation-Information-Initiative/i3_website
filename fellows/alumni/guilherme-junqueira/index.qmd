@@ -1,0 +1,9 @@
+---
+title: "Guilherme Junqueira"
+subtitle: "University of Florida, Finance"
+description: |
+  A new comprehensive dataset documenting financing sources for young innovative firms.
+cohort: 2025
+---
+
+**i3 Fellow, 2025 Cohort**

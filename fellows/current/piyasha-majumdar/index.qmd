@@ -1,0 +1,13 @@
+---
+title: "Piyasha Majumdar"
+subtitle: "Virginia Tech"
+description: |
+  The project will digitize and standardize all historical Indian patents from 1900–2005, link them to UK and US counterparts, and classify them using the CPC system.
+image: images/photo.jpg
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+
+**i3 Fellow, 2026 Cohort**

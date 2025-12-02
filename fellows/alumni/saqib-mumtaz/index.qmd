@@ -1,0 +1,9 @@
+---
+title: "Saqib Mumtaz"
+subtitle: "UC Berkeley"
+description: |
+  Saqib's research connects scientific publications with their media coverage by linking EurekaAlert press release data to OpenAlex author information.
+cohort: 2024
+---
+
+**i3 Fellow, 2024 Cohort**

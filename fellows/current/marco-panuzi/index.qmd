@@ -1,0 +1,13 @@
+---
+title: "Marco Panuzi"
+subtitle: "Stanford"
+description: |
+  Using LLMs and clustering, this project will extract and categorize author-action sentences (e.g., "we propose an estimator") from millions of paper abstracts to create the first large-scale dataset of fine-grained scientific tasks.
+image: images/photo.webp
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+
+**i3 Fellow, 2026 Cohort**

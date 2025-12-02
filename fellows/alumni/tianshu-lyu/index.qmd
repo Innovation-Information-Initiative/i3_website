@@ -1,0 +1,9 @@
+---
+title: "Tianshu Lyu"
+subtitle: "Yale School of Management"
+description: |
+  A new matched dataset of consumer products with patents using detailed product-level data and topic modeling techniques.
+cohort: 2025
+---
+
+**i3 Fellow, 2025 Cohort**

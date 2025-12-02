@@ -1,0 +1,9 @@
+---
+title: "Rebekah Dix"
+subtitle: "MIT Economics"
+description: |
+  A dataset of combination innovations in medicine using LLMs and clinical trials data.
+cohort: 2025
+---
+
+**i3 Fellow, 2025 Cohort**

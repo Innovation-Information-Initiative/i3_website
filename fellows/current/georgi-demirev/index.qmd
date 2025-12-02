@@ -1,0 +1,13 @@
+---
+title: "Georgi Demirev"
+subtitle: "Northwestern"
+description: |
+  Georgi will build and continuously update a public dataset of corporate product launch announcements by scraping press releases (e.g., PRNewswire) and classifying them with a fine-tuned transformer model.
+image: images/photo.jpg
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+
+

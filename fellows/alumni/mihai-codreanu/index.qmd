@@ -1,0 +1,9 @@
+---
+title: "Mihai Codreanu"
+subtitle: "Stanford Economics"
+description: |
+  A database of electronics products using 20th-century historical data, matched to patents via LLMs.
+cohort: 2025
+---
+
+**i3 Fellow, 2025 Cohort**
