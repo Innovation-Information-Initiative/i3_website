@@ -26,6 +26,10 @@ We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **N
 - Bronwyn Hall
 - Bhaven Sampat
 
+## Code of Conduct
+
+We are committed to providing a welcoming and inclusive environment for all participants. Please review our [Code of Conduct](CODE_OF_CONDUCT.qmd) to understand our community standards and expectations.
+
 :::
 
 ::: {.g-col-12 .g-col-md-5}
