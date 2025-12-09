@@ -190,7 +190,29 @@ Storage costs for i3 datasets are covered by the initiative—users pay only for
 
 The i3 repository welcomes contributions from the research community. Researchers may contribute derived datasets, share analysis workflows, or participate in data curation efforts.
 
-To propose a contribution, contact the i3 team with a description of your dataset, its research applications, and any associated publications.
+### Contributing a Dataset
+
+To contribute a dataset to the i3 repository, follow these steps:
+
+**Step 1:** Upload your dataset to an independent Google Cloud project (your own project or a project you control).
+
+**Step 2:** Make the dataset publicly accessible by sharing it with `allUsers` and granting them the **BigQuery Data Viewer** role:
+
+- In the BigQuery console, navigate to your dataset
+- Click on the dataset name, then select **Sharing** → **Permissions**
+- Click **Add Principal**
+- In the "New principals" field, enter: `allUsers`
+- Select the role: **BigQuery Data Viewer**
+- Click **Save**
+
+**Step 3:** Contact the i3 team with:
+
+- A description of your dataset
+- The project ID and dataset name where your dataset is hosted
+- Its research applications
+- Any associated publications and citation instructions
+
+**Step 4:** The i3 team will review your dataset. If accepted, we will clone into the i3 repository, making it available to the broader research community.
 
 ---
 
