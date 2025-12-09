@@ -1,0 +1,213 @@
+# Innovation Information Initiative (i3) Governance Document
+
+**Version 1.0 | Effective Date: [Insert Date]**
+
+## 1. Mission and Purpose
+
+The Innovation Information Initiative (i3) is a global community of economists and innovation scholars dedicated to building open, interoperable datasets to advance research on science, technology, innovation, and entrepreneurship. i3 develops high-quality public datasets, shares methodological best practices, and coordinates research infrastructure to democratize access to innovation research data.
+
+## 2. Organizational Structure
+
+### 2.1 Steering Committee
+
+The Steering Committee provides strategic direction, oversees operations, and makes major decisions regarding i3's activities and resources.
+
+**Composition:**
+- 5-7 members representing diverse institutions and expertise areas
+- Members serve staggered 3-year terms (renewable once)
+- At least one member should represent early-career researchers
+
+**Responsibilities:**
+- Set strategic priorities and research agenda
+- Approve budget and resource allocation
+- Oversee grant distribution to students and researchers
+- Approve new major datasets or infrastructure projects
+- Ensure adherence to open science principles
+
+**Decision-Making:**
+- Decisions require a simple majority vote
+- Quorum: At least 50% of committee members must be present
+- Meetings held quarterly (minimum)
+
+### 2.2 Project Lead(s) / Coordinator(s)
+
+**Role:** Day-to-day operations, community coordination, and implementation of Steering Committee decisions
+
+**Responsibilities:**
+- Manage BigQuery repository and technical infrastructure
+- Coordinate community meetings and communications
+- Facilitate collaboration among members
+- Prepare reports for Steering Committee and funders
+- Serve as primary contact with NumFOCUS
+
+**Appointment:** Selected by Steering Committee for 2-year renewable terms
+
+### 2.3 Working Groups
+
+Topic-specific working groups may be established by the Steering Committee or community members to focus on particular datasets, methodologies, or infrastructure needs.
+
+**Structure:**
+- Self-organized with designated coordinators
+- Report progress to Steering Committee quarterly
+- Open to all community members
+
+## 3. Membership
+
+### 3.1 Community Members
+
+**Eligibility:** Researchers, students, and practitioners actively engaged in innovation research or dataset development
+
+**Rights:**
+- Participate in working groups
+- Attend community meetings
+- Contribute to datasets and tools
+- Propose new projects or initiatives
+- Vote in community surveys (non-binding)
+
+**Process:** Self-identification via community registration or participation
+
+### 3.2 Steering Committee Selection
+
+**Nomination Process:**
+- Annual call for nominations (self-nominations accepted)
+- Nominees must be active community members
+- Current Steering Committee reviews nominations
+
+**Selection:**
+- Current Steering Committee votes on new members
+- Considerations: expertise diversity, institutional diversity, geographic representation, career stage
+
+## 4. Financial Management
+
+### 4.1 Budget Authority
+
+The Steering Committee approves annual budgets and major expenditures (>$5,000).
+
+### 4.2 Funding Sources
+
+- Donations from individuals and institutions
+- Grant funding from foundations
+- Institutional support from partner organizations
+
+### 4.3 Expenditure Categories
+
+- Data infrastructure maintenance
+- Student and researcher grants for dataset development
+- Community meetings and workshops
+- Documentation and outreach
+
+### 4.4 Grant Allocation
+
+**Process:**
+- Open calls for proposals issued at least annually
+- Review by Steering Committee or designated review panel
+- Awards based on: alignment with i3 mission, feasibility, potential impact, open science commitment
+
+**Requirements:**
+- All funded work must produce openly licensed datasets
+- Recipients must document methods and provide metadata
+- Regular progress reports required
+
+### 4.5 Financial Reporting
+
+- Quarterly financial reports to Steering Committee
+- Annual financial summary shared with community
+- Full transparency of fund usage via NumFOCUS reporting
+
+## 5. Decision-Making Processes
+
+### 5.1 Major Decisions
+
+Require Steering Committee approval:
+- Strategic direction changes
+- Budget allocation
+- Major partnerships or collaborations
+- Changes to governance structure
+- Expenditures >$5,000
+
+### 5.2 Operational Decisions
+
+Project Lead(s) have authority over:
+- Day-to-day operations
+- Infrastructure maintenance
+- Community coordination
+- Expenditures <$5,000
+
+### 5.3 Community Input
+
+The Steering Committee seeks community input on major decisions through:
+- Community surveys
+- Open meetings
+- Working group feedback
+- Annual community meetings
+
+## 6. Code of Conduct
+
+### 6.1 Principles
+
+i3 is committed to fostering an inclusive, respectful, and collaborative community. All members must:
+- Treat others with respect and professionalism
+- Value diverse perspectives and contributions
+- Adhere to principles of open science and reproducibility
+- Properly attribute and cite others' work
+- Protect confidential or sensitive information
+
+### 6.2 Violations
+
+Reports of Code of Conduct violations should be submitted to [designated contact]. The Steering Committee will investigate and determine appropriate actions, which may include warnings, temporary suspension, or removal from the community.
+
+## 7. Intellectual Property and Licensing
+
+### 7.1 Default License
+
+All datasets, code, and documentation produced by i3 or with i3 funds should be released under permissive open licenses:
+- Data: CC0 or CC-BY 4.0
+- Code: MIT, Apache 2.0, or BSD
+- Documentation: CC-BY 4.0
+
+### 7.2 Attribution
+
+Contributors retain credit for their work. i3 requires proper attribution and citation of datasets and tools.
+
+### 7.3 External Contributions
+
+Contributors who use i3 infrastructure or funding agree to license their outputs openly as specified above.
+
+## 8. Amendments
+
+This governance document may be amended by:
+- Two-thirds vote of the Steering Committee
+- Community consultation period (minimum 30 days)
+
+## 9. Dissolution
+
+In the event of dissolution:
+- All remaining funds will be transferred another organization supporting open science
+- All datasets and tools will remain publicly available
+- Documentation will be archived in long-term repositories
+
+## 10. Effective Date and Review
+
+**Effective Date:** [Insert Date]
+
+**Review Schedule:** This governance document will be reviewed annually by the Steering Committee and updated as needed.
+
+---
+
+## Appendix A: Current Leadership
+
+**Steering Committee:**
+- [Name, Institution] - Chair (term expires: YYYY)
+- [Name, Institution] (term expires: YYYY)
+- [Name, Institution] (term expires: YYYY)
+- [Name, Institution] (term expires: YYYY)
+- [Name, Institution] (term expires: YYYY)
+
+**Project Lead(s):**
+- [Name, Institution]
+
+**Contact Information:**
+- Email: [contact email]
+- Website: [website]
+- GitHub: [if applicable]
+
