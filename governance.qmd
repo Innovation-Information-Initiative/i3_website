@@ -27,7 +27,7 @@ The Steering Committee provides strategic direction, oversees operations, and ma
 **Decision-Making:**
 - Decisions require a simple majority vote
 - Quorum: At least 50% of committee members must be present
-- Meetings held quarterly (minimum)
+- Meetings held at least semiannually
 
 ### 2.2 Project Lead(s) / Coordinator(s)
 
@@ -110,8 +110,7 @@ The Steering Committee approves annual budgets and major expenditures (>$5,000).
 
 ### 4.5 Financial Reporting
 
-- Quarterly financial reports to Steering Committee
-- Annual financial summary shared with community
+- Annual financial report to Steering Committee, shared publicly
 - Full transparency of fund usage via NumFOCUS reporting
 
 ## 5. Decision-Making Processes
@@ -127,7 +126,7 @@ Require Steering Committee approval:
 
 ### 5.2 Operational Decisions
 
-Project Lead(s) have authority over:
+Project Lead has authority over:
 - Day-to-day operations
 - Infrastructure maintenance
 - Community coordination
@@ -196,18 +195,17 @@ In the event of dissolution:
 
 ## Appendix A: Current Leadership
 
-**Steering Committee:**
-- [Name, Institution] - Chair (term expires: YYYY)
-- [Name, Institution] (term expires: YYYY)
-- [Name, Institution] (term expires: YYYY)
-- [Name, Institution] (term expires: YYYY)
-- [Name, Institution] (term expires: YYYY)
+**Steering Committee:** (need to add term expirations)
+- Adam Jaffe
+- Samuel Klein
+- Matt Marx
+- Bronwyn Hall
+- Bhaven Sampat
+- Agnes Cameron
+- Dror Shvadron
 
 **Project Lead(s):**
-- [Name, Institution]
-
+- Matt Marx
 **Contact Information:**
-- Email: [contact email]
-- Website: [website]
-- GitHub: [if applicable]
+- Email: mmarx@cornell.edu
 
