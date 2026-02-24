@@ -21,6 +21,7 @@ We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **N
 - Matt Marx
 - Bronwyn Hall
 - Bhaven Sampat
+- Agnes Cameron
 - Dror Shvadron
 
 ## Code of Conduct
