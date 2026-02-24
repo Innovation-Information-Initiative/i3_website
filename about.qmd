@@ -15,16 +15,13 @@ The **Innovation Information Initiative** (**i3**) is a data collaborative for o
 
 We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER**. 
 
-## Founding Members
-
+## Steering Committee
 - Adam Jaffe
-- Osmat Jefferson
 - Samuel Klein
 - Matt Marx
-- Gaetan de Rassenfosse
-- James Weis
 - Bronwyn Hall
 - Bhaven Sampat
+- Dror Shvadron
 
 ## Code of Conduct
 
