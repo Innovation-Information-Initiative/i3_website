@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Samuel Klein">
+<meta name="dcterms.date" content="2022-12-02">
+<meta name="description" content="Two-day event at NBER featuring presentations on patent-article corpus building, semantic matching datasets, mapping patents to technology standards, pharmaceutical Orange Book dataset, inventor-author crosswalks, and validation frameworks for patent metrics from semantic analysis.">
+
+<title>Winter 2022 Technical Working Group Meeting – Innovation Information Initiative</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-4f45926fbf7b8b67d23d75c6c0af1acc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+<meta property="og:title" content="Winter 2022 Technical Working Group Meeting – Innovation Information Initiative">
+<meta property="og:description" content="Two-day event at NBER featuring presentations on patent-article corpus building, semantic matching datasets, mapping patents to technology standards, pharmaceutical Orange Book dataset, inventor-author crosswalks, and validation frameworks for patent metrics from semantic analysis.">
+<meta property="og:image" content="https://www.i3open.org/events/2022-technical-working-group/images/2022_twg.png">
+<meta property="og:site_name" content="Innovation Information Initiative">
+<meta property="og:image:height" content="1536">
+<meta property="og:image:width" content="1024">
+<meta name="twitter:title" content="Winter 2022 Technical Working Group Meeting – Innovation Information Initiative">
+<meta name="twitter:description" content="Two-day event at NBER featuring presentations on patent-article corpus building, semantic matching datasets, mapping patents to technology standards, pharmaceutical Orange Book dataset, inventor-author crosswalks, and validation frameworks for patent metrics from semantic analysis.">
+<meta name="twitter:image" content="https://www.i3open.org/events/2022-technical-working-group/images/2022_twg.png">
+<meta name="twitter:image-height" content="1536">
+<meta name="twitter:image-width" content="1024">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Innovation Information Initiative</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../events.html"> 
+<span class="menu-text">Events</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../fellows.html"> 
+<span class="menu-text">Fellows</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../datasets.html"> 
+<span class="menu-text">Datasets</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../bigquery.html"> 
+<span class="menu-text">BigQuery</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#friday-december-2" id="toc-friday-december-2" class="nav-link active" data-scroll-target="#friday-december-2">Friday, December 2</a>
+  <ul class="collapse">
+  <li><a href="#building-a-corpus-of-patent-article-siblings" id="toc-building-a-corpus-of-patent-article-siblings" class="nav-link" data-scroll-target="#building-a-corpus-of-patent-article-siblings"><strong>Building a Corpus of “Patent-Article Siblings”</strong></a></li>
+  <li><a href="#patents-phrase-to-phrase-semantic-matching-dataset" id="toc-patents-phrase-to-phrase-semantic-matching-dataset" class="nav-link" data-scroll-target="#patents-phrase-to-phrase-semantic-matching-dataset"><strong>Patents Phrase to Phrase Semantic Matching Dataset</strong></a></li>
+  </ul></li>
+  <li><a href="#saturday-december-3" id="toc-saturday-december-3" class="nav-link" data-scroll-target="#saturday-december-3">Saturday, December 3</a>
+  <ul class="collapse">
+  <li><a href="#mapping-patents-to-technology-standards-slides" id="toc-mapping-patents-to-technology-standards-slides" class="nav-link" data-scroll-target="#mapping-patents-to-technology-standards-slides"><strong>Mapping Patents to Technology Standards</strong> (slides)</a></li>
+  <li><a href="#the-nber-orange-book-dataset-a-users-guide" id="toc-the-nber-orange-book-dataset-a-users-guide" class="nav-link" data-scroll-target="#the-nber-orange-book-dataset-a-users-guide"><strong>The NBER Orange Book Dataset: A User’s Guide</strong></a></li>
+  <li><a href="#progress-report-on-an-inventor-author-crosswalk" id="toc-progress-report-on-an-inventor-author-crosswalk" class="nav-link" data-scroll-target="#progress-report-on-an-inventor-author-crosswalk"><strong>Progress Report on an Inventor-Author Crosswalk</strong></a></li>
+  <li><a href="#panel-how-do-we-validate-patent-metrics-derived-from-semantic-analysis" id="toc-panel-how-do-we-validate-patent-metrics-derived-from-semantic-analysis" class="nav-link" data-scroll-target="#panel-how-do-we-validate-patent-metrics-derived-from-semantic-analysis"><strong>Panel: How do we validate patent metrics derived from semantic analysis?</strong></a>
+  <ul class="collapse">
+  <li><a href="#innovae---generative-ai-for-patent-innovation" id="toc-innovae---generative-ai-for-patent-innovation" class="nav-link" data-scroll-target="#innovae---generative-ai-for-patent-innovation"><strong>InnoVAE</strong> - Generative AI for patent innovation</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Winter 2022 Technical Working Group Meeting</h1>
+<p class="subtitle lead">December 2022 meeting of the I3 TWG</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">workshop</div>
+    <div class="quarto-category">technical-working-group</div>
+    <div class="quarto-category">featured</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Two-day event at NBER featuring presentations on patent-article corpus building, semantic matching datasets, mapping patents to technology standards, pharmaceutical Orange Book dataset, inventor-author crosswalks, and validation frameworks for patent metrics from semantic analysis.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Samuel Klein </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 2, 2022</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>December 2-3, 2022</strong> | Cambridge, MA (NBER) | <a href="https://bit.ly/i3-2022">Agenda</a></p>
+<hr>
+<section id="friday-december-2" class="level1">
+<h1>Friday, December 2</h1>
+<p>4:30 pm — Welcome!</p>
+<hr>
+<section id="building-a-corpus-of-patent-article-siblings" class="level2">
+<h2 class="anchored" data-anchor-id="building-a-corpus-of-patent-article-siblings"><strong>Building a Corpus of “Patent-Article Siblings”</strong></h2>
+<p><em>Jean-Marc Deltorn</em>, University of Strasbourg Dominique Guellec, Observatoire des Sciences et Techniques<br>
+Jiangyin Liu, Observatoire des Sciences et Techniques<br>
+Chenyin Wu, University of Strasbourg</p>
+<p>Scientific papers can serve as a background approximation to the field in which the patent exists. Trying to use citations for this has limitations. So does language similarity: Language serves different purposes in the scientific and patent worlds. Standards of clarity are different.</p>
+<p>Keywords are brittle: latent semantic analysis is not currently capable of going beyond the style to the underlying technical object. We are looking at embeddings, and want to evaluate whether text embeddings can discriminate true patent-paper pairs from non-pairs.</p>
+<p>We started with a manual ground-truth corpus. Chose a subset of domains and their CPC codes. Then evaluated different embeddings: GANs, transformers, and other models, and developed a classifier based on them.</p>
+<p>Selection of corresponding articles: based on inventor last names, pub date, and priority date. Then querying the resulting corpus, looking at Jaccard index, date difference, and text embedding difference (of abstracts)…</p>
+<p><strong>Ongoing work:</strong> - Extend to other technical fields (ML, crypto, quantum computing, ARNm) - Build a <strong>public corpus</strong> of field-dependent PPPs</p>
+<p><strong>Future work:</strong> - Extend to other sources (preprints, other media) - Fine tune language models - Address limitations: reliance on author/inventor names</p>
+<p><strong>Discussion</strong>:</p>
+<p>Q: Timeframe?<br>
+A: We want to extend this to a much larger set…</p>
+<p>Q: How do you ensure patent/paper have an overlapping author?<br>
+A: We query Semantic Scholar, to maximize proximity of patent + author.</p>
+<p>Q: My understanding is that there are differences normatively and legally re: what counts in being an author / inventor. How do you think about that?<br>
+A: The rules are different, though it’s a similar principle in Europe and the US.</p>
+<p>Comment: Great to see this, fantastic use of patent data. As you expand on this project: institutional affiliation could help evaluate some matches. And have you considered looking at full claims, not just abstracts? A: Yes, affiliation is interesting. A: Our experience from a first test was that the full claim tree did not add much value in classifying true matches, and takes a lot of computation time. (LeeF: seconded)</p>
+<p>Comment: Affiliations are missing for 20% of OpenAlex. When there are multiple authors + institutions, they don’t always link correctly.</p>
+<p>Comment: From the other side, patents from universities can be assigned to someone else (a grant provider, a startup) leading to other notable gaps.</p>
+<p>Comment: This is a perfect example of what we want presented at this workshop: a sense of what’s going on, before it is finalized. Thank you!</p>
+<p>Q: (Adam) In your first slide you had something about “we looked at PPP to understand the relation b/t science and invention. If we <em>knew</em> which were the pairs: can we use this analysis to get a deeper understanding b/t the science and the invention? And predict which science linked to which inventions would produce valuable inventions?<br>
+A: That’s part of the idea, one of my colleagues (Dominique?) should join there. That’s a longer goal, to get that kind of understanding. A: Often you might take inspiration from a scientific idea…</p>
+<p>NB: Lee Fleming is talking about related work tomorrow.</p>
+<hr>
+</section>
+<section id="patents-phrase-to-phrase-semantic-matching-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="patents-phrase-to-phrase-semantic-matching-dataset"><strong>Patents Phrase to Phrase Semantic Matching Dataset</strong></h2>
+<p><em>Grigor Aslanyan</em>, Google<br>
+Ian Wetherbee, Google</p>
+<p>This is a new public phrase-to-phrase dataset for semantic textual similarity (STS): the <em>Google Patent Phrase Similarity Dataset</em></p>
+<ul>
+<li>Human rated, contextual, focused on technical terms, w/ similarity scores</li>
+<li>With granular ratings/flags (e.g.&nbsp;synonym, antonym, hypernym, hyponym, holonym, shared domain, unrelated…)</li>
+</ul>
+<p>Existing STS collections build on Wikipedia, books, &amp;c.&nbsp;not technical terms.</p>
+<p>Our dataset was used in a Kaggle <a href="https://www.kaggle.com/competitions/us-patent-phrase-to-phrase-matching">competition</a> in March 2022.</p>
+<p>We focused on <strong>phrase disambiguation</strong> (adding CPCs for context), <strong>adversarial keyword</strong> matching, and <strong>hard negatives</strong> (explicit non-relation).</p>
+<p><strong>Method:</strong></p>
+<p><strong>Choosing anchors:</strong> - We keep phrases that appear in 100+ patents - Randomly choosing 1000 anchor phrases from these - Randomly sampling up to 4 CPC classes for each, for context</p>
+<p><strong>Generating targets:</strong> - We randomly select phrases from the full corpus with a partial keyword match with an anchor - We use a masked language model, asking BERT to generate replacement phrases after masking out each instance of the phrase</p>
+<p><strong>Discussion</strong>:</p>
+<p>This is meant to be a tool to fine tune models rather than intended as a model itself.</p>
+<hr>
+<p>6:30 pm — <strong>Dinner</strong></p>
+<hr>
+</section>
+</section>
+<section id="saturday-december-3" class="level1">
+<h1>Saturday, December 3</h1>
+<p>8:30 am — Continental Breakfast</p>
+<hr>
+<section id="mapping-patents-to-technology-standards-slides" class="level2">
+<h2 class="anchored" data-anchor-id="mapping-patents-to-technology-standards-slides"><strong>Mapping Patents to Technology Standards</strong> (<a href="https://conference.nber.org/conf_papers/f176406/f176406.slides.pdf">slides</a>)</h2>
+<p><em>Fabian Gaessler</em>, Pompeu Fabra University<br>
+Dietmar Harhoff, Max Planck Institute for Innovation and Competition<br>
+Lorenz Brachtendorf, Max Planck Institute for Innovation and Competition</p>
+<p><strong>Summary</strong>: We try a new method to link patents to standards based on semantic similarity. Useful for SEP litigation, strategic patenting, contributions to tech progress.</p>
+<p><strong>Future Improvements</strong>: Refine similarity measure, extend to other standards, historical and other regions.</p>
+<p><strong>Data sources + challenges:</strong> - <strong>Standards</strong>: We focus on ETSI - a standards db with 40k standard docs, varying in size &gt;1k pages, may describe multiple technologies and split at a chapter level - Also 18,000 declared SEPs, at family level - <strong>Challenges</strong>: long texts, multiple docs, two corpora</p>
+<p><strong>Similarity approaches:</strong> - <code>octimine</code>: closed-source, via Natterer(2016). ‘vector space model’, cosine + other? fine tuning - <em>tf-idf</em>, embeddings: we checked results with this</p>
+<p>Linking essentiality status to predicted essentiality: “if this worked better I would be out founding a company offering patent-tech”</p>
+<p>We compared this w/ wifi patents, and hand-marked gold standard, w/ similar results.</p>
+<p><img src="images/standards-wifi-comparison.png" class="img-fluid"></p>
+<p>We posted everything on Harvard Dataverse: with csv’s for 60k docs, use cases, and more. <a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/B2RJSX">Semantic similarity of patent-standard pairs</a> (ETSI, IEEE, ITUT)</p>
+<p><strong>Discussion</strong>:</p>
+<p>Tim: We are basically citing one another’s unpublished papers here. Great to see this. Can you say more about similarity score coeffs and how this changes for claims? A: With <em>claims</em>: Effect size gets smaller. There’s a tradeoff b/t the noise you have from just having [claims] vs [standards], and bias that may come in (from also looking at description, less uniform?). A: Also interesting that the final decisions (across the corpus) didn’t change that much when using just claims or using full.</p>
+<p>Tim: Ideas - take claim + description, find ones that are more similar on one or the other. Perhaps claims change in ways that make them fall w.r.t. standard. There’s such time variation in patenting and standardization processes, this micro-longitudinal change could show which ones move in or away from specs. From a policy standpoint: can you find things that were close substitutes but isn’t essential? Policy debate here is that stands process created a monopoly that wasn’t there before. So: what were the alternatives early in stands? A: We looked at undeclared-by-humans but high-similarity. Overall seem less valuable. Also much older at the time; patent had expired. Share of SSO membership was not lower among these.</p>
+<p>Comment: One way to get essentiality is to put language in your patent into the standard (in one direction or the other). Given the slow standards process, you have opportunities through continuations + more. My concern w/ this approach: it’s not that patents are written in a eureka moment, and language summarizes that insight! A: This is complex. There are some just-in-time patenting studies, also personal ties: can you see prelim drafts, file a patent just before adoption? This is an issue for many such efforts.</p>
+<p>Adam: Sounds like you could document this phenomenon by looking at increasing similarity over the course of the standards process.</p>
+<hr>
+</section>
+<section id="the-nber-orange-book-dataset-a-users-guide" class="level2">
+<h2 class="anchored" data-anchor-id="the-nber-orange-book-dataset-a-users-guide"><a href="https://www.nber.org/system/files/working_papers/w30628/w30628.pdf"><strong>The NBER Orange Book Dataset: A User’s Guide</strong></a></h2>
+<p><em>Maya Durvasula</em>, Stanford University<br>
+Scott Hemphill, NYU Law School<br>
+Lisa Larrimore Ouellette, Stanford University<br>
+Bhaven Sampat, Columbia University and NBER<br>
+Heidi Williams, Stanford University and NBER</p>
+<p>Patents are used as measure of innovation; but <em>mappings to products</em> can be unclear. There’s no straightforward linkage. But this is different in pharma, via the <a href="http://rx-wiki.org/index.php?title=Orange_Book">Orange Book</a>.</p>
+<p>We introduce a newly digitized OA dataset of Orange Book records, w/ annual editions providing snapshots at points in time; giving a comprehensive portrait of legal protections over drug lifecycles.</p>
+<p><strong>Challenges:</strong> - OB records are self-reported, not audited by the FDA. We validated against external benchmarks - Appropriate use may differ across researchers. Use case: calculating market exclusivity</p>
+<p>“Orange Book” is a misnomer. Real name: Approved Drug Products with Therapeutic Equivalence Evaluations, for pharmacists to track generic-brandname links. Related: <em>Hatch-Waxman Act</em> for drug price competition.</p>
+<p>Not everything is eligible for listing. Only patents that could reasonably be asserted (to track infringement of generics). Incentives to list all patents: generic competitors have to challenge every patent that’s still in force at the point they enter the market. [challenge means: legal certification, required to argue each specific patent is either invalid or not infringed]</p>
+<p>Any infringement suit leads to 30 months of blocking generic approval. Free extra exclusivity! Sometimes called ‘pseudo-patents’. We see 5 categories of exclusivity:</p>
+<ol type="1">
+<li>New chemical entity (NCE): 5y</li>
+<li>Orphan drug (ODE): 7y</li>
+<li>Pediatric (PED): 6mo</li>
+<li>Generating Antibiotic Incentives Now (GAIN): 5y</li>
+<li>180-day exclusivity (Generic DE): 6mo</li>
+</ol>
+<p><strong>Find our dataset</strong> on NBER: the <a href="https://www.nber.org/research/data/orange-book-patent-and-exclusivity-data-1985-2016">NBER Orange Book Dataset</a> (<a href="https://data.nber.org/fda/orange-book/historical/1986-2016/README.pdf">Readme</a>).</p>
+<p>Good news: you can <em>just use this</em> w/o worrying about gaps! [4 data files: Drug patents, patent use codes, drug exclusivity, drug exclusivity code…]</p>
+<p>Of 2500 new drugs 1985-2015, 80% have one form of such protection. Of 800 new molecular entities, 96% of these ‘innovative drugs’ have one. This exclusivity is granted and recorded directly by FDA.</p>
+<p>We run a comparison to IQVIA/Ark, look at litigation records, and at extended patents under Hatch-Waxman. The majority of drug patents do get recorded in the Book.</p>
+<p>We also looked at 4 predictable changes to expiry: 1. TRIPS 2. PT Extension 3. PT Adjustment 4. Maintenance fee non-payment (at 3.5/7.5/11.5)</p>
+<p>At high level all things are accurate, but non-payment doesn’t appear! Firms just stop self-reporting. <strong>45% of patents expire before full term</strong>. Must find other resources to track.</p>
+<p><em>Context</em>: This was originally an appendix for another project estimating market exclusivity: Nominal, Expected, Realized (what do legal protections say they confer, what shielding should be expected, how much time actually elapsed in a case).</p>
+<p><strong>Discussion</strong>:</p>
+<p>Q: Dan Gross: Could you list some potential misuses as well as good uses of this dataset?<br>
+A: Bhaven: Positive use cases included… Don’t count all entries as if they are equal. E.g. those that actually matter for generic entry.</p>
+<p><strong>Errors/disputes:</strong></p>
+<p>If you’re a competitor you can state that a record doesn’t actually conflict w/ listed drugs. There are 54 active disputes here, from generic competitors. This is hard if you’re not yourself in the weeds re: what the patent text allows. Our period ends in 2015, and there weren’t disputes that ended in delisting in that period.</p>
+<p>Until 2003, you could get multiple 30mo stays. Firms would start pulling new OB listings out of nowhere. Had to be fixed in the Medicare Modernization Act.</p>
+<p>Q: Have you thought about how different IP rights complement one another?<br>
+A: The project this was originally an appendix for is doing that: looking at new uses for approved drugs, and how patent + regulatory exclusivity interact. Definitely something you can do with this data!</p>
+<p>Comment: [from USPTO] The <a href="https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-examination-research-dataset-public-pair"><strong>patent examination research dataset</strong></a> (<strong>PatEx</strong>) includes patent status, expiry due to non-maintenance. Published annually since 2014. Google Patents may have more, if you need older years reach out and we can track down where it actually is.</p>
+<p>Comment: Renewals can be found in <strong>PatStat</strong>.</p>
+<hr>
+</section>
+<section id="progress-report-on-an-inventor-author-crosswalk" class="level2">
+<h2 class="anchored" data-anchor-id="progress-report-on-an-inventor-author-crosswalk"><strong>Progress Report on an Inventor-Author Crosswalk</strong></h2>
+<p><em>Lee Fleming</em>, University of California, Berkeley</p>
+<p>We have initial results, model, and proposed flow.</p>
+<p><strong>The Gatekeepers of Science</strong>: Papers for pure sci, Light bulb for pure inventor, Gate for sciinventor.</p>
+<p>Relationship width: # of coauthorships. Heterogeneity across lab clusters?</p>
+<p><strong>Artefacts:</strong> - Sankey diagram of Doudna’s OA ID / PatsView ID shows over-splitting in OA - For a ML model estimating missed links: - Take subset of Marx/Fuegi patent-article citations that are self-citations. Look for scientists w/ ORCID IDs [‘best thing we have right now’] - Features of prediction model: many! Clean up all fields, plug in, publish accuracy estimates - Enable sub-setting, intermediate results</p>
+<p><img src="images/inventor-features.png" class="img-fluid"></p>
+<p>Some features used in distance calculation.</p>
+<p><strong>Challenges</strong>: Queries directly draw from OAlex right now. Encoding takes time. For clustering, let users choose an algorithm, show both sanity check + confidence measure.</p>
+<p><strong>Discussion</strong>:</p>
+<p>Lee: Our server died, so we’re trying to figure out the economies of hosting own servers and BigQuery.</p>
+<p>Q: Say more about this? How could BQ help?<br>
+A: Some IT guys suggested using [it] to help keeping this running. NB: For Gaetan, curation feels like the critical upkeep cost.</p>
+<p>Q: What are the most expensive parts of keeping this updated?<br>
+A: OA updates their dataset every 6mo. PatentsView each year. We want to turn the crank. Needs ~10k compute each time…</p>
+<p>OA is changing in real time, since last year. Maybe they’re trying to cluster researchers. (A: we should incorporate those)</p>
+<p>Q: Are you using OA’s <code>field</code> concepts? They’re a bit wonky, too sparse, too many of them associated w/ each researcher.<br>
+A: We’re using those and rolling our own, trying both. I’m a pathological case: my patents are in materials science, and I’m a social scientist now. A: (Adam) I waded into this in NZ, looking at the work of NZ scientists who worked in NA/Europe and returned. Typically in db’s they are treated as different people. Different location + institution! May be impossible to handle. A: Doesn’t seem impossible for a human, or a great machine reader (esp if they can trace the full timeline of other work of each person).</p>
+<p>Q: Is there a way to [use email to prompt to dig deeper]?<br>
+Q: What fraction of scientists have an ORCID?<br>
+A: As of 2022: about 6M distinct ORCIDs are associated with at least one work or external identifier. Recency bias.</p>
+<hr>
+</section>
+<section id="panel-how-do-we-validate-patent-metrics-derived-from-semantic-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="panel-how-do-we-validate-patent-metrics-derived-from-semantic-analysis"><strong>Panel: How do we validate patent metrics derived from semantic analysis?</strong></h2>
+<p>There has been an explosion of development of semantic-based measures seeking to capture similarity across patents; novelty; disruptiveness, value or impact, etc. The panel will bring together researchers who’ve been working on these metrics to discuss questions such as: what is the relationship of these metrics to older ones based on, e.g., patent classification or citations; how should validation be structured (should people validate their own measures or should we try to create some kind of shared or over-arching validation process); what is the relationship between different modes of validation (e.g.&nbsp;correlation with existing metrics, testing against subjective expert judgements, correlation with outcome indicators such as productivity or prizes).</p>
+<p><strong>Moderator</strong>: Bronwyn Hall, Stanford University and NBER <strong>Panelists</strong>: Sam Arts (KU Leuven), Dokyun Lee (Boston University), Ina Ganguli (UMass Amherst), Josh Lerner (Harvard + NBER)</p>
+<p>Approaches to validation:</p>
+<ol type="1">
+<li>Internal validity: expert ratings (13 from 5 fields)</li>
+<li>External validity: citations, shared family, shared ID</li>
+</ol>
+<p><em>Ideas</em>: Use new combinations of classes to estimate novelty. Special case: Look at 400 patents that got rare awards. Control case: Not novel / impactful? (US grant, EPO/JPO rejection)</p>
+<p><strong>General remarks:</strong> - Preprocessing text makes a big difference - Articulate tradeoffs b/t simple and advanced approaches - Explain why text works better (than trad measures) - Define the goal (better to estimate what?) - We need new benchmarks to validate metrics - To everyone: provide raw data, and the code that processes it! That lets others replicate, vary steps, chain processes</p>
+<section id="innovae---generative-ai-for-patent-innovation" class="level3">
+<h3 class="anchored" data-anchor-id="innovae---generative-ai-for-patent-innovation"><a href="https://tiny.cc/innovae"><strong>InnoVAE</strong></a> - Generative AI for patent innovation</h3>
+<p>We looked at different representations for innovation.</p>
+<p>Token-based methods, embedding methods, topic methods are used for similarity, but there is no regularization of the learned manifolds/latent spaces, so distances are hard to interpret.</p>
+<p>Semantic orthogonality + dimension independence is not internalized or sharpened → problem of unique interpretability.</p>
+<p><strong>Innovae</strong>: Develops Innovation Space — constructing economically interpretable measures, in a well-disentangled representation.</p>
+<ul>
+<li>What could you get by combining two patents? E.g., combinational creativity for claims. How exceptional is one patent in the context of a portfolio / with respect to one tech factor?</li>
+<li>Desirable features: <em>Multimodal</em>…</li>
+</ul>
+<p>Innovation factors for one topical specialty:</p>
+<p><img src="images/innovae-factors.png" class="img-fluid"></p>
+<p>Our ideal: A common dataset, task, metric + benchmarks - Compare how speech + language models evolved; Kaggle today - Unite scattered approaches to this for patent/scholarly data</p>
+<p>Downstream application: Predict <a href="https://en.wikipedia.org/wiki/Tobin%27s_q"><em>Tobin’s q</em></a>.</p>
+<p><strong>Discussion</strong>:</p>
+<p>Comment: Cautious optimism about advancing the s.quo with language models.</p>
+<p>Q: Is there a way to look inside black boxes to describe what’s driving the process (and compare options)?</p>
+<p>Comment: Limits of language similarity: (Andy Toole) Applicants have an incentive to morph language to differentiate their applications and help overcome objections related to novelty and nonobviousness. Now Bronwyn is talking about strategic language.</p>
+<p>(Adam) One concrete thing that seems to be coming out of this: <strong>We should create a parallel index of validation datasets</strong> Get everyone [running contests] to compare a) their prize matching[?], b) standard tests to run new measures against. Then referees could say “you have to run your new metric against those testing datasets”.</p>
+<p>Josh’s comments hinted at this: Patents are issued through a resource-intensive admin process. There’s just a lot of eyes on these docs. As we saw today there’s a lot of emphasis on similarity, but we haven’t targeted what Julian was talking about: examination process, assignment to examiners, to a unit, what kinds of rejection specific claims get. - That’s more informed than a lot of RAs who look at patents - That plugs into a community of commercial/professional services [tools to get your patent assigned to a favorable art unit] - If we do things relevant to that community they could come help?</p>
+<p>Comment: Validation tasks seem specific to an application… but for human coding, we could draw standards from how to design the coding task. People are expensive, if consistent over time… and a recent emerging patent pool is “Open RAN” for 5g. They decided there was so much IP clamoring to get in, they had to turn it over to computers to determine essentiality. - [Machine reading / synthesis is good enough to get lots of leverage here] - (Adam) We could explore this more systematically - The first AI winter came about due to a lack of shared validation? - Compare how <a href="https://paperswithcode.com/">Papers With Code</a>/<a href="https://paperswithcode.com/datasets">Papers With Data</a> work now</p>
+<p>More clarity would be useful for specific common ideas: - <em>Similarity</em> (much more than just cosine of feature vectors) — ex: consider what we’re looking at similarity <em>between</em> - <em>Quality</em> (Bronwyn has a whole chapter on this) - <em>Novelty</em> (compare to what, on what timescale)</p>
+<p>Q: General Q: Is public pair data available?<br>
+A: It is discontinued; queries go through <a href="https://patentcenter.uspto.gov/">Patent Center</a></p>
+<hr>
+<p>1:00 pm — <strong>Lunch</strong></p>
+<hr>
+<p>Thanks for joining! For further questions or conversation, please join the I3 discussion list (<a href="https://mailman.mit.edu/mailman/listinfo/i3-open">i3-open</a>).</p>
+<hr>
+<p><em>Original content published on <a href="https://iii.pubpub.org/pub/kdv6mt73/release/7">PubPub</a> under Creative Commons Attribution 4.0 International License (CC-BY 4.0)</em></p>
+
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/www\.i3open\.org");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+Innovation Information Initiative (I³) ©
+<script>document.write(new Date().getFullYear())</script>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
