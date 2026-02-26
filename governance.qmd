@@ -10,135 +10,45 @@ The Innovation Information Initiative (i3) is a global community of economists a
 
 ### 2.1 Steering Committee
 
-The Steering Committee provides strategic direction, oversees operations, and makes major decisions regarding i3's activities and resources.
+The Steering Committee is the primary governing body of i3, responsible for setting strategic direction and making major organizational decisions. It comprises five to seven members serving staggered three-year terms, providing continuity while enabling the regular introduction of new perspectives. Decisions are made by simple majority vote of members present at a duly constituted meeting. The Steering Committee approves annual budgets, expenditures above $5,000, changes to governance policies, and the admission of new Steering Committee members.
 
-**Composition:**
-- 5-7 members representing diverse institutions and expertise areas
-- Members serve staggered 3-year terms (renewable once)
-- At least one member should represent early-career researchers
-
-**Responsibilities:**
-- Set strategic priorities and research agenda
-- Approve budget and resource allocation
-- Oversee grant distribution to students and researchers
-- Approve new major datasets or infrastructure projects
-- Ensure adherence to open science principles
 
 **Decision-Making:**
 - Decisions require a simple majority vote
 - Quorum: At least 50% of committee members must be present
 - Meetings held at least semiannually
 
-### 2.2 Project Lead(s) / Coordinator(s)
+### 2.2  Lead(s)
 
-**Role:** Day-to-day operations, community coordination, and implementation of Steering Committee decisions
+The Project Lead manages day-to-day operations, maintains technical infrastructure, and serves as the primary point of contact for i3. The Project Lead is authorized to approve expenditures under $5,000 without prior Steering Committee approval and is responsible for preparing agendas for Steering Committee meetings, maintaining records of decisions, and reporting regularly to the Steering Committee on operational matters.
 
-**Responsibilities:**
-- Manage BigQuery repository and technical infrastructure
-- Coordinate community meetings and communications
-- Facilitate collaboration among members
-- Prepare reports for Steering Committee and funders
-- Serve as primary contact with NumFOCUS
 
-**Appointment:** Selected by Steering Committee for 2-year renewable terms
+### 2.3 Project Groups
 
-### 2.3 Working Groups
+Topic-specific project groups may be established by the Steering Committee or community members to focus on particular datasets, methodologies, or infrastructure needs.
 
-Topic-specific working groups may be established by the Steering Committee or community members to focus on particular datasets, methodologies, or infrastructure needs.
-
-**Structure:**
-- Self-organized with designated coordinators
-- Report progress to Steering Committee quarterly
-- Open to all community members
+Project Groups are topic-specific teams open to all i3 community members. They carry out the substantive research and data-development work of i3, including dataset construction, methodological documentation, and community education. Any community member may propose a new Project Group; formation requires approval by the Project Lead or the Steering Committee. Project Groups operate with significant autonomy but report periodically to the Steering Committee and the broader community on their activities and outputs.
 
 ## 3. Membership
 
 ### 3.1 Community Members
 
-**Eligibility:** Researchers, students, and practitioners actively engaged in innovation research or dataset development
-
-**Rights:**
-- Participate in working groups
-- Attend community meetings
-- Contribute to datasets and tools
-- Propose new projects or initiatives
-- Vote in community surveys (non-binding)
-
-**Process:** Self-identification via community registration or participation
+i3 membership is open to researchers, students, and practitioners actively engaged in innovation research. Members are expected to participate constructively in the community, which may include contributing to Project Groups, attending community meetings, and proposing new initiatives. There are no formal membership dues; i3 relies on the voluntary contributions of time and expertise from its members, as well as financial support from donations, grants, and institutional partners.
 
 ### 3.2 Steering Committee Selection
 
-**Nomination Process:**
-- Annual call for nominations (self-nominations accepted)
-- Nominees must be active community members
-- Current Steering Committee reviews nominations
-
-**Selection:**
-- Current Steering Committee votes on new members
-- Considerations: expertise diversity, institutional diversity, geographic representation, career stage
+New members are nominated by existing Steering Committee members or the broader i3 community and confirmed by a majority vote of the Steering Committee. There are no formal term limits, though the Steering Committee encourages periodic renewal of membership to bring in new voices. Members wishing to step down should provide reasonable notice to allow for an orderly transition.
 
 ## 4. Financial Management
 
-### 4.1 Budget Authority
+The Steering Committee is responsible for the financial health of i3. It approves annual budgets and any individual expenditure above $5,000. The Project Lead has authority to approve expenditures below this threshold in the ordinary course of operations. i3's funding sources include donations from individual researchers and institutions, grants from foundations and government agencies, and other forms of institutional support.
 
-The Steering Committee approves annual budgets and major expenditures (>$5,000).
+To support long-term financial sustainability, i3 is exploring fiscal sponsorship through [numFocus](https://numfocus.org/), a nonprofit that provides financial and administrative infrastructure for open-source scientific projects. Under this arrangement, individuals and institutions would be able to make tax-deductible donations to support i3's infrastructure and dataset maintenance. An annual financial report will be made publicly available on the i3 website.
 
-### 4.2 Funding Sources
-
-- Donations from individuals and institutions
-- Grant funding from foundations
-- Institutional support from partner organizations
-
-### 4.3 Expenditure Categories
-
-- Data infrastructure maintenance
-- Student and researcher grants for dataset development
-- Community meetings and workshops
-- Documentation and outreach
-
-### 4.4 Grant Allocation
-
-**Process:**
-- Open calls for proposals issued at least annually
-- Review by Steering Committee or designated review panel
-- Awards based on: alignment with i3 mission, feasibility, potential impact, open science commitment
-
-**Requirements:**
-- All funded work must produce openly licensed datasets
-- Recipients must document methods and provide metadata
-- Regular progress reports required
-
-### 4.5 Financial Reporting
-
-- Annual financial report to Steering Committee, shared publicly
-- Full transparency of fund usage via NumFOCUS reporting
 
 ## 5. Decision-Making Processes
 
-### 5.1 Major Decisions
-
-Require Steering Committee approval:
-- Strategic direction changes
-- Budget allocation
-- Major partnerships or collaborations
-- Changes to governance structure
-- Expenditures >$5,000
-
-### 5.2 Operational Decisions
-
-Project Lead has authority over:
-- Day-to-day operations
-- Infrastructure maintenance
-- Community coordination
-- Expenditures <$5,000
-
-### 5.3 Community Input
-
-The Steering Committee seeks community input on major decisions through:
-- Community surveys
-- Open meetings
-- Working group feedback
-- Annual community meetings
+i3 follows a tiered decision-making model designed to balance efficiency with accountability. Routine operational matters — including expenditures under $5,000, day-to-day project management, and community communications — are handled by the Project Lead. Major decisions, including budget approval, governance changes, new Steering Committee members, and significant strategic shifts, require a majority vote of the Steering Committee. The Steering Committee aims to hold regular meetings (at least twice per year) and to conduct business by email or video conference as needed between meetings.
 
 ## 6. Code of Conduct
 
