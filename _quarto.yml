@@ -25,6 +25,8 @@ website:
         href: bigquery.qmd
       - text: About
         href: about.qmd
+      - text: Contact
+        href: contact.qmd
 
   page-navigation: true
   page-footer:
