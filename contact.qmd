@@ -10,11 +10,21 @@ page-layout: full
 
 All participants are welcome to join the Innovation Information Initiative. We have hosted regular convenings since 2019 to shape this collaborative and share our work.
 
-## Contact Information
+## Contact Us
 
-For questions, contributions, or to get involved with I³, please reach out:
+For questions, contributions, or to get involved with i3, please reach out using the form below:
 
-- **Website**: [https://iii.pubpub.org/](https://iii.pubpub.org/)
+<form action="https://formspree.io/f/mkoqwvrp" method="POST">
+  <div class="mb-3">
+    <label for="email" class="form-label">Your email:</label>
+    <input type="email" name="email" id="email" class="form-control" required>
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Your message:</label>
+    <textarea name="message" id="message" class="form-control" rows="5" required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Send</button>
+</form>
 
 ## Contributing
 
