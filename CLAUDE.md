@@ -195,9 +195,7 @@ The site uses a two-stage deployment process:
    - Publishes built site to `deploy` branch
    - Uses `peaceiris/actions-gh-pages` action
 
-2. **Netlify** serves the pre-built site from the `deploy` branch:
-   - No build step on Netlify (configured in `netlify.toml`)
-   - Simply serves static files from the branch
+2. **GitHub Pages** serves the pre-built site from the `deploy` branch, with **Cloudflare** handling DNS routing
    - Live site: **www.i3open.org**
 
 Simply commit and push changes to `main` to trigger the build and deployment. No need to manually run `quarto render`.
