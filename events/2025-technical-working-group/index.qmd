@@ -4,7 +4,6 @@ subtitle: "December 2025 meeting of the i3 TWG"
 description: "Two-day event featuring presentations on new sources of patent data, metascience, i3 fellows research, and building datasets with AI and machine learning."
 author:
   - Matt Marx
-  - Dror Shvadron
 date: "2025-12-05"
 image: images/2025-twg.png
 categories: [workshop, technical-working-group, featured]
