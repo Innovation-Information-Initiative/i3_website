@@ -1,16 +1,116 @@
 ---
 title: "2025 Technical Working Group meeting"
-subtitle: "December 2025 meeting of the I3 TWG"
-description: "Two-day event featuring presentations on emerging tools and datasets for innovation research, including discussions of entrepreneurship databases, new product analysis, novelty measurement tools, large language model applications, patent databases, and comparative NLP methodologies."
+subtitle: "December 2025 meeting of the i3 TWG"
+description: "Two-day event featuring presentations on new sources of patent data, metascience, i3 fellows research, and building datasets with AI and machine learning."
 author:
   - Matt Marx
   - Dror Shvadron
-date: "2025-12-01"
+date: "2025-12-05"
 image: images/2025-twg.png
 categories: [workshop, technical-working-group, featured]
 featured: true
 ---
 
-**December 5-6**, 2025   
+**December 5-6, 2025**
 
-TBD
+Royal Sonesta Hotel, Longfellow Room, 40 Edwin H. Land Blvd., Cambridge, MA (and Zoom)
+
+Supported by the Alfred P. Sloan Foundation grant #G-2024-22641
+
+Format: 20 minutes for presentations and 10 minutes for Q&A
+
+---
+
+# Friday, December 5
+
+---
+
+**4:00 pm** — Welcome/Introductions
+
+## New Sources of Patent Data
+
+### 4:15 pm — [Biologics Patent Database](https://conference.nber.org/conf_papers/f229110/f229110.pdf)
+
+**Melissa F. Wasserman** (University of Texas at Austin), Michael D. Frakes (Duke University, NBER)
+
+[Slides](https://conference.nber.org/conf_papers/f229110/f229110.slides.pptx)
+
+---
+
+### 4:45 pm — [Constructing the Soviet Patent Dataset](https://conference.nber.org/conf_papers/f230188/f230188.pdf)
+
+**Evgenii Fadeev** (Duke University), Josh Lerner (Harvard University, NBER), Jacob Moscona (Massachusetts Institute of Technology, NBER)
+
+---
+
+**5:15 pm** — *Next Steps for U.S. Patent Data* — Matt Marx, Andrew Toole
+
+**5:45 pm** — Adjourn
+
+**6:00 pm** — Reception and Group Dinner (Parkview Room)
+
+---
+
+# Saturday, December 6
+
+---
+
+**8:30 am** — Continental Breakfast
+
+## Metascience
+
+### 9:00 am — [Reliance on Scientific Ideas in Patenting](https://conference.nber.org/conf_papers/f230165/f230165.pdf)
+
+**Sam Arts** (KU Leuven), Nicola Melluso (LUISS University)
+
+---
+
+### 9:30 am — [Research Careers in Europe: New Evidence from the Doc-Track Database](https://conference.nber.org/conf_papers/f230121/f230121.pdf)
+
+**Alberto Corsini** (Spanish National Research Council, CSIC), Johannes Koenig (University of Kassel), Burcu Ozgun (Utrecht University), Andriy Romanyuk (Université de Bordeaux), Guido Buenstorf (University of Kassel), Francesco Lissoni (Université de Bordeaux), Ernest Miguelez (AQR-IREA, University of Barcelona), Michele Pezzoni (Université Côte d'Azur), Catalina Martínez (Spanish National Research Council, CSIC)
+
+---
+
+### 10:00 am — [SciSciGPT: Advancing Human-AI Collaboration in the Science of Science](https://conference.nber.org/conf_papers/f230056/f230056.pdf)
+
+**Erzhuo Shao** (Northwestern University), Yifang Wang (Florida State University), Yifan Qian (Northwestern University), Zhenyu Pan (Northwestern University), Han Liu (Northwestern University), Dashun Wang (Northwestern University)
+
+---
+
+**10:30 am** — Break
+
+## i3 Fellows Presentations
+
+**10:45 am**
+
+- **Mihai Codreanu** (Stanford University)
+- **Guilherme Junqueira** (University of Florida)
+- **Tianshu Lyu** (Yale University)
+
+---
+
+**11:30 am** — Break
+
+## Building Datasets with AI & Machine Learning
+
+### 11:45 am — Architectur(al Innovation) is (Mostly) all you Need
+
+**Saqib Mumtaz Choudhary** (Georgia Institute of Technology), Lee Fleming (University of California, Berkeley)
+
+---
+
+### 12:15 pm — [The Invisible Majority: Selection Bias in Self-Reported Data](https://conference.nber.org/conf_papers/f230182/f230182.pdf)
+
+**Emmanuel Yimfor** (Columbia University)
+
+[Slides](https://conference.nber.org/conf_papers/f230182/f230182.slides.pdf)
+
+---
+
+### 12:45 pm — [AI-Based Measurement of Innovation: Mapping Expert Insight into Large Language Model Applications](https://conference.nber.org/conf_papers/f230058/f230058.pdf)
+
+**Robin Nowak** (University of Passau), Patrick Figge (University of Passau), Carolin Haeussler (University of Passau)
+
+---
+
+**1:15 pm** — Adjourn and Lunch (Rooms Skyline ABC)
