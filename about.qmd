@@ -24,6 +24,10 @@ We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **N
 - Agnes Cameron
 - Dror Shvadron
 
+## Governance
+
+Learn more about how i3 is organized and how decisions are made in our [Governance](governance.qmd) document.
+
 ## Code of Conduct
 
 We are committed to providing a welcoming and inclusive environment for all participants. Please review our [Code of Conduct](CODE_OF_CONDUCT.qmd) to understand our community standards and expectations.

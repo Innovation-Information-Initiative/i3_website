@@ -1,6 +1,6 @@
 # Innovation Information Initiative (i3) Governance Document
 
-**Version 1.0 | Effective Date: [Insert Date]**
+**Version 1.0 | Effective Date: March 1, 2026**
 
 ## 1. Mission and Purpose
 
@@ -14,6 +14,7 @@ The Steering Committee is the primary governing body of i3, responsible for sett
 
 
 **Decision-Making:**
+
 - Decisions require a simple majority vote
 - Quorum: At least 50% of committee members must be present
 - Meetings held at least semiannually
@@ -55,6 +56,7 @@ i3 follows a tiered decision-making model designed to balance efficiency with ac
 ### 6.1 Principles
 
 i3 is committed to fostering an inclusive, respectful, and collaborative community. All members must:
+
 - Treat others with respect and professionalism
 - Value diverse perspectives and contributions
 - Adhere to principles of open science and reproducibility
@@ -70,6 +72,7 @@ Reports of Code of Conduct violations should be submitted to [designated contact
 ### 7.1 Default License
 
 All datasets, code, and documentation produced by i3 or with i3 funds should be released under permissive open licenses:
+
 - Data: CC0 or CC-BY 4.0
 - Code: MIT, Apache 2.0, or BSD
 - Documentation: CC-BY 4.0
@@ -85,19 +88,21 @@ Contributors who use i3 infrastructure or funding agree to license their outputs
 ## 8. Amendments
 
 This governance document may be amended by:
+
 - Two-thirds vote of the Steering Committee
 - Community consultation period (minimum 30 days)
 
 ## 9. Dissolution
 
 In the event of dissolution:
+
 - All remaining funds will be transferred another organization supporting open science
 - All datasets and tools will remain publicly available
 - Documentation will be archived in long-term repositories
 
 ## 10. Effective Date and Review
 
-**Effective Date:** [Insert Date]
+**Effective Date:** March 1, 2026
 
 **Review Schedule:** This governance document will be reviewed annually by the Steering Committee and updated as needed.
 
@@ -105,7 +110,8 @@ In the event of dissolution:
 
 ## Appendix A: Current Leadership
 
-**Steering Committee:** (need to add term expirations)
+**Steering Committee:** 
+
 - Adam Jaffe
 - Samuel Klein
 - Matt Marx
@@ -115,7 +121,10 @@ In the event of dissolution:
 - Dror Shvadron
 
 **Project Lead(s):**
+
 - Matt Marx
+
 **Contact Information:**
+
 - Email: mmarx@cornell.edu
 

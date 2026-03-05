@@ -2,6 +2,7 @@
 title: "Contact Us"
 subtitle: "Get in touch with the Innovation Information Initiative"
 page-layout: full
+toc: false
 ---
 
 {{< include /files/includes/_msclarity.qmd >}}
@@ -14,6 +15,7 @@ All participants are welcome to join the Innovation Information Initiative. We h
 
 For questions, contributions, or to get involved with i3, please reach out using the form below:
 
+```{=html}
 <form action="https://formspree.io/f/mkoqwvrp" method="POST">
   <div class="mb-3">
     <label for="email" class="form-label">Your email:</label>
@@ -25,6 +27,7 @@ For questions, contributions, or to get involved with i3, please reach out using
   </div>
   <button type="submit" class="btn btn-primary">Send</button>
 </form>
+```
 
 ## Contributing
 
@@ -34,20 +37,5 @@ We welcome contributions in several areas:
 - **Datasets**: Contribute datasets or scripts to our public repository
 - **Technical Working Group**: Join our regular convenings and technical discussions
 - **Feedback**: Help us improve the initiative by sharing your ideas
-
-## Support
-
-The Innovation Information Initiative is supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER** and the **Knowledge Futures Group**.
-
-## Founding Members
-
-- Adam Jaffe
-- Osmat Jefferson
-- Samuel Klein
-- Matt Marx
-- Gaetan de Rassenfosse
-- James Weis
-- Bronwyn Hall
-- Bhaven Sampat
 
 
