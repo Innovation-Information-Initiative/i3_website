@@ -25,7 +25,7 @@ Join our [Google Group](https://groups.google.com/g/i3-bigquery) for announcemen
 
 ::: {.callout-important}
 ## Support This Resource
-Hosting the i3 BigQuery workspace costs approximately **$100/month**. If you use these datasets in your research, please consider making a contribution to help keep this resource available to the community.
+Hosting the i3 BigQuery workspace costs approximately **$100/month**. If you use these datasets in your research, please consider making a contribution to help keep this resource available to the community. [Contribute →](contribute.qmd)
 
 <script src="https://opencollective.com/i3open/donate/button.js" color="blue"></script>
 :::

@@ -27,6 +27,8 @@ website:
         href: about.qmd
       - text: Contact
         href: contact.qmd
+      - text: Contribute
+        href: contribute.qmd
 
   page-navigation: true
   page-footer:

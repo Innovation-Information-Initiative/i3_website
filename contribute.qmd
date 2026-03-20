@@ -1,0 +1,32 @@
+---
+title: "Support i3"
+subtitle: "Help keep open innovation data accessible to the research community"
+page-layout: full
+toc: false
+---
+
+i3 builds and maintains open data infrastructure for research on science and innovation — curating datasets, developing tools, and providing shared cloud resources so that researchers can work with large-scale patent, publication, and innovation data without setting up their own pipelines or managing terabyte-scale files locally.
+
+This infrastructure requires ongoing resources to sustain. Contributions support the following areas.
+
+### What your contributions support
+
+- **Data hosting and long-term access.**
+  The [i3 BigQuery workspace](bigquery.qmd) provides free access to core datasets including OpenAlex, PatentsView, and Crossref. Hosting costs approximately $100/month. We maintain versioned copies indefinitely — including after providers discontinue their data — to ensure that published research remains reproducible.
+
+- **Continuity when providers discontinue support.**
+  Data sources that researchers depend on can be discontinued or restructured without warning. i3 is developing open-source ingestion pipelines, designed to be community-maintained and automated, so that access to critical datasets is not contingent on any single provider's decisions.
+
+- **New datasets and tools.**
+  i3 Fellows and collaborators contribute specialized datasets — covering patent history, corporate innovation, scientific impact, patent–paper linkages, and related areas. Each contribution requires storage, processing, and documentation before it can serve the broader community.
+
+- **The i3 Fellows program.**
+  The Fellows program supports PhD students and postdoctoral researchers developing open datasets and analytical tools. Their work becomes part of the shared infrastructure, accessible to all users of the workspace.
+
+- **Training and documentation.**
+  Access to data is of limited value without the ability to use it effectively. i3 develops tutorials, example queries, and documentation to reduce barriers to entry, particularly for researchers less familiar with cloud computing or SQL-based analysis.
+
+- **Community coordination.**
+  i3 convenes an annual Technical Working Group, maintains discussion channels, and coordinates contributions across institutions. Sustaining this collaborative infrastructure requires ongoing effort and support.
+
+<iframe src="https://opencollective.com/embed/i3open/donate" style="width: 100%; min-height: 100vh; border: none;"></iframe>
