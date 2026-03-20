@@ -29,4 +29,5 @@ This infrastructure requires ongoing resources to sustain. Contributions support
 - **Community coordination.**
   i3 convenes an annual Technical Working Group, maintains discussion channels, and coordinates contributions across institutions. Sustaining this collaborative infrastructure requires ongoing effort and support.
 
-<iframe src="https://opencollective.com/embed/i3open/donate" style="width: 100%; min-height: 100vh; border: none;"></iframe>
+<iframe src="https://opencollective.com/embed/i3open/contribute/one-time-donation-99998" style="width: 100%; min-height: 100vh; border: none;"></iframe>
+
