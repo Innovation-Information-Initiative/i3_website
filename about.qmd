@@ -16,13 +16,19 @@ The **Innovation Information Initiative** (**i3**) is a data collaborative for o
 We are supported by the **Alfred P. Sloan Foundation**, with facilitation by **NBER**. 
 
 ## Steering Committee
+- Matt Marx (lead)
+- Daniel Gross 
+- Ina Ganguli 
+- Samuel Klein 
+- Dror Shvadron
+- Andrew Toole
+
+## Founders
 - Adam Jaffe
 - Samuel Klein
 - Matt Marx
 - Bronwyn Hall
 - Bhaven Sampat
-- Agnes Cameron
-- Dror Shvadron
 
 ## Governance
 
