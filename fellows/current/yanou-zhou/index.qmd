@@ -1,5 +1,5 @@
 ---
-title: "Yanou Zhou"
+title: "Yanuo Zhou"
 subtitle: "University of Toronto"
 description: |
   LLM_AuditKit is an open-source Python package that audits large language models for embedded producer-specific biases that trade off factual accuracy for perceived harmlessness.
