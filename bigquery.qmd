@@ -87,7 +87,7 @@ The repository contains two categories of datasets: raw data sources and derivat
 | **Patent Scope** | Patent breadth and technological coverage measures | [Kuhn & Thompson (2019)](https://doi.org/10.1080/13571516.2018.1553284) |
 | **PQRS** | Inventors who publish and scientists who patent | [Scharfmann, Marx & Fleming (2025)](https://doi.org/10.1126/science.adx3736) |
 | **Reliance on Science** | Patent citations to scientific literature | [Marx & Fuegi (2022)](https://doi.org/10.1111/jems.12455) |
-| **Trademark Dimensions** | USPTO trademark dimensions and indicators of firms' product development, product lines, and marketing strategies; mergeable with [USPTO trademark bulk data](https://data.uspto.gov/bulkdata) | [Hsu, Li, Li, Teoh & Tseng (2022)](https://doi.org/10.1287/mnsc.2020.3887); [Hsu, Li, Liu & Wu (2022)](https://doi.org/10.1017/S0022109022000230); Hsu & Li (2026) |
+| **Trademarks-CRSP** | USPTO trademark dimensions and indicators of firms' product development, product lines, and marketing strategies; mergeable with [USPTO trademark bulk data](https://data.uspto.gov/bulkdata) | [Hsu, Li, Li, Teoh & Tseng (2022)](https://doi.org/10.1287/mnsc.2020.3887); [Hsu, Li, Liu & Wu (2022)](https://doi.org/10.1017/S0022109022000230); Hsu & Li (2026) |
 
 
 ---
