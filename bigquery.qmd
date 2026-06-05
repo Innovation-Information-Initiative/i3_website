@@ -75,18 +75,19 @@ The repository contains two categories of datasets: raw data sources and derivat
 | **British Historic Patents** | Historical UK patent records | [Berkes, Chen & Tranchero (2026)](https://doi.org/10.1016/j.respol.2025.105347) |
 | **Commercial Potential of Science** | Measures of commercial potential of science | [Masclans, Hasan & Cohen (2025)](https://doi.org/10.1002/smj.3720) |
 | **DISCERN** | Patenting and scientific publications by U.S. publicly listed firms | [Arora, Belenzon, Cioaca, Sheer, Shin & Shvadron (2024)](https://doi.org/10.5281/zenodo.13619821) |
-| **Founding Patents** | Assignee age at patent grant | — |
+| **Founding Patents** | Assignee age at patent grant | [Ewens & Marx (2023)](https://foundingpatents.com/) |
 | **Geocoding of Worldwide Patent Data** | Geographic coordinates for inventors and assignees | [de Rassenfosse, Kozak & Seliger (2019)](https://doi.org/10.1038/s41597-019-0264-6) |
 | **HistPat** | Historical patents with harmonized geography | [Petralia, Balland & Rigby (2016)](https://doi.org/10.7910/DVN/BPC15W) |
-| **Inventor Age** | Inventor demographic and career-stage information | — |
-| **JCIF** | Journal Commercial Impact Factor | [Marx & Fuegi (2019); Bikard & Marx (2020)](https://github.com/mattmarx/jcif) |
+| **Inventor Age** | Inventor demographic and career-stage information | [Kaltenberg, Jaffe & Lachman (2023)](https://doi.org/10.1016/j.respol.2022.104629) |
+| **JCIF** | Journal Commercial Impact Factor | [Bikard & Marx (2020)](https://doi.org/10.1287/mnsc.2019.3385) |
 | **KPSS Patent Value** | Stock market-based patent valuations | [Kogan, Papanikolaou, Seru & Stoffman (2017)](https://doi.org/10.1093/qje/qjw040) |
 | **Paper Twins** | Matched paper pairs | [Bikard & Marx (2020)](https://doi.org/10.1287/mnsc.2019.3385) |
-| **Patent Hubs** | Geographic clustering of innovation | — |
-| **Patent Paper Pairs** | Linked patent-publication data | — |
-| **Patent Scope** | Patent breadth and technological coverage measures | — |
-| **PQRS** | Patent quality and relevance scores | — |
-| **Reliance on Science** | Patent citations to scientific literature | [Marx & Fuegi (2020, 2022)](https://doi.org/10.1111/jems.12455) |
+| **Patent Hubs** | Geographic clustering of innovation | [Bikard & Marx (2020)](https://doi.org/10.1287/mnsc.2019.3385) |
+| **Patent Paper Pairs** | Linked patent-publication data | Marx (2026) |
+| **Patent Scope** | Patent breadth and technological coverage measures | [Kuhn & Thompson (2019)](https://doi.org/10.1080/13571516.2018.1553284) |
+| **PQRS** | Inventors who publish and scientists who patent | [Scharfmann, Marx & Fleming (2025)](https://doi.org/10.1126/science.adx3736) |
+| **Reliance on Science** | Patent citations to scientific literature | [Marx & Fuegi (2022)](https://doi.org/10.1111/jems.12455) |
+| **Trademark Dimensions** | USPTO trademark dimensions and indicators of firms' product development, product lines, and marketing strategies; mergeable with [USPTO trademark bulk data](https://data.uspto.gov/bulkdata) | [Hsu, Li, Li, Teoh & Tseng (2022)](https://doi.org/10.1287/mnsc.2020.3887); [Hsu, Li, Liu & Wu (2022)](https://doi.org/10.1017/S0022109022000230); Hsu & Li (2026) |
 
 
 ---
