@@ -8,7 +8,7 @@ project:
 
 website:
   title: "Innovation Information Initiative"
-  site-url: "https://www.i3open.org"
+  site-url: "https://i3open.org"
   description: "Innovation Information Initiative (I³): A data collaborative for innovation datasets, analytics, and metrics. Open innovation data including patent datasets, citation graphs, and related analytics tools."
 
   navbar:
