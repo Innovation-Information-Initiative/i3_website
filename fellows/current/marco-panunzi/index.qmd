@@ -1,0 +1,15 @@
+---
+title: "Marco Panunzi"
+subtitle: "Stanford"
+description: |
+  The project will digitize and geocode the laboratories recorded in the "Industrial Research Laboratories of the United States" and its successor, the "Directory of American Research and Technology".
+aliases:
+  - /fellows/current/marco-panuzi/index.html
+image: images/photo.webp
+about:
+  template: solana
+  image-width: 250px
+  image-shape: rectangle
+---
+
+**i3 Fellow, 2026 Cohort**
